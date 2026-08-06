@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 130" width="460" height="130">
+  
+  <g transform="translate(10.8,13.6) scale(1.6)" fill="none">
+  <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.42"/>
+  <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <text x="132" y="74" text-anchor="start" font-family="Nunito, 'Segoe UI', sans-serif" font-weight="800"
+        font-size="56" letter-spacing="7.8" fill="#12333A">BRUMA</text>
+  <text x="132" y="100" text-anchor="start" font-family="Nunito, 'Segoe UI', sans-serif" font-weight="700"
+        font-size="15" letter-spacing="5.1" fill="#0D9488">SERVIÇOS</text>
+</svg>
