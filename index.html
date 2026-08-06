@@ -15,23 +15,20 @@
 <meta property="og:url" content="https://brumaservicos.pt/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
 <header>
-  <div class="wrap">
-    <div class="hd">
-      <a class="marca" href="./">
-        <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
-          <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
-          <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
-        </svg>
-        <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
-      </a>
-      <a class="tel" href="https://wa.me/351914502987">914 502 987</a>
-    </div>
+  <div class="wrap hd">
+    <a class="marca" href="./">
+      <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
+        <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
+        <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
+      </svg>
+      <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
+    </a>
     <nav class="menu">
       <a href="limpeza-de-sofas/">Sofás</a>
       <a href="limpeza-de-colchoes/">Colchões</a>
@@ -40,79 +37,183 @@
       <a href="perguntas-frequentes/">Perguntas</a>
       <a href="blog/">Guias</a>
     </nav>
+    <div class="hd-right">
+      <div class="hd-tel"><span>Respondemos todos os dias</span><a href="https://wa.me/351914502987">914 502 987</a></div>
+      <a class="btn-cta" href="#reservar">Pedir data e preço</a>
+    </div>
   </div>
 </header>
 <main>
 
 <div class="hero">
   <svg class="ondas" viewBox="0 0 420 300" preserveAspectRatio="none" fill="none" aria-hidden="true">
-    <path d="M-40 210c60-46 120 46 180 0s120 46 180 0 120 46 180 0" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".10"/>
-    <path d="M-40 258c60-46 120 46 180 0s120 46 180 0 120 46 180 0" stroke="#fff" stroke-width="30" stroke-linecap="round" opacity=".13"/>
-    <path d="M-40 60c60-40 120 40 180 0s120 40 180 0 120 40 180 0" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".07"/>
+    <path d="M-40 210c60-46 120 46 180 0s120 46 180 0 120 46 180 0" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".05"/>
+    <path d="M-40 258c60-46 120 46 180 0s120 46 180 0 120 46 180 0" stroke="#fff" stroke-width="30" stroke-linecap="round" opacity=".07"/>
+    <path d="M-40 60c60-40 120 40 180 0s120 40 180 0 120 40 180 0" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".04"/>
   </svg>
   <div class="wrap">
-    <div class="kick">Viseu e arredores</div>
-    <h1>O sofá como novo.<em>Sem sair de casa.</em></h1>
-    <p>Levamos-lhe a casa uma máquina profissional Kärcher, mostramos como se usa em dois minutos e vamos buscá-la quando terminar. O detergente vai incluído.</p>
-    <div class="ctas">
-      <a class="btn btn-branco" href="#reservar">Pedir data e preço</a>
-      <a class="btn btn-linha" href="#precos">Ver preços</a>
+    <div class="hero-grelha">
+      <div>
+        <div class="selos">
+          <span class="selo">Novo em Viseu</span>
+          <span class="selo">Entrega e recolha em sua casa</span>
+          <span class="selo">Fatura sempre</span>
+        </div>
+        <h1 class="display">Quando foi a última vez<em>que lavou o sofá?</em></h1>
+        <div class="nota-caveat caveat" aria-hidden="true">
+          <svg width="34" height="26" viewBox="0 0 34 26" fill="none"><path d="M31 3C22 14 14 18 4 19m0 0l6-5m-6 5l7 3" stroke="#5EC5B8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          aspirar não conta
+        </div>
+        <p class="lead">Levamos-lhe a casa uma máquina profissional Kärcher de injeção e extração, mostramos como se usa em dois minutos e vamos buscá-la quando terminar. O detergente vai incluído.</p>
+        <div class="ctas">
+          <a class="btn btn-menta" href="#reservar">Pedir data e preço</a>
+          <a class="btn btn-fantasma" href="#precos">Ver preços</a>
+        </div>
+      </div>
+      <div class="cartao-form">
+        <h2>Peça a sua data</h2>
+        <p class="sub">Diga-nos o essencial. O botão abre o WhatsApp com tudo escrito e nós confirmamos data e preço.</p>
+        <form onsubmit="return false">
+          <label class="campo"><span>Nome *</span><input type="text" id="hNome" autocomplete="name"></label>
+          <label class="campo"><span>Telemóvel com WhatsApp *</span><input type="tel" id="hTel" autocomplete="tel" inputmode="tel"></label>
+          <label class="campo"><span>O que vai limpar</span>
+            <select id="hQue">
+              <option>Sofá</option>
+              <option>Colchões</option>
+              <option>Carro</option>
+              <option>Sofá, colchões e mais</option>
+              <option>Ainda não sei bem</option>
+            </select>
+          </label>
+          <label class="campo"><span>Para quando</span><input type="date" id="hQuando"></label>
+          <div class="aviso" id="hAviso"></div>
+          <button class="btn-zap" onclick="enviarHero()">Pedir pelo WhatsApp</button>
+          <p class="tranquilo">Sem compromisso. Respondemos normalmente no próprio dia.</p>
+        </form>
+      </div>
+    </div>
+    <div class="numeros">
+      <div class="num"><b>40€</b><span>Dia inteiro, entrega incluída</span></div>
+      <div class="num"><b>3 bocais</b><span>E detergente incluído</span></div>
+      <div class="num"><b>150€</b><span>Caução devolvida na recolha</span></div>
+      <div class="num"><b>4-8h</b><span>De secagem, pronto no próprio dia</span></div>
     </div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2>Uma máquina, quase tudo o que tem em casa</h2>
-    <p class="sub">É uma Kärcher Puzzi de injeção e extração: molha o tecido com água quente e volta a aspirá-la, trazendo a sujidade que o aspirador não alcança.</p>
-    <div class="chips">
-      <div class="chip">Sofás e poltronas</div>
-      <div class="chip">Colchões</div>
-      <div class="chip">Cadeiras e puffs</div>
-      <div class="chip">Tapetes e alcatifas</div>
-      <div class="chip">Bancos e interior do carro</div>
-      <div class="chip">Carrinhos e cadeirinhas de bebé</div>
+    <div class="cabeca-seccao">
+      <div class="kicker">O que faz a máquina</div>
+      <h2 class="display">Uma máquina, quase tudo o que tem em casa</h2>
+      <p class="sub">É uma Kärcher Puzzi de injeção e extração: injeta água com detergente na fibra e volta a aspirá-la, trazendo a sujidade que o aspirador não alcança.</p>
+    </div>
+    <div class="cartoes">
+      <div class="cartao">
+        <div class="icone"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11V8a2 2 0 012-2h12a2 2 0 012 2v3"/><path d="M3 11a2 2 0 012 2v1h14v-1a2 2 0 014 0v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-4a2 2 0 012-2z"/><path d="M5 20v1m14-1v1"/></svg></div>
+        <h3>Sofás e poltronas</h3>
+        <p>Tecido, chaise longue, cantos e almofadas. O reservatório de anos sai na água suja.</p>
+        <ul>
+          <li>Nódoas de uso e gordura</li>
+          <li>Odores entranhados</li>
+          <li>Braços e assentos escurecidos</li>
+        </ul>
+        <a class="liga" href="limpeza-de-sofas/">Como se lava um sofá</a>
+      </div>
+      <div class="cartao">
+        <div class="icone"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h20v7H2z"/><path d="M2 16v3m20-3v3M4 9V6a2 2 0 012-2h12a2 2 0 012 2v3"/><path d="M7 9V7.5A1.5 1.5 0 018.5 6h2A1.5 1.5 0 0112 7.5V9m0 0V7.5A1.5 1.5 0 0113.5 6h2A1.5 1.5 0 0117 7.5V9"/></svg></div>
+        <h3>Colchões</h3>
+        <p>Lava-se sem o tirar da cama. De manhã limpa, à noite dorme em cima dele.</p>
+        <ul>
+          <li>Manchas de suor e auréolas</li>
+          <li>Urina de crianças e animais</li>
+          <li>Pó acumulado na fibra</li>
+        </ul>
+        <a class="liga" href="limpeza-de-colchoes/">O colchão também se lava</a>
+      </div>
+      <div class="cartao">
+        <div class="icone"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5a2 2 0 011.9-1.4h10.2A2 2 0 0119 8l2 5"/><path d="M2 13h20v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H6v1a1 1 0 01-1 1H3a1 1 0 01-1-1z"/><circle cx="6.5" cy="15.5" r=".5"/><circle cx="17.5" cy="15.5" r=".5"/></svg></div>
+        <h3>Bancos do carro</h3>
+        <p>O bocal de mão cabe entre os bancos e nas calhas. O interior fica pronto numa manhã.</p>
+        <ul>
+          <li>Bancos, tapetes e mala</li>
+          <li>Nódoas de café e gordura</li>
+          <li>Seca com as portas abertas</li>
+        </ul>
+        <a class="liga" href="estofos-automovel/">Limpar o carro por dentro</a>
+      </div>
+      <div class="cartao">
+        <div class="icone"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 4v16M4 8h16M4 16h16M16 4v16"/></svg></div>
+        <h3>Tapetes e alcatifas</h3>
+        <p>O bocal largo de 240 mm despacha zonas de passagem, quartos e escritórios.</p>
+        <ul>
+          <li>Zonas de passagem escurecidas</li>
+          <li>Pelos e cheiro de animais</li>
+          <li>Pó que a vassoura espalha</li>
+        </ul>
+        <a class="liga" href="#precos">Ver preços</a>
+      </div>
     </div>
     <p class="notas">Não serve para pele, camurça, veludo nem seda. Na dúvida, <b>mande-nos uma fotografia da etiqueta</b> e nós dizemos.</p>
   </div>
 </section>
 
-<section class="alt">
+<section class="escuro">
   <div class="wrap">
-    <h2>Como funciona</h2>
+    <div class="cabeca-seccao">
+      <div class="kicker">Como funciona</div>
+      <h2 class="display">Três passos. Zero complicações.</h2>
+      <p class="sub">Sabe o preço, o dia e a hora antes de a máquina entrar em sua casa.</p>
+    </div>
     <div class="passos">
-      <div class="passo"><div class="n">1</div><b>Escolhe o dia</b><span>Preenche o pedido aqui em baixo ou manda mensagem. Confirmamos a data e o preço final.</span></div>
-      <div class="passo"><div class="n">2</div><b>Entregamos em sua casa</b><span>Levamos a máquina pronta a usar, com as pastilhas de detergente e um cartão com os quatro passos.</span></div>
-      <div class="passo"><div class="n">3</div><b>Vamos buscá-la</b><span>No dia e hora combinados. Não tem de ir a lado nenhum nem carregar nada.</span></div>
+      <div class="passo"><div class="n">01</div><b>Escolhe o dia</b><span>Preenche o pedido ou manda mensagem. Confirmamos a data e o preço final por WhatsApp, sem surpresas.</span></div>
+      <div class="passo"><div class="n">02</div><b>Entregamos e explicamos</b><span>Levamos a máquina pronta a usar, com as pastilhas de detergente e um cartão com os quatro passos. Dois minutos e está a limpar.</span></div>
+      <div class="passo"><div class="n">03</div><b>Vamos buscá-la</b><span>No dia e hora combinados. Conferimos a máquina, devolvemos a caução e não tem de ir a lado nenhum.</span></div>
     </div>
   </div>
 </section>
 
 <section id="precos">
   <div class="wrap">
-    <h2>Preços</h2>
-    <p class="sub">Com entrega e recolha incluídas até 5 km do centro de Viseu.</p>
-    <table class="precos">
-      <tr><td>Um dia</td><td>40€</td></tr>
-      <tr><td>Dois dias</td><td>65€</td></tr>
-      <tr><td>Três dias</td><td>90€</td></tr>
-      <tr class="destaque"><td>Fim de semana<small>Entregamos sexta, recolhemos segunda</small></td><td>70€</td></tr>
-      <tr><td>Semana</td><td>160€</td></tr>
-    </table>
-    <p class="notas">
-      <b>Caução de 150€</b> por MB Way antes da entrega, devolvida na recolha depois de conferirmos a máquina.
-      Fora dos 5 km, acrescentam-se 1€ por quilómetro. Emitimos sempre fatura.
-    </p>
-    <p class="notas">
-      <b>Detergente incluído:</b> vai uma pastilha para o primeiro depósito. Extras à consignação, paga só o que usar:
-      pastilha adicional 5€, spray tira-nódoas 8€, kit para urina e odores de animais 10€.
-    </p>
+    <div class="cabeca-seccao">
+      <div class="kicker">Preços</div>
+      <h2 class="display">Sem letras pequenas.</h2>
+      <p class="sub">Entrega e recolha incluídas até 5 km do centro de Viseu. Fora dos 5 km, 1€ por quilómetro.</p>
+    </div>
+    <div class="grelha-precos">
+      <div>
+        <table class="precos">
+          <tr><td>Um dia</td><td>40€</td></tr>
+          <tr><td>Dois dias</td><td>65€</td></tr>
+          <tr><td>Três dias</td><td>90€</td></tr>
+          <tr class="destaque"><td>Fim de semana<small>Entregamos sexta, recolhemos segunda</small></td><td>70€</td></tr>
+          <tr><td>Semana</td><td>160€</td></tr>
+        </table>
+        <p class="notas">
+          <b>Caução de 150€</b> por MB Way antes da entrega, devolvida na recolha depois de conferirmos a máquina. Emitimos sempre fatura.
+        </p>
+      </div>
+      <div class="caixa-extras">
+        <h3>O que vai com a máquina</h3>
+        <ul>
+          <li>3 bocais: pavimento, estofos e mão<b>Incluído</b></li>
+          <li>1 pastilha de detergente<b>Incluída</b></li>
+          <li>Cartão com os quatro passos<b>Incluído</b></li>
+          <li>Pastilha adicional, à consignação<b>5€</b></li>
+          <li>Spray tira-nódoas<b>8€</b></li>
+          <li>Kit urina e odores de animais<b>10€</b></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <h2>Porquê alugar em vez de mandar limpar</h2>
+    <div class="cabeca-seccao">
+      <div class="kicker">Porquê alugar</div>
+      <h2 class="display">Mandar limpar custa o triplo</h2>
+    </div>
     <div class="vantagens">
       <div class="v"><b>Custa uma fração</b><span>Mandar lavar um sofá a uma empresa custa 80€ a 150€, e é só o sofá. Com a máquina em casa faz o sofá, os colchões e o carro no mesmo dia.</span></div>
       <div class="v"><b>Não precisa de experiência</b><span>Mostramos como se usa antes de sair, e fica com um cartão com os passos. Quem sabe usar um aspirador sabe usar isto.</span></div>
@@ -122,8 +223,11 @@
 </section>
 
 <section>
-  <div class="wrap">
-    <h2>Perguntas que nos fazem sempre</h2>
+  <div class="wrap-estreito">
+    <div class="cabeca-seccao">
+      <div class="kicker">Perguntas</div>
+      <h2 class="display">Perguntas que nos fazem sempre</h2>
+    </div>
     <details><summary>É difícil de usar?</summary><p>Não. Enche-se o depósito com água morna e uma pastilha, passa-se devagar a puxar, e a máquina faz o resto. Explicamos tudo na entrega e fica com um cartão com os quatro passos.</p></details>
     <details><summary>Quanto tempo demora a secar?</summary><p>Entre quatro e oito horas, conforme o tecido e o arejamento da divisão. No verão, com as janelas abertas, seca muito mais depressa.</p></details>
     <details><summary>Porquê a caução de 150€?</summary><p>É uma máquina profissional que custa perto de mil euros. A caução é devolvida na recolha, assim que confirmamos que está tudo bem, e serve só para protegermos o equipamento.</p></details>
@@ -132,54 +236,64 @@
   </div>
 </section>
 
-<section class="alt">
+<section class="alt" id="reservar">
   <div class="wrap">
-    <h2>Guias e conselhos</h2>
-    <p class="sub">Nódoas, odores, secagem e como tirar o máximo da máquina. Escrevemos sobre o que nos perguntam, sem produtos milagre.</p>
-    <p class="notas"><a href="blog/" style="color:var(--teal-esc);font-weight:800">Ler os guias no blog</a></p>
-  </div>
-</section>
-
-<section id="reservar">
-  <div class="wrap">
-    <h2>Pedir data e preço</h2>
-    <p class="sub">Um minuto a preencher. O botão abre o WhatsApp com tudo escrito, e respondemos com o preço final.</p>
-
-    <form id="frm" onsubmit="return false">
-      <div class="bloco">
-        <h3><span class="n">1</span> Os seus dados</h3>
-        <label class="campo"><span>Nome completo *</span><input type="text" id="fNome" autocomplete="name"></label>
-        <label class="campo"><span>Telemóvel com WhatsApp *</span><input type="tel" id="fTel" autocomplete="tel" inputmode="tel"></label>
-        <label class="campo"><span>Morada de entrega *</span><input type="text" id="fMorada" autocomplete="street-address" placeholder="rua, n.º, andar, localidade"></label>
-        <label class="campo"><span>NIF <em>· opcional, só se quiser a fatura com o seu NIF</em></span><input type="text" id="fNif" inputmode="numeric"></label>
+    <div class="grelha-contacto">
+      <div>
+        <div class="kicker">Marcar</div>
+        <h2 class="display" style="margin-top:12px">Peça a sua data</h2>
+        <p class="sub">Preencha o pedido ao lado e o botão abre o WhatsApp com tudo escrito. Respondemos com o preço final e a confirmação da data, normalmente no próprio dia.</p>
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg></div>
+          <div><div class="rotulo">WhatsApp ou chamada</div><div class="valor"><a href="https://wa.me/351914502987">914 502 987</a></div><div class="extra">Respondemos das 18h às 22h à semana e das 9h às 21h ao fim de semana.</div></div>
+        </div>
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div>
+          <div><div class="rotulo">Email</div><div class="valor"><a href="mailto:geral.brumaservicos@gmail.com">geral.brumaservicos@gmail.com</a></div></div>
+        </div>
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></svg></div>
+          <div><div class="rotulo">Instagram</div><div class="valor"><a href="https://www.instagram.com/bruma.servicos" rel="noopener">@bruma.servicos</a></div></div>
+        </div>
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><div class="rotulo">Zona de entrega</div><div class="valor">Viseu e arredores</div><div class="extra">Grátis até 5 km do centro. <a href="zonas-servidas/" style="color:var(--teal-esc)">Ver todas as zonas</a>.</div></div>
+        </div>
       </div>
-
-      <div class="bloco">
-        <h3><span class="n">2</span> Quando precisa da máquina</h3>
-        <label class="campo"><span>Entrega, dia e hora *</span><input type="datetime-local" id="fEntrega"></label>
-        <label class="campo"><span>Devolução, dia e hora *</span><input type="datetime-local" id="fRecolha"></label>
+      <div>
+        <form id="frm" onsubmit="return false">
+          <div class="bloco" style="margin-top:0">
+            <h3><span class="n">1</span> Os seus dados</h3>
+            <label class="campo"><span>Nome completo *</span><input type="text" id="fNome" autocomplete="name"></label>
+            <label class="campo"><span>Telemóvel com WhatsApp *</span><input type="tel" id="fTel" autocomplete="tel" inputmode="tel"></label>
+            <label class="campo"><span>Morada de entrega *</span><input type="text" id="fMorada" autocomplete="street-address" placeholder="rua, n.º, andar, localidade"></label>
+            <label class="campo"><span>NIF <em>· opcional, só se quiser a fatura com o seu NIF</em></span><input type="text" id="fNif" inputmode="numeric"></label>
+          </div>
+          <div class="bloco">
+            <h3><span class="n">2</span> Quando precisa da máquina</h3>
+            <label class="campo"><span>Entrega, dia e hora *</span><input type="datetime-local" id="fEntrega"></label>
+            <label class="campo"><span>Devolução, dia e hora *</span><input type="datetime-local" id="fRecolha"></label>
+          </div>
+          <div class="bloco">
+            <h3><span class="n">3</span> O que vai limpar</h3>
+            <label class="chk"><input type="checkbox" id="cSofa"> Sofá · lugares: <input type="text" class="qtd" id="cSofaN" inputmode="numeric" placeholder="3"></label>
+            <label class="chk"><input type="checkbox" id="cColchao"> Colchões · quantos: <input type="text" class="qtd" id="cColchaoN" inputmode="numeric" placeholder="1"></label>
+            <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
+            <label class="chk"><input type="checkbox" id="cAlcatifa"> Alcatifa ou tapetes</label>
+            <label class="chk"><input type="checkbox" id="cCadeiras"> Cadeiras, puffs, cadeirinha de bebé</label>
+            <label class="chk"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
+            <label class="campo" style="margin-top:12px"><span>Há manchas específicas? <em>· gordura, tinta, urina, sangue, muito antigas</em></span><textarea id="fManchas" placeholder="Diga-nos o pior, é para levarmos o produto certo"></textarea></label>
+          </div>
+          <div class="bloco">
+            <label class="chk rgpd"><input type="checkbox" id="fRgpd" style="margin-top:2px">
+              <span>Aceito que estes dados sejam usados apenas para responder a este pedido e preparar o aluguer. Não são partilhados com ninguém e não é feita cópia de documentos de identificação. <a href="privacidade/" style="color:var(--teal-esc)">Política de privacidade</a>.</span></label>
+          </div>
+          <div class="aviso" id="aviso"></div>
+          <button class="btn-zap" onclick="enviar()">Enviar pedido pelo WhatsApp</button>
+          <button class="btn-alt" onclick="copiar()">O botão não abriu o WhatsApp? Copie as respostas e cole na conversa</button>
+        </form>
       </div>
-
-      <div class="bloco">
-        <h3><span class="n">3</span> O que vai limpar</h3>
-        <label class="chk"><input type="checkbox" id="cSofa"> Sofá · lugares: <input type="text" class="qtd" id="cSofaN" inputmode="numeric" placeholder="3"></label>
-        <label class="chk"><input type="checkbox" id="cColchao"> Colchões · quantos: <input type="text" class="qtd" id="cColchaoN" inputmode="numeric" placeholder="1"></label>
-        <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
-        <label class="chk"><input type="checkbox" id="cAlcatifa"> Alcatifa ou tapetes</label>
-        <label class="chk"><input type="checkbox" id="cCadeiras"> Cadeiras, puffs, cadeirinha de bebé</label>
-        <label class="chk"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
-        <label class="campo" style="margin-top:12px"><span>Há manchas específicas? <em>· gordura, tinta, urina, sangue, muito antigas</em></span><textarea id="fManchas" placeholder="Diga-nos o pior, é para levarmos o produto certo"></textarea></label>
-      </div>
-
-      <div class="bloco">
-        <label class="chk rgpd"><input type="checkbox" id="fRgpd" style="margin-top:2px">
-          <span>Aceito que estes dados sejam usados apenas para responder a este pedido e preparar o aluguer. Não são partilhados com ninguém e não é feita cópia de documentos de identificação. <a href="privacidade/" style="color:var(--teal-esc)">Política de privacidade</a>.</span></label>
-      </div>
-
-      <div class="aviso" id="aviso"></div>
-      <button class="btn-zap" onclick="enviar()">Enviar pedido pelo WhatsApp</button>
-      <button class="btn-alt" onclick="copiar()">O botão não abriu o WhatsApp? Copie as respostas e cole na conversa</button>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -254,6 +368,24 @@ function fmt(v){
   const d = new Date(v);
   return d.toLocaleDateString('pt-PT',{weekday:'short',day:'2-digit',month:'2-digit'}) + ' às ' +
          d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
+}
+function enviarHero(){
+  const av = $('hAviso'), falta = [];
+  if (!$('hNome').value.trim()) falta.push('o nome');
+  if (!$('hTel').value.trim()) falta.push('o telemóvel');
+  if (falta.length){ av.style.display='block'; av.textContent='Falta preencher: ' + falta.join(' e ') + '.'; return; }
+  av.style.display='none';
+  let quando = 'a combinar';
+  if ($('hQuando').value){
+    quando = new Date($('hQuando').value).toLocaleDateString('pt-PT',{weekday:'long',day:'2-digit',month:'2-digit'});
+  }
+  const msg = '*Pedido de aluguer · Bruma Serviços*\n\n' +
+    'Nome: ' + $('hNome').value.trim() + '\n' +
+    'Telemóvel: ' + $('hTel').value.trim() + '\n' +
+    'Vou limpar: ' + $('hQue').value + '\n' +
+    'Para quando: ' + quando + '\n' +
+    '\nEnviado pelo site';
+  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
 }
 function montar(){
   const limpar = [];
