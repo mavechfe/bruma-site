@@ -6,7 +6,7 @@ Estados: pendente | rascunho | aprovado | publicado
 
 | nº | tema | palavras-chave | página de serviço | estado |
 |----|------|----------------|-------------------|--------|
-| 1 | Como tirar nódoas do sofá de tecido sem o estragar | tirar nódoas sofá, limpar nódoa sofá tecido | limpeza-de-sofas | pendente |
+| 1 | Como tirar nódoas do sofá de tecido sem o estragar | tirar nódoas sofá, limpar nódoa sofá tecido | limpeza-de-sofas | rascunho |
 | 2 | Cheiro de urina no colchão: o que funciona mesmo | cheiro urina colchão, tirar xixi colchão | limpeza-de-colchoes | pendente |
 | 3 | Como limpar um sofá de tecido em casa, passo a passo | como limpar sofá de tecido, limpar sofá em casa | limpeza-de-sofas | pendente |
 | 4 | Quanto custa limpar um sofá: profissional vs alugar a máquina | quanto custa limpar sofá, limpeza sofá preço | limpeza-de-sofas | pendente |
