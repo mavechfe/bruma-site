@@ -7,6 +7,11 @@ PASSOS:
 3. Escolhe o primeiro tema em estado `pendente` (ordem da tabela).
 4. Escreve o artigo completo:
    - 800 a 1200 palavras, português de Portugal.
+   - TOM (aprovado pela Mariana a 06/08/2026): direto, fácil de entender e simpático, no registo dos posts de Instagram da marca, com tratamento por tu. FRASES COMPLETAS E NATURAIS, nunca telegráficas ("Em vez de esfregar, encosta um pano limpo e pressiona" e não "Não esfregues, absorve"). Abrir com uma situação concreta, desmontar mitos quando existam, e ser honesto sobre limites ("marcador permanente raramente desaparece").
+   - SUBSTÂNCIA: rácios exatos, tempos de atuação e erros a evitar, ao nível dos melhores artigos internacionais do tema. Nunca copiar texto de ninguém.
+   - RITMO VISUAL (obrigatório, o CSS já existe em assets/site.css): começar com `<div class="resumo-artigo"><span class="rot">Em 30 segundos</span><ul>...</ul></div>` com o essencial em negrito; usar `<b>` nas instruções chave ao longo do texto; usar caixas `<div class="box-artigo"><span class="rot">Truque · ...</span><p>...</p></div>` e as variantes `box-artigo atencao` (avisos) e `box-artigo mito` (mitos); personalizar a `cta-caixa` final ao tema do artigo.
+   - LINKS INTERNOS: artigos sobre manchas linkam ao guia mãe `../nodoas-guia-mancha-a-mancha/` e a artigos irmãos relevantes, além da página de serviço.
+   - ⚠ O validador bloqueia qualquer palavra que contenha "desinfe": escrever "álcool gel", nunca "gel desinfetante".
    - Responde genuinamente ao problema primeiro; a ponte comercial só no fim, com a frase "alugar a Puzzi custa 40€ por um dia inteiro, com entrega em Viseu" e link interno para a página de serviço indicada na tabela (ex.: `../../limpeza-de-sofas/`).
    - Usa o ficheiro `blog/_template.html` como base, substituindo {{TITULO}}, {{DESCRIPTION}} (50-160 carateres), {{SLUG}} (kebab-case, sem acentos), {{DATA_ISO}} (AAAA-MM-DD de hoje), {{DATA_PT}} (ex.: "10 de agosto de 2026") e {{CORPO}} (parágrafos `<p>`, subtítulos `<h2>`, listas `<ul>`/`<ol>`).
 5. REGRAS ABSOLUTAS DE CONTEÚDO (violar qualquer uma invalida o artigo):

@@ -261,6 +261,18 @@ footer small{display:block;margin-top:24px;color:#6E9491;font-size:12.5px}
 .cartao-artigo a:hover{color:var(--teal-esc)}
 .cartao-artigo p{color:var(--suave);font-size:14.5px;margin-top:6px}
 .cartao-artigo time{color:var(--teal-esc);font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+/* caixas dentro de artigos */
+.resumo-artigo{background:var(--nevoa-clara);border:1px solid var(--linha);border-radius:16px;padding:18px 22px 20px;margin-top:24px}
+.resumo-artigo .rot{display:block;font-size:11.5px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-esc)}
+.resumo-artigo ul{margin:10px 0 0 20px}
+.resumo-artigo li{margin-top:6px}
+.box-artigo{border-left:4px solid var(--teal-esc);background:var(--nevoa-clara);border-radius:0 14px 14px 0;padding:14px 20px 16px;margin-top:20px}
+.box-artigo .rot{display:block;font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-esc);margin-bottom:2px}
+.box-artigo p{margin-top:6px}
+.box-artigo.atencao{border-left-color:#C77D0A;background:#FBF3E2}
+.box-artigo.atencao .rot{color:#8A5A0B}
+.box-artigo.mito{border-left-color:#8CA2A7;background:#EEF2F3}
+.box-artigo.mito .rot{color:var(--suave)}
 .cta-caixa{background:var(--ardosia);color:#fff;border-radius:18px;padding:28px;margin-top:36px}
 .cta-caixa b{font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
 .cta-caixa p{color:var(--claro-sobre-escuro);margin-top:8px}
