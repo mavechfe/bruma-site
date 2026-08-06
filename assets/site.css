@@ -149,6 +149,17 @@ table.precos tr.destaque{background:var(--nevoa-clara)}
 .caixa-extras ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .caixa-extras li{display:flex;justify-content:space-between;gap:14px;font-size:15px;color:#3A4E53;font-weight:600}
 .caixa-extras li b{color:var(--teal-esc);font-weight:900;white-space:nowrap}
+.caixa-extras a{color:var(--teal-esc)}
+
+/* instruções de utilização */
+.instrucoes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+@media(max-width:820px){.instrucoes{grid-template-columns:1fr}}
+.instrucao{background:#fff;border:1px solid var(--linha);border-radius:16px;padding:24px;display:flex;gap:18px;align-items:flex-start}
+.instrucao .num{font-size:32px;font-weight:900;color:var(--teal-esc);line-height:1;flex:0 0 auto;width:40px}
+.instrucao h3{font-size:17px;font-weight:900;color:var(--ardosia)}
+.instrucao p{color:var(--suave);font-size:14.5px;margin-top:7px}
+.instrucao p b{color:var(--texto)}
+.instrucao .figura{margin-top:14px;background:var(--nevoa-clara);border-radius:12px;padding:12px;display:flex;justify-content:center}
 
 /* vantagens */
 .vantagens{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
