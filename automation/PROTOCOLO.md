@@ -1,31 +1,22 @@
 # Protocolo do piloto automático do blog
 
-Duas rotinas agendadas escrevem e publicam os artigos do blog. Nada é publicado sem OK explícito da Mariana.
+Uma rotina agendada escreve os artigos do blog. Nada é publicado sem OK explícito da Mariana. Toda a aprovação acontece no Claude (app ou claude.ai/code); o Gmail NÃO faz parte do circuito (decisão da Mariana, 06/08/2026).
 
 ## Intervenientes
 
-- **Rotina escritora** (`bruma-escritor`): corre à segunda-feira às 09:00 (Europe/Lisbon). Prompt em `automation/prompt-escritor.md`.
-- **Rotina publicadora** (`bruma-publicador`): corre todos os dias às 10:00 (Europe/Lisbon). Prompt em `automation/prompt-publicador.md`.
-- **Mariana**: aprova de duas formas possíveis: respondendo `OK` na própria sessão da escritora (app do Claude ou claude.ai/code), ou por email a partir do Gmail (mavechfe@gmail.com).
+- **Rotina escritora** (`bruma-escritor`): corre à segunda-feira às 09:00 (Europe/Lisbon). Prompt em `automation/prompt-escritor.md`. Escreve E publica (após OK).
+- **Rotina publicadora** (`bruma-publicador`): DESATIVADA a 06/08/2026. Era o caminho de aprovação por Gmail, que deixou de existir. O prompt `automation/prompt-publicador.md` fica como referência dos passos de publicação.
+- **Mariana**: aprova respondendo `OK` na sessão da escritora, na app do Claude ou em claude.ai/code.
 
-## Fluxo de aprovação na sessão (caminho rápido)
+## Fluxo de aprovação
 
-1. A app do Claude notifica quando a escritora termina (segundas de manhã).
-2. A Mariana abre a sessão da escritora e responde `OK` (ou escreve as alterações que quer).
-3. A própria escritora publica na hora (mesmos passos e validador da publicadora) e marca o rascunho do Gmail como "JÁ PUBLICADO", ou reescreve o artigo se houver alterações.
-
-## Fluxo de aprovação por email (alternativa, sempre disponível)
-
-O conector Gmail não envia emails; cria rascunhos e pesquisa. O fluxo usa isso:
-
-1. A escritora escreve o artigo, grava em `blog/_rascunhos/<slug>.html` (commit no repositório `mavechfe/bruma-site`) e cria um **rascunho no Gmail** dirigido a mavechfe@gmail.com com o assunto `[Bruma blog] Aprovação: <slug>` e o texto integral do artigo no corpo.
-2. A Mariana abre o rascunho no Gmail e:
-   - **Aprovar**: escreve `OK` na primeira linha do corpo e envia (o email é dela para ela).
-   - **Pedir alterações**: escreve as alterações em texto livre no corpo e envia.
-   - **Rejeitar**: apaga o rascunho.
-3. A publicadora pesquisa no Gmail `subject:"[Bruma blog]" newer_than:14d`:
-   - Corpo a começar por `OK` e slug ainda não publicado: publica.
-   - Corpo com outro texto: reescreve o rascunho seguindo as alterações e cria novo rascunho `[Bruma blog] Aprovação v2: <slug>`.
+1. Segunda de manhã, a escritora escreve o artigo, grava em `blog/_rascunhos/<slug>.html` (commit no repositório `mavechfe/bruma-site`) e apresenta o texto integral na própria sessão. A última mensagem é uma linha única a pedir o OK, legível na notificação da app.
+2. A app do Claude notifica a Mariana quando a sessão termina.
+3. A Mariana abre a sessão e:
+   - **Aprovar**: responde `OK`. A escritora publica na hora (validador incluído) e confirma com o URL.
+   - **Pedir alterações**: escreve as alterações em texto livre. A escritora reescreve e volta a pedir OK.
+   - **Rejeitar/adiar**: não responde. O artigo fica em `blog/_rascunhos/` sem ser publicado.
+4. Alternativa sempre disponível: dizer ao Claude Code local (no PC) "publica o artigo <slug>", que segue os mesmos passos de publicação.
 
 ## Regras duras
 
@@ -36,9 +27,10 @@ O conector Gmail não envia emails; cria rascunhos e pesquisa. O fluxo usa isso:
 
 ## Fallback
 
-Se as rotinas cloud não tiverem acesso ao Gmail ou ao repositório, correr localmente no PC da Mariana via Agendador de Tarefas do Windows:
+Se as rotinas cloud não tiverem acesso ao repositório, correr localmente no PC da Mariana via Agendador de Tarefas do Windows:
 
 ```
 claude -p "$(type automation\prompt-escritor.md)"    (segundas 09:00)
-claude -p "$(type automation\prompt-publicador.md)"  (diário 10:00)
 ```
+
+A publicação local faz-se pedindo diretamente ao Claude Code: "publica o artigo <slug> seguindo automation/prompt-publicador.md".
