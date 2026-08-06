@@ -22,4 +22,4 @@ PASSOS:
 8. Cria um RASCUNHO no Gmail (não enviar) dirigido a mavechfe@gmail.com:
    - Assunto: `[Bruma blog] Aprovação: <slug>`
    - Corpo: instruções curtas na primeira linha ("Para aprovar, escreve OK na primeira linha e envia. Para alterar, escreve as alterações e envia.") seguidas do título e do texto integral do artigo em texto simples.
-9. Reporta no final: tema escolhido, slug, e que o rascunho de aprovação ficou no Gmail.
+9. Reporta no final: tema escolhido, slug, e que o rascunho de aprovação ficou no Gmail. A tua ÚLTIMA mensagem deve ser uma única linha, pensada para ser lida numa notificação de telemóvel: `Artigo novo à espera do teu OK no Gmail: "<título>". Abre o rascunho "[Bruma blog] Aprovação: <slug>", escreve OK na primeira linha e envia.`
