@@ -6,9 +6,15 @@ Duas rotinas agendadas escrevem e publicam os artigos do blog. Nada é publicado
 
 - **Rotina escritora** (`bruma-escritor`): corre à segunda-feira às 09:00 (Europe/Lisbon). Prompt em `automation/prompt-escritor.md`.
 - **Rotina publicadora** (`bruma-publicador`): corre todos os dias às 10:00 (Europe/Lisbon). Prompt em `automation/prompt-publicador.md`.
-- **Mariana**: aprova por email a partir do Gmail (mavechfe@gmail.com).
+- **Mariana**: aprova de duas formas possíveis: respondendo `OK` na própria sessão da escritora (app do Claude ou claude.ai/code), ou por email a partir do Gmail (mavechfe@gmail.com).
 
-## Fluxo de aprovação por email
+## Fluxo de aprovação na sessão (caminho rápido)
+
+1. A app do Claude notifica quando a escritora termina (segundas de manhã).
+2. A Mariana abre a sessão da escritora e responde `OK` (ou escreve as alterações que quer).
+3. A própria escritora publica na hora (mesmos passos e validador da publicadora) e marca o rascunho do Gmail como "JÁ PUBLICADO", ou reescreve o artigo se houver alterações.
+
+## Fluxo de aprovação por email (alternativa, sempre disponível)
 
 O conector Gmail não envia emails; cria rascunhos e pesquisa. O fluxo usa isso:
 

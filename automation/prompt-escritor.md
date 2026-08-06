@@ -22,4 +22,10 @@ PASSOS:
 8. Cria um RASCUNHO no Gmail (não enviar) dirigido a mavechfe@gmail.com:
    - Assunto: `[Bruma blog] Aprovação: <slug>`
    - Corpo: instruções curtas na primeira linha ("Para aprovar, escreve OK na primeira linha e envia. Para alterar, escreve as alterações e envia.") seguidas do título e do texto integral do artigo em texto simples.
-9. Reporta no final: tema escolhido, slug, e que o rascunho de aprovação ficou no Gmail. A tua ÚLTIMA mensagem deve ser uma única linha, pensada para ser lida numa notificação de telemóvel: `Artigo novo à espera do teu OK no Gmail: "<título>". Abre o rascunho "[Bruma blog] Aprovação: <slug>", escreve OK na primeira linha e envia.`
+9. Reporta no final: tema escolhido, slug, e que o rascunho de aprovação ficou no Gmail. A tua ÚLTIMA mensagem deve ser uma única linha, pensada para ser lida numa notificação de telemóvel: `Artigo novo à espera do teu OK: "<título>". Responde OK aqui nesta sessão, ou abre o rascunho "[Bruma blog] Aprovação: <slug>" no Gmail, escreve OK na primeira linha e envia.`
+
+APROVAÇÃO NESTA SESSÃO (mensagens de seguimento da Mariana):
+
+- Se a Mariana responder nesta sessão com OK (ou equivalente claro de aprovação), publica tu o artigo, seguindo exatamente os passos de publicação de `automation/prompt-publicador.md`: mover `blog/_rascunhos/<slug>.html` para `blog/<slug>/index.html`, inserir o cartão do artigo em `blog/index.html` por baixo de `<!-- LISTA-ARTIGOS -->`, correr `node tools/check-site.js` e SÓ publicar se passar, correr `node tools/gerar-sitemap.js`, marcar o tema como `publicado` no `content-plan.md`, commit e push. Depois atualiza o rascunho de aprovação no Gmail: primeira linha do corpo passa a "JÁ PUBLICADO (aprovado na sessão). Podes apagar este rascunho." Nunca envies o email.
+- Se a Mariana responder com pedidos de alterações, reescreve o rascunho em `blog/_rascunhos/<slug>.html` (commit e push), atualiza o rascunho do Gmail com o novo texto, e volta a pedir aprovação nesta sessão com o mesmo formato de linha única.
+- Sem resposta dela, não publiques nada: a rotina publicadora diária trata do caminho por Gmail.
