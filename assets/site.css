@@ -175,7 +175,7 @@ details p{padding:0 20px 18px;color:#42585C;font-size:15px}
 label.campo{display:block;margin-bottom:14px}
 label.campo span{display:block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--suave);
                  margin-bottom:6px;text-transform:uppercase}
-label.campo span em{font-style:normal;text-transform:none;letter-spacing:0;font-weight:600;opacity:.85}
+label.campo span em{font-style:normal;text-transform:none;letter-spacing:0;font-weight:600}
 input[type=text],input[type=tel],input[type=date],input[type=datetime-local],select,textarea{
   width:100%;background:var(--papel);border:1.5px solid var(--linha);color:var(--texto);padding:12px 13px;
   font-family:inherit;font-size:16px;border-radius:10px}
