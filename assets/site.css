@@ -38,6 +38,8 @@ nav.menu{display:flex;gap:2px 4px;flex-wrap:wrap;font-size:14.5px;font-weight:70
 nav.menu a{color:#42585C;text-decoration:none;display:inline-block;padding:8px 9px;border-radius:8px}
 nav.menu a:hover{color:var(--teal-esc);background:var(--nevoa-clara)}
 nav.menu a.ativo{color:var(--teal-esc)}
+nav.menu a.destaque{background:var(--teal-esc);color:#fff;font-weight:800}
+nav.menu a.destaque:hover{background:var(--teal);color:#fff}
 .hd-right{display:flex;align-items:center;gap:16px;flex:0 0 auto}
 .hd-tel{text-align:right;line-height:1.25}
 .hd-tel span{display:block;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--suave)}
@@ -277,37 +279,6 @@ footer small{display:block;margin-top:24px;color:#6E9491;font-size:12.5px}
 .cta-caixa b{font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
 .cta-caixa p{color:var(--claro-sobre-escuro);margin-top:8px}
 .cta-caixa .btn{margin-top:16px;background:var(--menta);color:var(--ardosia-esc)}
-
-/* ---------- destaque "como se usa" ---------- */
-.usar{display:grid;grid-template-columns:.86fr 1.14fr;gap:48px;align-items:start}
-@media(max-width:900px){.usar{grid-template-columns:1fr;gap:34px}}
-.usar-foto{position:relative}
-.usar-foto img{border-radius:20px;box-shadow:0 22px 50px rgba(18,51,58,.2)}
-.usar-media .nota-caveat{color:var(--teal-esc);margin-top:40px;transform:rotate(-1.5deg)}
-.usar-media .nota-caveat svg path{stroke:var(--teal)}
-.selo-foto{position:absolute;left:-12px;bottom:-16px;max-width:250px;background:var(--ardosia);
-           color:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 16px 34px rgba(18,51,58,.32)}
-.selo-foto b{display:block;font-size:11.5px;font-weight:900;letter-spacing:.18em;
-             text-transform:uppercase;color:var(--menta)}
-.selo-foto span{display:block;font-size:13.5px;color:var(--claro-sobre-escuro);margin-top:5px;line-height:1.45}
-@media(max-width:900px){.selo-foto{position:static;max-width:none;margin-top:16px}
-  .usar-media .nota-caveat{margin-top:18px}}
-.caixa-comandos{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--teal-esc);
-                border-radius:0 14px 14px 0;padding:15px 20px 17px;margin-bottom:28px}
-.caixa-comandos .rot{display:block;font-size:11px;font-weight:900;letter-spacing:.2em;
-                     text-transform:uppercase;color:var(--teal-esc)}
-.caixa-comandos p{margin-top:5px;font-size:14.5px;color:#3A4E53;font-weight:600}
-.caixa-comandos b{color:var(--ardosia)}
-.linha-passos{list-style:none;position:relative}
-.linha-passos::before{content:"";position:absolute;left:19px;top:20px;bottom:38px;width:2px;background:var(--nevoa)}
-.linha-passos li{position:relative;display:grid;grid-template-columns:40px 1fr;gap:18px;padding-bottom:22px}
-.linha-passos li:last-child{padding-bottom:0}
-.linha-passos .n{width:40px;height:40px;border-radius:50%;background:var(--teal-esc);color:#fff;
-                 font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center;
-                 position:relative;z-index:2;box-shadow:0 0 0 6px var(--nevoa-clara)}
-.linha-passos b{display:block;font-size:17px;font-weight:900;color:var(--ardosia);padding-top:8px}
-.linha-passos span{display:block;color:var(--suave);font-size:14.5px;margin-top:3px}
-.usar .btn{margin-top:26px}
 
 /* ---------- prova: os dois depósitos ---------- */
 .prova{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:start}
