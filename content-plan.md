@@ -8,7 +8,7 @@ Estados: pendente | rascunho | aprovado | publicado
 |----|------|----------------|-------------------|--------|
 | 1 | Guia mãe: nódoas mancha a mancha (slug nodoas-guia-mancha-a-mancha; substituiu "como tirar nódoas do sofá") | tirar nódoas sofá, limpar nódoa sofá tecido | limpeza-de-sofas | publicado |
 | 2 | Cheiro de xixi no colchão (slug cheiro-urina-colchao-o-que-funciona-mesmo) | cheiro urina colchão, tirar xixi colchão | limpeza-de-colchoes | publicado |
-| 3 | Como limpar um sofá de tecido em casa, passo a passo | como limpar sofá de tecido, limpar sofá em casa | limpeza-de-sofas | pendente |
+| 3 | Como limpar um sofá de tecido em casa, passo a passo (slug como-limpar-sofa-tecido-passo-a-passo) | como limpar sofá de tecido, limpar sofá em casa | limpeza-de-sofas | rascunho |
 | 4 | Quanto custa limpar um sofá: profissional vs alugar a máquina | quanto custa limpar sofá, limpeza sofá preço | limpeza-de-sofas | pendente |
 | 5 | Xixi de cão ou gato no sofá, tapete ou carro (slug xixi-de-animais) | urina gato sofá, cheiro xixi cão sofá | limpeza-de-sofas | publicado |
 | 6 | Quanto tempo demora um sofá a secar depois da limpeza | sofá molhado secar, tempo secagem sofá | limpeza-de-sofas | pendente |
