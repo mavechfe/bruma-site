@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservar a máquina | Bruma Serviços</title>
+<meta name="description" content="Peça a sua reserva da máquina de limpeza de estofos em Viseu. Vê o preço, a deslocação e a caução antes de confirmar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Bruma: teal #0D9488 · teal escuro #0B6E66 · menta #5EC5B8 · ardósia #12333A · névoa #D9E7E5 · papel #FBFCFC */
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif; color: #12333A; background: #EFF3F3; line-height: 1.5; font-size: 16px; }
+  .pagina { max-width: 640px; margin: 0 auto; background: #FBFCFC; min-height: 100vh; padding: 22px 20px 40px; }
+
+  header { text-align: center; border-bottom: 2px solid #D9E7E5; padding-bottom: 16px; margin-bottom: 18px; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; }
+  .logo svg { width: 38px; height: 22px; }
+  .logo b { font-size: 21px; font-weight: 800; letter-spacing: 3px; }
+  .logo b small { display: block; font-size: 8px; letter-spacing: 3px; color: #0B6E66; font-weight: 700; }
+  h1 { font-size: 24px; font-weight: 800; margin-top: 12px; }
+  header p { color: #42585C; font-size: 15px; margin-top: 4px; }
+
+  h2 { font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #0B6E66; margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1.5px solid #D9E7E5; }
+  h2 span { background: #0D9488; color: #FBFCFC; border-radius: 50%; width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; margin-right: 7px; vertical-align: 1px; }
+
+  label { display: block; font-weight: 700; font-size: 14.5px; margin: 12px 0 4px; }
+  label .op { font-weight: 400; color: #8FA6A8; }
+  input[type=text], input[type=tel], input[type=email], input[type=number], input[type=datetime-local], select, textarea {
+    width: 100%; font-family: inherit; font-size: 16px; color: #12333A; background: #FBFCFC;
+    border: 2px solid #D9E7E5; border-radius: 10px; padding: 11px 12px; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: #5EC5B8; }
+  textarea { min-height: 74px; resize: vertical; }
+  .dupla { display: flex; gap: 10px; } .dupla > div { flex: 1; }
+
+  .escolha { display: flex; gap: 10px; align-items: flex-start; border: 2px solid #D9E7E5; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; }
+  .escolha:has(input:checked) { border-color: #5EC5B8; background: #F1F7F6; }
+  .escolha input { width: 20px; height: 20px; flex: 0 0 20px; margin-top: 1px; accent-color: #0D9488; }
+  .escolha .et { font-size: 15px; }
+  .escolha .et b { display: block; font-weight: 700; }
+  .escolha .et small { color: #42585C; }
+  .escolha input[type=number] { width: 62px; flex: 0 0 62px; padding: 5px 7px; font-size: 14px; margin-left: auto; }
+
+  .resumo { position: sticky; bottom: 0; background: #12333A; color: #FBFCFC; border-radius: 14px; padding: 14px 16px; margin-top: 24px; box-shadow: 0 6px 20px rgba(18,51,58,.28); }
+  .resumo h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; color: #5EC5B8; margin-bottom: 8px; }
+  .resumo .l { display: flex; justify-content: space-between; font-size: 15px; margin-bottom: 4px; }
+  .resumo .l span:last-child { font-weight: 700; }
+  .resumo .tot { border-top: 1px solid #42585C; margin-top: 8px; padding-top: 8px; font-size: 18px; font-weight: 800; }
+  .resumo .nota { font-size: 12.5px; color: #B7D7D2; margin-top: 8px; line-height: 1.4; }
+
+  .aceites { border: 2px solid #5EC5B8; border-radius: 12px; padding: 12px 14px; margin-top: 20px; background: #F1F7F6; }
+  .aceites .escolha { border: none; background: none; padding: 6px 0; margin: 0; }
+
+  button.calc { width: 100%; margin-top: 10px; background: #F1F7F6; color: #0B6E66; border: 2px solid #5EC5B8; border-radius: 10px; padding: 11px; font-family: inherit; font-size: 15px; font-weight: 800; cursor: pointer; }
+  button.calc:hover { background: #D9E7E5; }
+  button.calc:disabled { opacity: .6; cursor: default; }
+  .dica { font-size: 13px; color: #8FA6A8; margin-top: 6px; line-height: 1.4; }
+  .dica.ok { color: #0B6E66; font-weight: 700; }
+  .dica.mau { color: #A33F3F; }
+
+  button.enviar { width: 100%; margin-top: 18px; background: #0D9488; color: #FBFCFC; border: none; border-radius: 12px; padding: 16px; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer; }
+  button.enviar:hover { background: #0B6E66; }
+  .erro { display: none; background: #FDF6F6; border-left: 4px solid #C86B6B; color: #A33F3F; padding: 10px 12px; border-radius: 0 8px 8px 0; margin-top: 12px; font-size: 14.5px; }
+  .feito { display: none; text-align: center; padding: 30px 10px; }
+  .feito .v { font-size: 44px; }
+  .feito h2 { border: none; font-size: 20px; text-transform: none; letter-spacing: 0; color: #12333A; margin: 10px 0; }
+
+  footer { margin-top: 26px; padding-top: 14px; border-top: 2px solid #D9E7E5; text-align: center; color: #42585C; font-size: 14px; }
+  footer a { color: #0B6E66; font-weight: 700; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<header>
+  <div class="logo">
+    <svg viewBox="0 0 60 46" aria-hidden="true">
+      <path d="M6 16c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.42"/>
+      <path d="M6 32c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </svg>
+    <b>BRUMA<small>SERVIÇOS</small></b>
+  </div>
+  <h1>Reservar a máquina</h1>
+  <p>Preencha e veja o valor total antes de confirmar. Sem surpresas.</p>
+</header>
+
+<form id="frm" onsubmit="return false">
+
+<h2><span>1</span>Os seus dados</h2>
+<label>Nome completo</label>
+<input type="text" id="nome" autocomplete="name">
+<div class="dupla">
+  <div><label>Telemóvel</label><input type="tel" id="tel" autocomplete="tel"></div>
+  <div><label>NIF <span class="op">opcional</span></label><input type="text" id="nif" inputmode="numeric"></div>
+</div>
+<label>Morada de entrega e recolha</label>
+<input type="text" id="morada" placeholder="Rua, n.º, andar">
+<label>Localidade</label>
+<input type="text" id="localidade" placeholder="Viseu, Cavernães, Repeses, Silgueiros..." onchange="verDistancia()">
+<button type="button" class="calc" onclick="verDistancia()">Calcular a distância e o preço</button>
+<p class="dica" id="dicaKm">A distância é medida por estrada, a partir da Câmara Municipal de Viseu.</p>
+<label>Distância <span class="op">km, pode corrigir</span></label>
+<input type="number" id="km" min="0" step="1" placeholder="preenche-se sozinho" oninput="calcular()">
+
+<h2><span>2</span>Quando precisa</h2>
+<div class="dupla">
+  <div><label>Entrega</label><input type="datetime-local" id="ini"></div>
+  <div><label>Devolução</label><input type="datetime-local" id="fim"></div>
+</div>
+<label>Duração do aluguer</label>
+<select id="modalidade" onchange="calcular()">
+  <option value="30">Meia jornada, manhã ou tarde · 30 €</option>
+  <option value="40" selected>Um dia · 40 €</option>
+  <option value="65">Dois dias · 65 €</option>
+  <option value="90">Três dias · 90 €</option>
+  <option value="70">Fim de semana, de 6.ª a 2.ª · 70 €</option>
+  <option value="160">Semana completa · 160 €</option>
+</select>
+
+<h2><span>3</span>O que vai limpar</h2>
+<label class="escolha"><input type="checkbox" id="cSofa"><span class="et"><b>Sofá ou cadeirões</b><small>quantos lugares</small></span><input type="number" id="nSofa" min="1" placeholder="n.º"></label>
+<label class="escolha"><input type="checkbox" id="cColchao"><span class="et"><b>Colchões</b><small>quantos</small></span><input type="number" id="nColchao" min="1" placeholder="n.º"></label>
+<label class="escolha"><input type="checkbox" id="cCarro"><span class="et"><b>Carro</b><small>bancos e interior</small></span></label>
+<label class="escolha"><input type="checkbox" id="cTapete"><span class="et"><b>Tapetes ou alcatifa</b></span></label>
+<label class="escolha"><input type="checkbox" id="cCadeiras"><span class="et"><b>Cadeiras, puffs, cadeirinha de bebé</b></span></label>
+<label class="escolha"><input type="checkbox" id="cAnimais"><span class="et"><b>Tenho animais em casa</b><small>levo o produto próprio</small></span></label>
+<label>Manchas específicas <span class="op">opcional</span></label>
+<textarea id="manchas" placeholder="Gordura, tinta, urina, sangue, vinho, muito antigas..."></textarea>
+
+<h2><span>4</span>Extras</h2>
+<label class="escolha"><input type="checkbox" class="ex" value="10" data-nome="Pack de 3 pastilhas extra" onchange="calcular()"><span class="et"><b>Pack de 3 pastilhas extra</b><small>para trabalhos maiores</small></span><b style="margin-left:auto">10 €</b></label>
+<label class="escolha"><input type="checkbox" class="ex" value="8" data-nome="Spray tira-nódoas" onchange="calcular()"><span class="et"><b>Spray tira-nódoas</b><small>gordura, tinta, maquilhagem</small></span><b style="margin-left:auto">8 €</b></label>
+<label class="escolha"><input type="checkbox" class="ex" value="10" data-nome="Kit urina e odores de animais" onchange="calcular()"><span class="et"><b>Kit urina e odores de animais</b><small>enzimático</small></span><b style="margin-left:auto">10 €</b></label>
+
+<div class="resumo">
+  <h3>Resumo do pedido</h3>
+  <div class="l"><span>Aluguer</span><span id="rAluguer">40,00 €</span></div>
+  <div class="l"><span id="rDeslocLabel">Deslocação</span><span id="rDesloc">a confirmar</span></div>
+  <div class="l"><span>Extras</span><span id="rExtras">0,00 €</span></div>
+  <div class="l tot"><span>Total a pagar na entrega</span><span id="rTotal">40,00 €</span></div>
+  <p class="nota">Entrega e recolha grátis até 5 km do centro de Viseu. Fora disso, 1,50 € por km, já com ida e volta contadas. A caução de 150 € é entregue à parte, no momento, e devolvida por inteiro na recolha.</p>
+</div>
+
+<div class="aceites">
+  <label class="escolha"><input type="checkbox" id="okCaucao"><span class="et"><b id="txtCaucao">Aceito a caução de 150 €</b><small>entregue no momento e devolvida por inteiro na recolha, assim que confirmarmos que está tudo como ficou</small></span></label>
+  <label class="escolha"><input type="checkbox" id="okDesloc"><span class="et"><b id="txtDesloc">Aceito o valor da deslocação</b><small>1,50 € por km além dos 5 km incluídos</small></span></label>
+  <label class="escolha"><input type="checkbox" id="okDados"><span class="et"><b>Autorizo o uso dos meus dados</b><small>apenas para preparar este aluguer e emitir a fatura. Não são partilhados e não é feita cópia do cartão de cidadão</small></span></label>
+</div>
+
+<button class="enviar" onclick="enviar()">Enviar pedido de reserva</button>
+<div class="erro" id="erro"></div>
+
+</form>
+
+<div class="feito" id="feito">
+  <div class="v"><svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h2>Pedido enviado!</h2>
+  <p>Recebi o seu pedido e respondo normalmente no próprio dia, a confirmar a data e o valor final.</p>
+  <p style="margin-top:14px"><a href="#" id="linkWhats" style="color:#0B6E66;font-weight:800">Abrir também no WhatsApp</a></p>
+</div>
+
+<footer>
+  Bruma Serviços · Viseu<br>
+  <a href="tel:+351914502987">914 502 987</a> · <a href="https://brumaservicos.pt">brumaservicos.pt</a>
+</footer>
+
+</div>
+
+<script>
+// ⬇⬇ COLE AQUI o endereço da aplicação web do Google Apps Script (acaba em /exec)
+var SHEETS_URL = 'COLAR_AQUI_O_URL_DO_APPS_SCRIPT';
+var TELEFONE = '351914502987';
+var KM_GRATIS = 5, PRECO_KM = 1.5, CAUCAO = 150;
+
+function eur(v) { return v.toFixed(2).replace('.', ',') + ' €'; }
+function $(id) { return document.getElementById(id); }
+
+function deslocacao() {
+  var km = parseFloat($('km').value);
+  if (isNaN(km)) return null;
+  return Math.max(0, km - KM_GRATIS) * PRECO_KM;
+}
+function extras() {
+  var t = 0, l = [];
+  document.querySelectorAll('.ex:checked').forEach(function (e) { t += parseFloat(e.value); l.push(e.dataset.nome); });
+  return { total: t, lista: l };
+}
+function calcular() {
+  var al = parseFloat($('modalidade').value);
+  var d = deslocacao(), ex = extras();
+  $('rAluguer').textContent = eur(al);
+  $('rExtras').textContent = eur(ex.total);
+  if (d === null) {
+    $('rDesloc').textContent = 'a confirmar';
+    $('rTotal').textContent = eur(al + ex.total) + ' + deslocação';
+    $('txtDesloc').textContent = 'Aceito o valor da deslocação, calculado a 1,50 €/km';
+  } else {
+    $('rDesloc').textContent = d === 0 ? 'grátis' : eur(d);
+    $('rTotal').textContent = eur(al + ex.total + d);
+    $('txtDesloc').textContent = d === 0
+      ? 'Confirmo que estou dentro dos 5 km, sem custo de deslocação'
+      : 'Aceito pagar ' + eur(d) + ' de deslocação';
+  }
+  $('txtCaucao').textContent = 'Aceito a caução de ' + CAUCAO + ' €';
+}
+
+// Distância por estrada desde a Câmara Municipal de Viseu (Praça da República).
+var CAMARA = { lat: 40.6575793, lon: -7.9142192 };
+
+async function verDistancia() {
+  var loc = $('localidade').value.trim(), mor = $('morada').value.trim();
+  var dica = $('dicaKm'), botao = document.querySelector('button.calc');
+  if (!loc && !mor) {
+    dica.className = 'dica mau';
+    dica.textContent = 'Escreva primeiro a localidade.';
+    return;
+  }
+  dica.className = 'dica';
+  dica.textContent = 'A calcular...';
+  botao.disabled = true;
+  try {
+    var procura = (mor ? mor + ', ' : '') + loc + ', Viseu, Portugal';
+    var g = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=pt&q=' + encodeURIComponent(procura));
+    var lista = await g.json();
+    if (!lista.length && mor) { // tenta só com a localidade
+      g = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=pt&q=' + encodeURIComponent(loc + ', Viseu, Portugal'));
+      lista = await g.json();
+    }
+    if (!lista.length) throw new Error('sem resultado');
+    var p = lista[0];
+    var r = await fetch('https://router.project-osrm.org/route/v1/driving/' + CAMARA.lon + ',' + CAMARA.lat + ';' + p.lon + ',' + p.lat + '?overview=false');
+    var j = await r.json();
+    if (j.code !== 'Ok') throw new Error('sem rota');
+    var km = Math.ceil(j.routes[0].distance / 1000);
+    $('km').value = km;
+    calcular();
+    var custo = Math.max(0, km - KM_GRATIS) * PRECO_KM;
+    dica.className = 'dica ok';
+    dica.textContent = km <= KM_GRATIS
+      ? 'São ' + km + ' km da Câmara de Viseu, dentro dos 5 km incluídos. Entrega e recolha grátis.'
+      : 'São ' + km + ' km por estrada desde a Câmara de Viseu. Descontando os 5 km incluídos, a deslocação fica em ' + eur(custo) + '.';
+  } catch (e) {
+    dica.className = 'dica mau';
+    dica.textContent = 'Não consegui calcular a distância daqui. Escreva os km se souber, ou deixe em branco que eu confirmo consigo.';
+  } finally {
+    botao.disabled = false;
+  }
+}
+
+function limpar() {
+  var l = [];
+  if ($('cSofa').checked) l.push('sofá' + ($('nSofa').value ? ' de ' + $('nSofa').value + ' lugares' : ''));
+  if ($('cColchao').checked) l.push(($('nColchao').value || '') + ' colchão/colchões');
+  if ($('cCarro').checked) l.push('carro');
+  if ($('cTapete').checked) l.push('tapetes ou alcatifa');
+  if ($('cCadeiras').checked) l.push('cadeiras ou puffs');
+  return l.join(', ') || 'a indicar';
+}
+
+function enviar() {
+  var falta = [];
+  if (!$('nome').value.trim()) falta.push('o nome');
+  if (!$('tel').value.trim()) falta.push('o telemóvel');
+  if (!$('morada').value.trim()) falta.push('a morada');
+  if (!$('ini').value) falta.push('a data de entrega');
+  if (!$('okCaucao').checked || !$('okDesloc').checked || !$('okDados').checked) falta.push('as três confirmações no fim');
+  if (falta.length) {
+    var e = $('erro');
+    e.style.display = 'block';
+    e.textContent = 'Falta preencher: ' + falta.join(', ') + '.';
+    e.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  $('erro').style.display = 'none';
+
+  var al = parseFloat($('modalidade').value), d = deslocacao(), ex = extras();
+  var dados = {
+    recebido: new Date().toISOString(),
+    nome: $('nome').value.trim(),
+    telemovel: $('tel').value.trim(),
+    nif: $('nif').value.trim(),
+    morada: $('morada').value.trim(),
+    localidade: $('localidade').value.trim(),
+    km: $('km').value,
+    entrega: $('ini').value,
+    devolucao: $('fim').value,
+    modalidade: $('modalidade').options[$('modalidade').selectedIndex].text,
+    vai_limpar: limpar(),
+    animais: $('cAnimais').checked ? 'sim' : 'não',
+    manchas: $('manchas').value.trim(),
+    extras: ex.lista.join(', '),
+    valor_aluguer: al,
+    valor_deslocacao: d === null ? '' : d,
+    valor_extras: ex.total,
+    total: d === null ? al + ex.total : al + ex.total + d,
+    caucao: CAUCAO,
+    aceitou_caucao: 'sim',
+    aceitou_deslocacao: 'sim',
+    aceitou_dados: 'sim',
+    estado: 'pedido'
+  };
+
+  if (SHEETS_URL.indexOf('http') === 0) {
+    fetch(SHEETS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(dados)
+    }).catch(function () { });
+  }
+
+  var msg = '*Pedido de reserva · Bruma Serviços*\n\n'
+    + 'Nome: ' + dados.nome + '\n'
+    + 'Telemóvel: ' + dados.telemovel + '\n'
+    + 'Morada: ' + dados.morada + (dados.localidade ? ', ' + dados.localidade : '') + '\n'
+    + (dados.km ? 'Distância: ' + dados.km + ' km\n' : '')
+    + 'Entrega: ' + dados.entrega + '\n'
+    + 'Devolução: ' + (dados.devolucao || 'a combinar') + '\n'
+    + 'Aluguer: ' + dados.modalidade + '\n'
+    + 'Vou limpar: ' + dados.vai_limpar + '\n'
+    + 'Animais: ' + dados.animais + '\n'
+    + (dados.manchas ? 'Manchas: ' + dados.manchas + '\n' : '')
+    + (dados.extras ? 'Extras: ' + dados.extras + '\n' : '')
+    + '\nTotal: ' + eur(dados.total) + (d === null ? ' (falta a deslocação)' : '')
+    + '\nCaução aceite: 150 €\n\nEnviado pelo formulário do site';
+
+  $('linkWhats').href = 'https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg);
+  $('frm').style.display = 'none';
+  $('feito').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
+}
+
+calcular();
+</script>
+</body>
+</html>
