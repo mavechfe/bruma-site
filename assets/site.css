@@ -40,6 +40,9 @@ nav.menu a:hover{color:var(--teal-esc);background:var(--nevoa-clara)}
 nav.menu a.ativo{color:var(--teal-esc)}
 nav.menu a.destaque{background:var(--teal-esc);color:#fff;font-weight:800}
 nav.menu a.destaque:hover{background:var(--teal);color:#fff}
+nav.menu a.reservar{display:none;border:2px solid var(--teal-esc);color:var(--teal-esc);font-weight:800;padding:6px 9px}
+nav.menu a.reservar:hover{background:var(--teal-esc);color:#fff}
+@media(max-width:640px){nav.menu a.reservar{display:inline-block}}
 .hd-right{display:flex;align-items:center;gap:16px;flex:0 0 auto}
 .hd-tel{text-align:right;line-height:1.25}
 .hd-tel span{display:block;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--suave)}
