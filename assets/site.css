@@ -193,7 +193,7 @@ label.campo{display:block;margin-bottom:14px}
 label.campo span{display:block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--suave);
                  margin-bottom:6px;text-transform:uppercase}
 label.campo span em{font-style:normal;text-transform:none;letter-spacing:0;font-weight:600}
-input[type=text],input[type=tel],input[type=date],input[type=datetime-local],select,textarea{
+input[type=text],input[type=tel],input[type=email],input[type=date],input[type=datetime-local],select,textarea{
   width:100%;background:var(--papel);border:1.5px solid var(--linha);color:var(--texto);padding:12px 13px;
   font-family:inherit;font-size:16px;border-radius:10px}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.16)}

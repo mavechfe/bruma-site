@@ -56,7 +56,7 @@
     <path d="M-40 60c60-40 120 40 180 0s120 40 180 0 120 40 180 0" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".04"/>
   </svg>
   <div class="wrap">
-    <div class="hero-grelha solo">
+    <div class="hero-grelha">
       <div>
         <div class="selos">
           <span class="selo">Novo em Viseu</span>
@@ -69,9 +69,20 @@
           aspirar não conta
         </div>
         <p class="lead">Levamos-lhe a casa uma máquina profissional Kärcher de injeção e extração, mostramos como se usa em dois minutos e vamos buscá-la quando terminar. O detergente vai incluído.</p>
-        <div class="ctas">
-          <a class="btn btn-menta" href="reservar/">Reservar</a>
-        </div>
+      </div>
+      <div class="cartao-form">
+        <h2>Reserve o equipamento</h2>
+        <p class="sub">40 € por dia com detergente, 3 bocais, entrega e recolha incluídos até 5 km do centro de Viseu · fora disso, 1,50 € por km.</p>
+        <form onsubmit="return false">
+          <label class="campo"><span>Nome</span><input type="text" id="hNome" autocomplete="name"></label>
+          <label class="campo"><span>Telemóvel</span><input type="tel" id="hTel" autocomplete="tel" inputmode="tel"></label>
+          <label class="campo"><span>Email <em>· opcional</em></span><input type="email" id="hEmail" autocomplete="email"></label>
+          <label class="campo"><span>Localidade</span><input type="text" id="hLoc" placeholder="Viseu, Cavernães, Mangualde..."></label>
+          <label class="campo"><span>Para quando</span><input type="date" id="hData"></label>
+          <div class="aviso" id="hAviso"></div>
+          <button class="btn-zap" onclick="pedir('h')">Reservar</button>
+          <p class="tranquilo">Sem compromisso. Caução de 150 € devolvida na recolha.</p>
+        </form>
       </div>
     </div>
     <div class="numeros">
@@ -292,14 +303,18 @@
       </div>
       <div>
         <div class="bloco" style="margin-top:0">
-          <h3>Reservar leva meio minuto</h3>
-          <p style="color:var(--suave);font-size:15px;line-height:1.6;margin-bottom:14px">Diz-nos o que vai lavar, para quando e onde. Nós tratamos do resto: confirmamos a data, levamos a máquina a sua casa e mostramos como se usa.</p>
-          <ul class="lista-cta escura">
-            <li>Resposta normalmente no próprio dia</li>
-            <li>Detergente, 3 bocais e instruções incluídos</li>
-            <li>Caução de 150 € devolvida por inteiro na recolha</li>
-          </ul>
-          <a class="btn-zap" href="reservar/">Reservar</a>
+          <h3>Reserve o equipamento</h3>
+          <p style="color:var(--suave);font-size:14.5px;line-height:1.5;margin-bottom:12px">40 € por dia com detergente, 3 bocais, entrega e recolha incluídos até 5 km do centro de Viseu · fora disso, 1,50 € por km.</p>
+          <form onsubmit="return false">
+            <label class="campo"><span>Nome</span><input type="text" id="fNome" autocomplete="name"></label>
+            <label class="campo"><span>Telemóvel</span><input type="tel" id="fTel" autocomplete="tel" inputmode="tel"></label>
+            <label class="campo"><span>Email <em>· opcional</em></span><input type="email" id="fEmail" autocomplete="email"></label>
+            <label class="campo"><span>Localidade</span><input type="text" id="fLoc" placeholder="Viseu, Cavernães, Mangualde..."></label>
+            <label class="campo"><span>Para quando</span><input type="date" id="fData"></label>
+            <div class="aviso" id="fAviso"></div>
+            <button class="btn-zap" onclick="pedir('f')">Reservar</button>
+            <p class="tranquilo">Sem compromisso. Caução de 150 € devolvida na recolha.</p>
+          </form>
         </div>
       </div>
     </div>
@@ -366,6 +381,63 @@
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"18:00","closes":"22:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"21:00"}
   ]
+}
+</script>
+
+<script>
+var TELEFONE = '351914502987';
+var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec';
+
+function pedir(p) {
+  var v = function (id) { return document.getElementById(p + id).value.trim(); };
+  var av = document.getElementById(p + 'Aviso');
+  var falta = [];
+  if (!v('Nome')) falta.push('o nome');
+  if (!v('Tel')) falta.push('o telemóvel');
+  if (v('Email') && v('Email').indexOf('@') === -1) falta.push('um email válido');
+  if (!v('Loc')) falta.push('a localidade');
+  if (falta.length) {
+    av.style.display = 'block';
+    av.textContent = 'Falta preencher: ' + falta.join(', ') + '.';
+    return;
+  }
+  av.style.display = 'none';
+
+  var dataV = document.getElementById(p + 'Data').value;
+  var quando = 'a combinar';
+  if (dataV) {
+    quando = new Date(dataV).toLocaleDateString('pt-PT', { weekday: 'long', day: '2-digit', month: '2-digit' });
+  }
+
+  var dados = {
+    recebido: new Date().toISOString(),
+    estado: 'pedido site',
+    nome: v('Nome'),
+    telemovel: v('Tel'),
+    email: v('Email'),
+    localidade: v('Loc'),
+    entrega: dataV,
+    caucao: 150
+  };
+  fetch(SHEETS_URL, {
+    method: 'POST', mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(dados)
+  }).catch(function () { });
+
+  var msg = '*Pedido de reserva · Bruma Serviços*\n\n'
+    + 'Nome: ' + dados.nome + '\n'
+    + 'Telemóvel: ' + dados.telemovel + '\n'
+    + (dados.email ? 'Email: ' + dados.email + '\n' : '')
+    + 'Localidade: ' + dados.localidade + '\n'
+    + 'Para quando: ' + quando + '\n\nEnviado pelo site';
+  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
+
+  av.style.display = 'block';
+  av.style.background = '#F1F7F6';
+  av.style.borderColor = '#5EC5B8';
+  av.style.color = '#0B6E66';
+  av.textContent = 'Pedido enviado! Se o WhatsApp não abriu, fale connosco no 914 502 987.';
 }
 </script>
 </body>
