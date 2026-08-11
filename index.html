@@ -74,26 +74,16 @@
           <a class="btn btn-fantasma" href="#precos">Ver preços</a>
         </div>
       </div>
-      <div class="cartao-form">
+      <div class="cartao-form cartao-cta">
         <h2>Reserve o equipamento</h2>
-        <p class="sub">Diga-nos o essencial. O botão abre o WhatsApp com tudo escrito e nós confirmamos data e preço.</p>
-        <form onsubmit="return false">
-          <label class="campo"><span>Nome *</span><input type="text" id="hNome" autocomplete="name"></label>
-          <label class="campo"><span>Número de telefone *</span><input type="tel" id="hTel" autocomplete="tel" inputmode="tel"></label>
-          <label class="campo"><span>O que vai limpar</span>
-            <select id="hQue">
-              <option>Sofá</option>
-              <option>Colchões</option>
-              <option>Carro</option>
-              <option>Sofá, colchões e mais</option>
-              <option>Ainda não sei bem</option>
-            </select>
-          </label>
-          <label class="campo"><span>Para quando</span><input type="date" id="hQuando"></label>
-          <div class="aviso" id="hAviso"></div>
-          <button class="btn-zap" onclick="enviarHero()">Pedir pelo WhatsApp</button>
-          <p class="tranquilo">Sem compromisso. Respondemos normalmente no próprio dia.</p>
-        </form>
+        <p class="sub">Meio minuto a preencher. Respondemos no próprio dia com o preço certo e a confirmação da data.</p>
+        <ul class="lista-cta">
+          <li>Entrega e recolha em sua casa</li>
+          <li>Detergente e 3 bocais incluídos</li>
+          <li>Caução de 150 € devolvida na recolha</li>
+        </ul>
+        <a class="btn-zap" href="reservar/">Pedir data e preço</a>
+        <p class="tranquilo">Prefere falar já? WhatsApp <a href="https://wa.me/351914502987" style="color:var(--teal-esc);font-weight:800">914 502 987</a></p>
       </div>
     </div>
     <div class="numeros">
@@ -305,7 +295,7 @@
       <div>
         <div class="kicker">Reservar</div>
         <h2 class="display" style="margin-top:12px">Reserve o equipamento</h2>
-        <p class="sub">Preencha o pedido ao lado e o botão abre o WhatsApp com tudo escrito. Respondemos com o preço final e a confirmação da data, normalmente no próprio dia.</p>
+        <p class="sub">O pedido de reserva leva meio minuto a preencher. Respondemos com o preço final e a confirmação da data, normalmente no próprio dia.</p>
         <div class="linha-contacto">
           <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg></div>
           <div><div class="rotulo">WhatsApp ou chamada</div><div class="valor"><a href="https://wa.me/351914502987">914 502 987</a></div><div class="extra">Respondemos normalmente no próprio dia.</div></div>
@@ -324,37 +314,16 @@
         </div>
       </div>
       <div>
-        <form id="frm" onsubmit="return false">
-          <div class="bloco" style="margin-top:0">
-            <h3><span class="n">1</span> Os seus dados</h3>
-            <label class="campo"><span>Nome completo *</span><input type="text" id="fNome" autocomplete="name"></label>
-            <label class="campo"><span>Número de telefone *</span><input type="tel" id="fTel" autocomplete="tel" inputmode="tel"></label>
-            <label class="campo"><span>Morada de entrega *</span><input type="text" id="fMorada" autocomplete="street-address" placeholder="rua, n.º, andar, localidade"></label>
-            <label class="campo"><span>NIF <em>· opcional, só se quiser a fatura com o seu NIF</em></span><input type="text" id="fNif" inputmode="numeric"></label>
-          </div>
-          <div class="bloco">
-            <h3><span class="n">2</span> Quando precisa da máquina</h3>
-            <label class="campo"><span>Entrega, dia e hora *</span><input type="datetime-local" id="fEntrega"></label>
-            <label class="campo"><span>Devolução, dia e hora *</span><input type="datetime-local" id="fRecolha"></label>
-          </div>
-          <div class="bloco">
-            <h3><span class="n">3</span> O que vai limpar</h3>
-            <label class="chk"><input type="checkbox" id="cSofa"> Sofá · lugares: <input type="text" class="qtd" id="cSofaN" inputmode="numeric" placeholder="3"></label>
-            <label class="chk"><input type="checkbox" id="cColchao"> Colchões · quantos: <input type="text" class="qtd" id="cColchaoN" inputmode="numeric" placeholder="1"></label>
-            <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
-            <label class="chk"><input type="checkbox" id="cAlcatifa"> Alcatifa ou tapetes</label>
-            <label class="chk"><input type="checkbox" id="cCadeiras"> Cadeiras, puffs, cadeirinha de bebé</label>
-            <label class="chk"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
-            <label class="campo" style="margin-top:12px"><span>Há manchas específicas? <em>· gordura, tinta, urina, sangue, muito antigas</em></span><textarea id="fManchas" placeholder="Diga-nos o pior, é para levarmos o produto certo"></textarea></label>
-          </div>
-          <div class="bloco">
-            <label class="chk rgpd"><input type="checkbox" id="fRgpd" style="margin-top:2px">
-              <span>Aceito que estes dados sejam usados apenas para responder a este pedido e preparar o aluguer. Não são partilhados com ninguém e não é feita cópia de documentos de identificação. <a href="privacidade/" style="color:var(--teal-esc)">Política de privacidade</a>.</span></label>
-          </div>
-          <div class="aviso" id="aviso"></div>
-          <button class="btn-zap" onclick="enviar()">Enviar pedido pelo WhatsApp</button>
-          <button class="btn-alt" onclick="copiar()">O botão não abriu o WhatsApp? Copie as respostas e cole na conversa</button>
-        </form>
+        <div class="bloco" style="margin-top:0">
+          <h3>Reservar leva meio minuto</h3>
+          <p style="color:var(--suave);font-size:15px;line-height:1.6;margin-bottom:14px">Diz-nos o que vai lavar, para quando e onde. Nós tratamos do resto: confirmamos a data, levamos a máquina a sua casa e mostramos como se usa.</p>
+          <ul class="lista-cta escura">
+            <li>Resposta normalmente no próprio dia</li>
+            <li>Detergente, 3 bocais e instruções incluídos</li>
+            <li>Caução de 150 € devolvida por inteiro na recolha</li>
+          </ul>
+          <a class="btn-zap" href="reservar/">Preencher o pedido de reserva</a>
+        </div>
       </div>
     </div>
   </div>
@@ -420,77 +389,6 @@
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"18:00","closes":"22:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"21:00"}
   ]
-}
-</script>
-
-<script>
-const TELEFONE = '351914502987';
-const $ = id => document.getElementById(id);
-function fmt(v){
-  if (!v) return '?';
-  const d = new Date(v);
-  return d.toLocaleDateString('pt-PT',{weekday:'short',day:'2-digit',month:'2-digit'}) + ' às ' +
-         d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
-}
-function enviarHero(){
-  const av = $('hAviso'), falta = [];
-  if (!$('hNome').value.trim()) falta.push('o nome');
-  if (!$('hTel').value.trim()) falta.push('o número de telefone');
-  if (falta.length){ av.style.display='block'; av.textContent='Falta preencher: ' + falta.join(' e ') + '.'; return; }
-  av.style.display='none';
-  let quando = 'a combinar';
-  if ($('hQuando').value){
-    quando = new Date($('hQuando').value).toLocaleDateString('pt-PT',{weekday:'long',day:'2-digit',month:'2-digit'});
-  }
-  const msg = '*Pedido de aluguer · Bruma Serviços*\n\n' +
-    'Nome: ' + $('hNome').value.trim() + '\n' +
-    'Telemóvel: ' + $('hTel').value.trim() + '\n' +
-    'Vou limpar: ' + $('hQue').value + '\n' +
-    'Para quando: ' + quando + '\n' +
-    '\nEnviado pelo site';
-  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
-}
-function montar(){
-  const limpar = [];
-  if ($('cSofa').checked) limpar.push('sofá ' + ($('cSofaN').value||'?') + ' lugares');
-  if ($('cColchao').checked) limpar.push(($('cColchaoN').value||'?') + ' colchão(ões)');
-  if ($('cCarro').checked) limpar.push('carro');
-  if ($('cAlcatifa').checked) limpar.push('alcatifa/tapetes');
-  if ($('cCadeiras').checked) limpar.push('cadeiras/puffs');
-  return '*Pedido de aluguer · Bruma Serviços*\n\n' +
-    'Nome: ' + $('fNome').value.trim() + '\n' +
-    'Telemóvel: ' + $('fTel').value.trim() + '\n' +
-    'Morada: ' + $('fMorada').value.trim() + '\n' +
-    ($('fNif').value.trim() ? 'NIF p/ fatura: ' + $('fNif').value.trim() + '\n' : '') +
-    '\nEntrega: ' + fmt($('fEntrega').value) + '\n' +
-    'Devolução: ' + fmt($('fRecolha').value) + '\n' +
-    '\nVai limpar: ' + (limpar.join(', ') || '?') + '\n' +
-    'Animais em casa: ' + ($('cAnimais').checked ? 'sim' : 'não') + '\n' +
-    'Manchas: ' + ($('fManchas').value.trim() || 'nada de especial') + '\n' +
-    '\nEnviado pelo site';
-}
-function valida(){
-  const falta = [];
-  if (!$('fNome').value.trim()) falta.push('o nome');
-  if (!$('fTel').value.trim()) falta.push('o número de telefone');
-  if (!$('fMorada').value.trim()) falta.push('a morada');
-  if (!$('fEntrega').value) falta.push('a data de entrega');
-  if (!$('fRecolha').value) falta.push('a data de devolução');
-  if (!$('fRgpd').checked) falta.push('a autorização dos dados');
-  const av = $('aviso');
-  if (falta.length){ av.style.display='block'; av.textContent='Falta preencher: ' + falta.join(', ') + '.'; return false; }
-  av.style.display='none';
-  return true;
-}
-function enviar(){
-  if (!valida()) return;
-  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(montar()), '_blank');
-}
-function copiar(){
-  if (!valida()) return;
-  navigator.clipboard.writeText(montar())
-    .then(() => alert('Respostas copiadas. Cole na conversa de WhatsApp.'))
-    .catch(() => prompt('Copie manualmente:', montar()));
 }
 </script>
 </body>
