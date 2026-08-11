@@ -3,11 +3,11 @@
 TODOS OS DIAS, por esta ordem:
 
 1. Lê `automation/marketing-log.md` (o que já saiu), `automation/gbp-queue.md`, `automation/approvals-pendentes.md`, `content-plan.md` e o ficheiro mais recente de `automation/metrics/` (se existir).
-2. Lê o funil de vendas: GET a `https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec?funil=bruma2026`. Se falhar, segue sem funil e regista no log.
+2. Lê o funil de vendas no ficheiro mais recente `automation/metrics/funil-*.json` (a tarefa local atualiza-o 3ª, 5ª e sábado; o acesso direto a script.google.com está bloqueado no ambiente cloud, não tentes o GET). Se não existir, segue sem funil e regista no log.
 3. APROVAÇÕES: se `automation/approvals-pendentes.md` tem itens `pendente`, apresenta-os na íntegra no início do teu relatório de sessão. Se a Mariana respondeu OK na sessão anterior desta rotina, marca o item `aprovado` (commit) e diz no relatório que a tarefa local vai executar na próxima execução (3ª, 5ª ou sábado).
 4. AÇÃO DO DIA (fuso Europe/Lisbon):
    - Segunda: confirma no `content-plan.md` que a escritora correu. Prepara o post Instagram da semana (ver INSTAGRAM abaixo).
-   - Terça e quinta: garante que existe exatamente 1 post novo em `automation/gbp-queue.md` com `estado: fila` para a tarefa local de hoje às 10:00 (se a fila já tem um por publicar, não acrescentes). Deriva-o do artigo publicado mais recente ou de um ângulo sazonal do posicionamento. 3 a 5 frases, com link para https://brumaservicos.pt ou para um artigo do blog. Valida contra os guardrails antes de gravar.
+   - Terça e quinta: garante que existe exatamente 1 post novo em `automation/gbp-queue.md` com `estado: fila` (se a fila já tem um por publicar, não acrescentes). A tarefa local publica-o na sua próxima execução (3ª, 5ª ou sábado às 10:00; se a rotina de hoje corre depois das 10:00, o post sai na execução seguinte). Deriva-o do artigo publicado mais recente ou de um ângulo sazonal do posicionamento. 3 a 5 frases, com link para https://brumaservicos.pt ou para um artigo do blog. Valida contra os guardrails antes de gravar.
    - Quarta: otimização on-page: escolhe UMA melhoria concreta (title de artigo com mais de 70 caracteres, meta description fraca, ligação interna em falta), aplica-a, corre `node tools/check-site.js` e `node tools/gerar-sitemap.js`, commit e push. Prepara 2º post Instagram se houver material que o justifique.
    - Sexta: com as queries do último ficheiro de `automation/metrics/`, reordena o `content-plan.md` (temas que já geram impressões sobem) e regista o porquê no log.
    - Sábado: garante 1 post GBP leve na fila (dica prática de limpeza, no tom Bruma, dentro dos guardrails).
