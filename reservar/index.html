@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reservar a máquina | Bruma Serviços</title>
 <meta name="description" content="Peça a sua reserva da máquina de limpeza de estofos em Viseu. Vê o preço, a deslocação e a caução antes de confirmar.">
+<link rel="canonical" href="https://brumaservicos.pt/reservar/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reservar a máquina | Bruma Serviços">
+<meta property="og:description" content="Peça a sua reserva da máquina de limpeza de estofos em Viseu. Vê o preço, a deslocação e a caução antes de confirmar.">
+<meta property="og:url" content="https://brumaservicos.pt/reservar/">
+<meta property="og:image" content="https://brumaservicos.pt/assets/puzzi.jpg">
+<meta property="og:locale" content="pt_PT">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -74,13 +82,13 @@
 <div class="pagina">
 
 <header>
-  <div class="logo">
+  <a class="logo" href="../" style="text-decoration:none;color:inherit" aria-label="Voltar ao site da Bruma">
     <svg viewBox="0 0 60 46" aria-hidden="true">
       <path d="M6 16c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.42"/>
       <path d="M6 32c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7" stroke-linecap="round" fill="none"/>
     </svg>
     <b>BRUMA<small>SERVIÇOS</small></b>
-  </div>
+  </a>
   <h1>Reservar a máquina</h1>
   <p>Preencha e veja o valor total antes de confirmar. Sem surpresas.</p>
 </header>
@@ -145,7 +153,7 @@
 <div class="aceites">
   <label class="escolha"><input type="checkbox" id="okCaucao"><span class="et"><b id="txtCaucao">Aceito a caução de 150 €</b><small>entregue no momento e devolvida por inteiro na recolha, assim que confirmarmos que está tudo como ficou</small></span></label>
   <label class="escolha"><input type="checkbox" id="okDesloc"><span class="et"><b id="txtDesloc">Aceito o valor da deslocação</b><small>1,50 € por km além dos 5 km incluídos</small></span></label>
-  <label class="escolha"><input type="checkbox" id="okDados"><span class="et"><b>Autorizo o uso dos meus dados</b><small>apenas para preparar este aluguer e emitir a fatura. Não são partilhados e não é feita cópia do cartão de cidadão</small></span></label>
+  <label class="escolha"><input type="checkbox" id="okDados"><span class="et"><b>Autorizo o uso dos meus dados</b><small>apenas para preparar este aluguer e emitir a fatura. Não são partilhados e não é feita cópia do cartão de cidadão. <a href="../privacidade/" target="_blank" rel="noopener" style="color:#0B6E66">Política de privacidade</a></small></span></label>
 </div>
 
 <button class="enviar" onclick="enviar()">Enviar pedido de reserva</button>
