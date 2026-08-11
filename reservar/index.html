@@ -81,7 +81,7 @@
   <p>Meio minuto a preencher. Respondemos no próprio dia com o preço certo e a confirmação da data.</p>
 </header>
 
-<div class="precos"><b>40 € por dia</b> com detergente, 3 bocais, entrega e recolha incluídos até 5 km do centro de Viseu · fora disso, 1,50 € por km</div>
+<div class="precos"><b>45 € por dia · sem caução</b> · com detergente, 3 bocais, entrega e recolha incluídos até 5 km do centro de Viseu · fora disso, 1,50 € por km</div>
 
 <form id="frm" onsubmit="return false">
 
@@ -104,7 +104,7 @@
 <label class="escolha"><input type="checkbox" id="cAnimais"> Tenho animais em casa <small>· levamos o produto certo</small></label>
 
 <div class="caucao">
-  <label class="escolha"><input type="checkbox" id="okCaucao"><span><b>Sei que há uma caução de 150 €</b><small>entregue no momento e devolvida por inteiro na recolha, assim que confirmarmos que está tudo como ficou</small></span></label>
+  <p style="padding:8px 0"><b>Sem caução, sem adiantamentos.</b><small>Na entrega assinamos um contrato simples, 2 minutos, e paga só o aluguer. Mais nada.</small></p>
 </div>
 
 <button class="enviar" onclick="enviar()">Enviar pedido de reserva</button>
@@ -148,7 +148,6 @@ function enviar() {
   if (!$('tel').value.trim()) falta.push('o telemóvel');
   if ($('email').value.trim() && $('email').value.indexOf('@') === -1) falta.push('um email válido');
   if (!$('localidade').value.trim()) falta.push('a localidade');
-  if (!$('okCaucao').checked) falta.push('a confirmação da caução');
   if (falta.length) {
     var e = $('erro');
     e.style.display = 'block';
@@ -172,8 +171,8 @@ function enviar() {
     entrega: $('quando').value,
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
-    caucao: 150,
-    aceitou_caucao: 'sim',
+    caucao: 0,
+    aceitou_caucao: 'sem caução',
     aceitou_dados: 'sim'
   };
 
@@ -194,7 +193,7 @@ function enviar() {
     + 'Para quando: ' + quando + '\n'
     + 'Vou limpar: ' + dados.vai_limpar + '\n'
     + 'Animais em casa: ' + dados.animais + '\n'
-    + 'Caução de 150 €: ok\n\nEnviado pelo site';
+    + 'Sem caução · contrato na entrega\n\nEnviado pelo site';
 
   $('linkWhats').href = 'https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg);
   $('frm').style.display = 'none';
