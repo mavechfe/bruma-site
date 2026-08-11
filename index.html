@@ -43,7 +43,6 @@
     </nav>
     <div class="hd-right">
       <div class="hd-tel"><span>Respondemos todos os dias</span><a href="https://wa.me/351914502987">914 502 987</a></div>
-      <a class="btn-cta" href="reservar/">Reservar</a>
     </div>
   </div>
 </header>
@@ -177,7 +176,7 @@
           <tr><td>Um dia</td><td>40€</td></tr>
           <tr><td>Dois dias</td><td>65€</td></tr>
           <tr><td>Três dias</td><td>90€</td></tr>
-          <tr class="destaque"><td>Fim de semana<small>Entregamos sexta, recolhemos segunda</small></td><td>70€</td></tr>
+          <tr class="destaque"><td>Fim de semana</td><td>70€</td></tr>
           <tr><td>Semana</td><td>160€</td></tr>
         </table>
         <p class="notas">
@@ -415,25 +414,26 @@ function pedir(p) {
     entrega: dataV,
     caucao: 150
   };
+  var botao = av.parentNode.querySelector('.btn-zap');
+  botao.disabled = true;
+  botao.textContent = 'A enviar...';
   fetch(SHEETS_URL, {
     method: 'POST', mode: 'no-cors',
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
     body: JSON.stringify(dados)
-  }).catch(function () { });
-
-  var msg = '*Pedido de reserva · Bruma Serviços*\n\n'
-    + 'Nome: ' + dados.nome + '\n'
-    + 'Telemóvel: ' + dados.telemovel + '\n'
-    + (dados.email ? 'Email: ' + dados.email + '\n' : '')
-    + 'Localidade: ' + dados.localidade + '\n'
-    + 'Para quando: ' + quando + '\n\nEnviado pelo site';
-  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
-
-  av.style.display = 'block';
-  av.style.background = '#F1F7F6';
-  av.style.borderColor = '#5EC5B8';
-  av.style.color = '#0B6E66';
-  av.textContent = 'Pedido enviado! Se o WhatsApp não abriu, fale connosco no 914 502 987.';
+  }).then(function () {
+    av.style.display = 'block';
+    av.style.background = '#F1F7F6';
+    av.style.borderColor = '#5EC5B8';
+    av.style.color = '#0B6E66';
+    av.textContent = 'Pedido enviado! Respondemos normalmente no próprio dia.';
+    botao.textContent = 'Pedido enviado';
+  }).catch(function () {
+    av.style.display = 'block';
+    av.textContent = 'Não conseguimos enviar o pedido. Fale connosco pelo WhatsApp ou chamada: 914 502 987.';
+    botao.disabled = false;
+    botao.textContent = 'Reservar';
+  });
 }
 </script>
 </body>

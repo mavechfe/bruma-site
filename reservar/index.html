@@ -117,7 +117,7 @@
   <svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <h2>Pedido enviado!</h2>
   <p>Recebemos o seu pedido e respondemos normalmente no próprio dia, com o preço certo e a confirmação da data.</p>
-  <p style="margin-top:14px"><a href="#" id="linkWhats" style="color:#0B6E66;font-weight:800">Abrir também no WhatsApp</a></p>
+  <p style="margin-top:14px"><a href="#" id="linkWhats" style="color:#0B6E66;font-weight:800">Prefere falar já? Abrir a conversa no WhatsApp</a></p>
 </div>
 
 <footer>
@@ -201,7 +201,6 @@ function enviar() {
   document.querySelector('.precos').style.display = 'none';
   $('feito').style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  window.open('https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg), '_blank');
 }
 </script>
 </body>
