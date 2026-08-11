@@ -73,6 +73,7 @@ nav.menu a.reservar:hover{background:var(--teal-esc);color:#fff}
 .hero .wrap{position:relative;z-index:2}
 .hero-grelha{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
 @media(max-width:960px){.hero-grelha{grid-template-columns:1fr}}
+.hero-grelha.solo{grid-template-columns:1fr;max-width:820px}
 .selos{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
 .selo{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);border-radius:99px;
       padding:7px 15px;font-size:13px;font-weight:700;color:var(--claro-sobre-escuro)}
