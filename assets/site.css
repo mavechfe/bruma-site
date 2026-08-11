@@ -321,3 +321,7 @@ a.btn-zap{text-decoration:none}
 .lista-cta li{padding-left:26px;position:relative;margin-bottom:8px;font-size:15px;font-weight:600}
 .lista-cta li::before{content:"✓";position:absolute;left:0;top:0;color:var(--teal-esc);font-weight:900}
 .cartao-cta .tranquilo{margin-top:12px;text-align:center}
+
+/* linha SOS nas caixas CTA dos artigos */
+.cta-caixa .sos{margin-top:12px;font-size:14.5px;color:var(--suave)}
+.cta-caixa .sos a{color:var(--teal-esc);font-weight:800}
