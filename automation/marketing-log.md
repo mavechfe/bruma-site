@@ -5,3 +5,5 @@ Fonte única de verdade do que já foi feito e publicado. Uma linha por ação, 
 Formato: `- AAAA-MM-DD HH:mm | <canal: gbp|blog|ig|site|funil|sistema> | <ação> | <porquê/resultado>`
 
 - 2026-08-11 22:00 | sistema | arranque do agente MK | ficheiros de estado criados (Fase B do plano 2026-08-11)
+- 2026-08-11 23:12 | gbp | post de arranque publicado (Publicada ha 4 segundos, confirmado) | teste de producao do post-gbp.js; receita: keyboard.type + botao Mensagem
+- 2026-08-11 23:25 | sistema | REVERTIDOS commits 13c1930+260da58 (fim da caucao, +5 EUR) de outra sessao | decisao da Mariana: esquecer esses commits; caucao 150 e precos originais mantem-se
