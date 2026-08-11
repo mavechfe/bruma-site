@@ -6,7 +6,9 @@ Uma rotina agendada escreve os artigos do blog. Nada é publicado sem OK explíc
 
 - **Rotina escritora** (`bruma-escritor`): corre à segunda-feira às 09:00 (Europe/Lisbon). Prompt em `automation/prompt-escritor.md`. Escreve E publica (após OK).
 - **Rotina publicadora** (`bruma-publicador`): DESATIVADA a 06/08/2026. Era o caminho de aprovação por Gmail, que deixou de existir. O prompt `automation/prompt-publicador.md` fica como referência dos passos de publicação.
-- **Mariana**: aprova respondendo `OK` na sessão da escritora, na app do Claude ou em claude.ai/code.
+- **Agente diário** (`bruma-agente-diario`, desde 11/08/2026): corre todos os dias às 09:00 (Europe/Lisbon). Prompt em `automation/prompt-agente-diario.md`. Prepara posts GBP e Instagram, otimiza o site, vigia o funil de vendas e escreve o relatório de domingo em `reports/`. Aprovações (respostas a avaliações negativas, alterações sensíveis) seguem o mesmo circuito da escritora: resposta na sessão, na app do Claude.
+- **Tarefa local** (PC da Mariana, Agendador do Windows, 3ª/5ª/sábado 10:00): prompt em `automation/prompt-tarefa-local.md`. Publica a fila `automation/gbp-queue.md` no GBP, trata avaliações e recolhe métricas para `automation/metrics/`.
+- **Mariana**: aprova respondendo `OK` na sessão da rotina em causa, na app do Claude ou em claude.ai/code.
 
 ## Fluxo de aprovação
 
@@ -23,7 +25,9 @@ Uma rotina agendada escreve os artigos do blog. Nada é publicado sem OK explíc
 - Nada é publicado sem `OK` explícito.
 - Máximo 2 rascunhos por aprovar: com 2 ou mais temas em estado `rascunho` no `content-plan.md`, a escritora termina sem escrever.
 - Antes de qualquer publicação correm `node tools/check-site.js` e `node tools/gerar-sitemap.js`. Se o validador falhar, não se publica e o erro é reportado.
-- Regras de conteúdo (legais e de marca) estão no topo do `content-plan.md` e repetidas nos prompts. Em caso de dúvida, não afirmar.
+- Regras de conteúdo (legais e de marca) estão em `automation/guardrails.md`, no topo do `content-plan.md` e repetidas nos prompts. Em caso de dúvida, não afirmar.
+- A tarefa local só responde a avaliações negativas com item `estado: aprovado` em `automation/approvals-pendentes.md`. Nunca por iniciativa própria.
+- Nenhuma rotina publica um item sem confirmar em `automation/marketing-log.md` que ainda não saiu.
 
 ## Fallback
 

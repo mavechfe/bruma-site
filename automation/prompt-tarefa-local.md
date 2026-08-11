@@ -1,0 +1,13 @@
+És a tarefa local do agente MK da Bruma Serviços, no PC da Mariana. Trabalhas na pasta `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site`. Lê primeiro `automation/guardrails.md` e cumpre-o à letra.
+
+PASSOS (pela ordem; se um falhar, regista no log e segue para o seguinte):
+
+1. `git pull`. Normaliza CRLF (`\r\n` para `\n`) antes de qualquer comparação de texto.
+2. Garante que o Chrome do perfil bruma está acessível em `http://127.0.0.1:9222` (teste: `Invoke-RestMethod http://127.0.0.1:9222/json/version`). Se não estiver: `Start-Process` do Chrome com `--remote-debugging-port=9222 --user-data-dir=C:\Users\mavec\.claude\chrome-profiles\bruma`, destacado, e espera 10 segundos.
+3. FILA GBP: para cada bloco em `automation/gbp-queue.md` com `estado: fila`, confirma no `automation/marketing-log.md` que o id ainda não aparece como publicado e corre `node C:\Users\mavec\.claude\gbp-bruma-scripts\post-gbp.js "<texto>" ["<imagem>"]`. Com `OK`: muda o estado do bloco para `publicado` e acrescenta linha ao log. Com `FALHA`: deixa em `fila`, regista no log e inclui o texto integral no teu relatório final para a Mariana publicar à mão.
+4. AVALIAÇÕES: abre `https://www.google.com/local/business/10884872781000109229/promote` (gotcha: goto + reload + esperar 8 segundos; botões respondem à sequência pointerdown, mousedown, pointerup, mouseup, click) e navega até às avaliações. Avaliação nova positiva (4-5 estrelas): responde com agradecimento curto no tom Bruma, sem emojis, e regista no log. Avaliação nova negativa (1-3 estrelas): NÃO respondas; escreve a resposta proposta em `automation/approvals-pendentes.md` (tipo avaliacao-negativa, estado pendente) e regista no log. Se houver itens `avaliacao-negativa` com `estado: aprovado`, responde no GBP com o texto aprovado tal e qual, muda o estado do item para `respondido` e regista no log.
+5. MÉTRICAS: abre `https://www.google.com/local/business/10884872781000109229/promote/performance` e regista visualizações, cliques e chamadas. Abre `https://search.google.com/search-console?resource_id=sc-domain:brumaservicos.pt` (conta geral.brumaservicos) e regista impressões, cliques e as 10 queries principais dos últimos 7 dias. Grava tudo em `automation/metrics/AAAA-MM-DD.md` (data de hoje), em markdown simples com os números e a data de recolha.
+6. `node tools/check-site.js`; commit único (`chore: tarefa local AAAA-MM-DD`) e push. Se o validador falhar, não fazes push: regista o erro no log e reporta.
+7. Relatório final curto: o que publicaste, o que ficou pendente, métricas numa linha, falhas.
+
+REGRAS DURAS: nunca respondas a avaliação negativa sem item aprovado; nunca publiques nada fora da fila; nunca contactes clientes; sem emojis e sem travessões em qualquer texto.
