@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>Dados para prepararmos a máquina | Bruma Serviços</title>
+<title>Vamos preparar a sua máquina | Bruma Serviços</title>
 <meta name="description" content="Formulário rápido para nos dar os dados da entrega e do contrato, e para prepararmos a máquina com os bocais e o produto certos.">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dados para prepararmos a máquina | Bruma Serviços">
+<meta property="og:title" content="Vamos preparar a sua máquina | Bruma Serviços">
 <meta property="og:description" content="Um minuto para nos dar os dados da entrega e do contrato. É com isto que preparamos a máquina para o que vai limpar.">
 <meta property="og:image" content="https://brumaservicos.pt/assets/og-bruma.png">
 <meta property="og:image:width" content="1200">
@@ -63,14 +63,15 @@
       </svg>
       <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
     </a>
-    <h1>Falta só isto<br>e a máquina fica pronta</h1>
+    <h1>Vamos preparar<br>a sua máquina</h1>
     <div class="caveat">um minuto, prometemos</div>
   </div>
 
   <div class="porque" id="pedido">
-    <p>Já temos o seu dia reservado. Estes dados servem para duas coisas, mais nada.</p>
+    <p>Já temos o seu dia reservado. Estes dados servem para três coisas, mais nada.</p>
     <p><b>Preparar a máquina.</b> Conforme o que nos disser que vai limpar, escolhemos os bocais que vão consigo e levamos o produto certo. Não é a mesma coisa lavar um sofá de tecido ou tirar xixi de um colchão.</p>
-    <p><b>Preencher o contrato e a fatura.</b> O contrato de aluguer que assinamos na entrega leva o seu nome, o documento e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</p>
+    <p><b>Preencher o contrato.</b> O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</p>
+    <p><b>Enviar-lhe sugestões dos melhores produtos.</b> De vez em quando escrevemos a dizer o que resulta mesmo em cada tipo de tecido e de nódoa, sem tretas e sem promessas milagrosas. Se não quiser receber, é só dizer e deixamos de enviar.</p>
   </div>
 
   <form id="frm" onsubmit="return false">
@@ -85,7 +86,7 @@
     </div>
 
     <div class="grupo">
-      <h2><span class="n">2</span>Onde entregamos</h2>
+      <h2><span class="n">2</span>Onde e quando entregamos</h2>
       <label class="campo"><span>Morada</span><input type="text" id="morada" autocomplete="street-address" placeholder="Rua, número e andar"></label>
       <div class="dupla">
         <label class="campo"><span>Código postal</span><input type="text" id="postal" autocomplete="postal-code" placeholder="3500-000"></label>
@@ -93,6 +94,8 @@
       </div>
       <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
       <p class="ajuda">Pergunta feia mas prática: a máquina pesa cerca de dez quilos e queremos saber se subimos escadas.</p>
+      <label class="campo"><span>Dia combinado para a entrega</span><input type="date" id="dataEntrega"></label>
+      <p class="ajuda">O dia que já combinámos consigo. Serve para confirmarmos que estamos os dois a falar do mesmo, antes de a máquina sair daqui.</p>
     </div>
 
     <div class="grupo">
@@ -110,14 +113,14 @@
       <h2><span class="n">4</span>Para o contrato</h2>
       <div class="dupla">
         <label class="campo"><span>Cartão de cidadão</span><input type="text" id="cc" inputmode="numeric" placeholder="12345678 9 ZZ0"></label>
-        <label class="campo"><span>NIF <em>· opcional</em></span><input type="text" id="nif" inputmode="numeric" placeholder="para a fatura"></label>
+        <label class="campo"><span>NIF</span><input type="text" id="nif" inputmode="numeric" placeholder="000 000 000"></label>
       </div>
-      <p class="ajuda">Só copiamos o número para o contrato. Não tiramos fotocópia nem guardamos imagem do documento.</p>
+      <p class="ajuda">São os dois números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
     </div>
 
     <div class="aviso" id="aviso"></div>
     <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
-    <p class="notas" style="text-align:center;margin-top:14px">Usamos estes dados apenas para o seu aluguer, o contrato e a fatura. Não são partilhados com ninguém. <a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
+    <p class="notas" style="text-align:center;margin-top:14px">Usamos estes dados para o seu aluguer, para o contrato e para lhe enviarmos sugestões de produtos. Não são partilhados com ninguém e pode pedir-nos para parar quando quiser. <a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
   </form>
 
   <div class="feito" id="feito">
@@ -157,6 +160,8 @@ function enviar() {
   if (!v('morada')) falta.push('a morada');
   if (!v('localidade')) falta.push('a localidade');
   if (!v('cc')) falta.push('o cartão de cidadão');
+  if (!v('nif')) falta.push('o NIF');
+  if (!v('dataEntrega')) falta.push('o dia da entrega');
   if (!limpar()) falta.push('o que vai limpar');
 
   var av = $('aviso');
@@ -186,6 +191,7 @@ function enviar() {
     cc: v('cc'),
     morada: morada,
     localidade: v('localidade'),
+    entrega: v('dataEntrega'),
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
     manchas: v('manchas'),
