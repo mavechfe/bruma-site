@@ -123,7 +123,7 @@
         </div>
         <div class="razao">
           <b>Preencher o contrato.</b>
-          <span>O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</span>
+          <span>O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada.</span>
         </div>
 
         <div class="palco" style="padding:20px 18px 16px;margin-top:28px">
@@ -142,12 +142,17 @@
           <form id="frm" onsubmit="return false">
 
             <div class="grupo">
-              <h3><span class="n">1</span>Quem recebe a máquina</h3>
+              <h3><span class="n">1</span>Dados pessoais</h3>
               <label class="campo"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"></label>
               <div class="dupla">
                 <label class="campo"><span>Telemóvel</span><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></label>
                 <label class="campo"><span>Email</span><input type="email" id="email" autocomplete="email" inputmode="email"></label>
               </div>
+              <div class="dupla">
+                <label class="campo"><span>CC ou passaporte</span><input type="text" id="cc" placeholder="número do documento"></label>
+                <label class="campo"><span>NIF</span><input type="text" id="nif" inputmode="numeric" placeholder="000 000 000"></label>
+              </div>
+              <p class="ajuda">São os números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
             </div>
 
             <div class="grupo">
@@ -202,14 +207,6 @@
               <small>A entrega e a recolha estão incluídas até 5 km do centro de Viseu. Fora disso, 1,50 € por quilómetro. A caução de 50 € é entregue no momento e devolvida por inteiro na recolha. A distância é calculada por mapa, por isso confirmamos sempre o valor consigo antes da entrega.</small>
             </div>
 
-            <div class="grupo">
-              <h3><span class="n">6</span>Para o contrato</h3>
-              <div class="dupla">
-                <label class="campo"><span>Cartão de cidadão</span><input type="text" id="cc" inputmode="numeric" placeholder="12345678 9 ZZ0"></label>
-                <label class="campo"><span>NIF</span><input type="text" id="nif" inputmode="numeric" placeholder="000 000 000"></label>
-              </div>
-              <p class="ajuda">São os dois números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
-            </div>
 
             <div class="aviso" id="aviso"></div>
             <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
@@ -383,7 +380,7 @@ function enviar() {
   if (!v('dataEntrega')) falta.push('o dia da entrega');
   if (!limpar()) falta.push('o que vai limpar');
   if (!escolhida()) falta.push('o aluguer combinado');
-  if (!v('cc')) falta.push('o cartão de cidadão');
+  if (!v('cc')) falta.push('o cartão de cidadão ou passaporte');
   if (!v('nif')) falta.push('o NIF');
 
   var av = $('aviso');
