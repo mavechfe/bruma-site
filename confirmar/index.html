@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Vamos preparar a sua máquina | Bruma Serviços</title>
-<meta name="description" content="Formulário rápido para nos dar os dados da entrega e do contrato, e para prepararmos a máquina com os bocais e o produto certos.">
+<meta name="description" content="Os dados da entrega e do contrato, e o valor final do seu aluguer com a deslocação e os extras já contados.">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
@@ -26,145 +26,261 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="../assets/site.css">
 <style>
-  .folha{max-width:640px;margin:0 auto;padding:0 20px 60px}
-  .topo{text-align:center;padding:34px 0 26px}
-  .topo .marca{justify-content:center}
-  .topo h1{font-size:clamp(25px,5vw,34px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;
-           line-height:1.1;color:var(--ardosia);margin-top:18px}
-  .topo .caveat{font-size:23px;color:var(--teal-esc);margin-top:8px}
-  .porque{background:var(--nevoa-clara);border:1px solid var(--linha);border-radius:16px;padding:20px 22px;margin-top:22px}
-  .porque p{font-size:15.5px;color:#3A4E53;margin-bottom:10px}
-  .porque p:last-child{margin-bottom:0}
-  .porque b{color:var(--ardosia)}
-  .grupo{margin-top:30px}
-  .grupo > h2{font-size:13px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-esc);
+  .razao{margin-top:18px}
+  .razao b{display:block;color:var(--ardosia);font-size:16px}
+  .razao span{display:block;color:var(--suave);font-size:14.5px;margin-top:4px}
+  .grupo{margin-top:26px}
+  .grupo:first-of-type{margin-top:0}
+  .grupo > h3{font-size:12.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-esc);
               margin-bottom:14px;display:flex;align-items:center;gap:10px}
-  .grupo > h2 .n{width:24px;height:24px;border-radius:50%;background:var(--teal-esc);color:#fff;flex:0 0 auto;
+  .grupo > h3 .n{width:23px;height:23px;border-radius:50%;background:var(--teal-esc);color:#fff;flex:0 0 auto;
                  display:flex;align-items:center;justify-content:center;font-size:12px}
   .dupla{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
   @media(max-width:520px){.dupla{grid-template-columns:1fr}}
   .ajuda{font-size:13px;color:var(--suave);margin:-8px 0 14px}
-  .feito{display:none;text-align:center;padding:40px 10px}
-  .feito h2{font-size:24px;font-weight:900;text-transform:uppercase;color:var(--ardosia);margin-top:16px}
-  .feito p{color:var(--suave);margin-top:10px}
   .opcao{display:flex;align-items:center;gap:12px;border:1.5px solid var(--linha);background:var(--papel);
-         border-radius:12px;padding:13px 15px;margin-bottom:9px;cursor:pointer;font-size:16px;font-weight:700;color:#33474C}
+         border-radius:12px;padding:12px 15px;margin-bottom:9px;cursor:pointer;font-size:15.5px;font-weight:700;color:#33474C}
   .opcao:hover{border-color:var(--menta)}
   .opcao:has(input:checked){border-color:var(--teal-esc);background:var(--nevoa-clara)}
   .opcao input{appearance:none;width:21px;height:21px;border:2px solid #9DB4B1;border-radius:50%;flex:0 0 auto;
                background:#fff;position:relative;cursor:pointer}
+  .opcao input[type=checkbox]{border-radius:6px}
   .opcao input:checked{border-color:var(--teal-esc)}
-  .opcao input:checked::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--teal-esc)}
+  .opcao input[type=radio]:checked::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--teal-esc)}
+  .opcao input[type=checkbox]:checked{background:var(--teal-esc) no-repeat center/13px url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>')}
   .opcao b{margin-left:auto;color:var(--teal-esc);font-weight:900;white-space:nowrap}
-  footer.mini{background:none;text-align:center;color:var(--suave);font-size:14px;padding:26px 0 0;border-top:1px solid var(--linha);margin-top:34px}
-  footer.mini a{color:var(--teal-esc);font-weight:800;text-decoration:none}
+  .dica{font-size:13.5px;font-weight:700;margin:-6px 0 14px;min-height:18px}
+  .dica.ok{color:var(--teal-esc)}
+  .dica.mau{color:#A33C3C}
+  .conta{background:var(--ardosia);color:#fff;border-radius:16px;padding:22px 24px;margin-top:28px}
+  .conta h3{font-size:12.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--menta);margin-bottom:12px}
+  .conta .l{display:flex;justify-content:space-between;gap:16px;font-size:15px;padding:7px 0;color:var(--claro-sobre-escuro)}
+  .conta .l span:last-child{font-weight:800;color:#fff;white-space:nowrap}
+  .conta .total{border-top:1px solid rgba(255,255,255,.2);margin-top:8px;padding-top:14px;font-size:18px;color:#fff;font-weight:900}
+  .conta .total span:last-child{font-size:22px;color:var(--menta)}
+  .conta small{display:block;margin-top:12px;font-size:12.5px;color:#8FB4B0;line-height:1.5}
+  .feito{display:none;text-align:center;padding:30px 10px}
 </style>
 </head>
 <body>
 
-<div class="folha">
-
-  <div class="topo">
-    <a class="marca" href="../" style="display:inline-flex">
-      <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
-        <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
-        <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
-      </svg>
-      <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
-    </a>
-    <h1>Vamos preparar<br>a sua máquina</h1>
-    <div class="caveat">um minuto, prometemos</div>
+<header>
+  <div class="wrap hd">
+      <a class="marca" href="../">
+        <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
+          <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
+          <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
+        </svg>
+        <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
+      </a>
+    <nav class="menu">
+      <a href="../limpeza-de-sofas/">Sofás</a>
+      <a href="../limpeza-de-colchoes/">Colchões</a>
+      <a href="../estofos-automovel/">Automóvel</a>
+      <a class="destaque" href="../como-usar/">Como se usa</a>
+      <a href="../zonas-servidas/">Zonas</a>
+      <a href="../perguntas-frequentes/">Perguntas</a>
+      <a href="../blog/">Guias</a>
+      <a class="reservar ativo" href="#dados">Os meus dados</a>
+    </nav>
+    <div class="hd-right">
+      <div class="hd-tel"><span>Respondemos todos os dias</span><a href="https://wa.me/351914502987">914 502 987</a></div>
+      <a class="btn-cta" href="#dados">Enviar os meus dados</a>
+    </div>
   </div>
+</header>
+<main>
 
-  <div class="porque" id="pedido">
-    <p>Já temos o seu dia reservado. Estes dados servem para três coisas, mais nada.</p>
-    <p><b>Preparar a máquina.</b> Conforme o que nos disser que vai limpar, escolhemos os bocais que vão consigo e levamos o produto certo. Não é a mesma coisa lavar um sofá de tecido ou tirar xixi de um colchão.</p>
-    <p><b>Ajudar no processo.</b> Com as nódoas que nos descrever, dizemos-lhe o melhor produto para cada caso, a técnica certa para passar a máquina e quanto tempo deixar atuar. Explicamos tudo na entrega e ficamos a um WhatsApp de distância enquanto está a limpar. É a diferença entre ficar limpo e ficar quase limpo.</p>
-    <p><b>Preencher o contrato.</b> O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</p>
+<section class="pagina-interior">
+  <div class="wrap">
+    <ul class="breadcrumb">
+      <li><a href="../">Início</a></li>
+      <li>Preparar a máquina</li>
+    </ul>
+    <div class="kick">Já com o seu dia reservado</div>
+    <h1>Vamos preparar a sua máquina</h1>
+    <p class="notas" style="font-size:16px;color:var(--claro-sobre-escuro);margin-top:14px;max-width:56ch">
+      Um minuto para nos dar os últimos dados. No fim fica com o valor final à frente, já com a entrega e os extras contados.
+    </p>
   </div>
+</section>
 
-  <form id="frm" onsubmit="return false">
+<section id="dados">
+  <div class="wrap">
+    <div class="grelha-contacto">
 
-    <div class="grupo">
-      <h2><span class="n">1</span>Quem recebe a máquina</h2>
-      <label class="campo"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"></label>
-      <div class="dupla">
-        <label class="campo"><span>Telemóvel</span><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></label>
-        <label class="campo"><span>Email</span><input type="email" id="email" autocomplete="email" inputmode="email"></label>
+      <div>
+        <div class="kicker">Porquê estes dados</div>
+        <h2 class="display" style="margin-top:12px;font-size:26px">Servem para três coisas,<br>mais nada</h2>
+
+        <div class="razao">
+          <b>Preparar a máquina.</b>
+          <span>Conforme o que nos disser que vai limpar, escolhemos os bocais que vão consigo e levamos o produto certo. Não é a mesma coisa lavar um sofá de tecido ou tirar xixi de um colchão.</span>
+        </div>
+        <div class="razao">
+          <b>Ajudar no processo.</b>
+          <span>Com as nódoas que nos descrever, dizemos-lhe o melhor produto para cada caso, a técnica certa para passar a máquina e quanto tempo deixar atuar. Ficamos a um WhatsApp de distância enquanto está a limpar.</span>
+        </div>
+        <div class="razao">
+          <b>Preencher o contrato.</b>
+          <span>O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</span>
+        </div>
+
+        <div class="palco" style="padding:20px 18px 16px;margin-top:28px">
+          <span class="etiqueta">Kärcher Puzzi 10/1</span>
+          <img src="../assets/equipamento.webp" alt="Kärcher Puzzi 10/1, a máquina que entregamos em sua casa" width="1000" height="1212" loading="lazy" decoding="async" style="max-width:260px">
+        </div>
+
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg></div>
+          <div><div class="rotulo">Alguma dúvida?</div><div class="valor"><a href="https://wa.me/351914502987">914 502 987</a></div><div class="extra">Se tiver dúvidas sobre o tecido, mande-nos uma fotografia da etiqueta.</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bloco" style="margin-top:0">
+          <form id="frm" onsubmit="return false">
+
+            <div class="grupo">
+              <h3><span class="n">1</span>Quem recebe a máquina</h3>
+              <label class="campo"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"></label>
+              <div class="dupla">
+                <label class="campo"><span>Telemóvel</span><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></label>
+                <label class="campo"><span>Email</span><input type="email" id="email" autocomplete="email" inputmode="email"></label>
+              </div>
+            </div>
+
+            <div class="grupo">
+              <h3><span class="n">2</span>Onde e quando entregamos</h3>
+              <label class="campo"><span>Morada</span><input type="text" id="morada" autocomplete="street-address" placeholder="Rua, número e andar"></label>
+              <div class="dupla">
+                <label class="campo"><span>Código postal</span><input type="text" id="postal" autocomplete="postal-code" placeholder="3500-000"></label>
+                <label class="campo"><span>Localidade</span><input type="text" id="localidade" autocomplete="address-level2" placeholder="Viseu, Cavernães..."></label>
+              </div>
+              <div class="dica" id="dicaKm"></div>
+              <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
+              <p class="ajuda">Pergunta feia mas prática: a máquina pesa cerca de dez quilos e queremos saber se subimos escadas.</p>
+              <label class="campo"><span>Dia combinado para a entrega</span><input type="date" id="dataEntrega"></label>
+            </div>
+
+            <div class="grupo">
+              <h3><span class="n">3</span>O que vai limpar</h3>
+              <label class="chk"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
+              <label class="chk"><input type="checkbox" id="cColchao"> Colchões</label>
+              <label class="chk"><input type="checkbox" id="cTapete"> Tapetes ou alcatifa</label>
+              <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
+              <label class="chk" style="margin-top:6px"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
+              <label class="campo" style="margin-top:16px"><span>Alguma nódoa em especial <em>· opcional</em></span><input type="text" id="manchas" placeholder="vinho na almofada, xixi do gato, gordura no braço..."></label>
+              <p class="ajuda">Quanto mais nos disser, melhor o ajudamos: levamos o produto de pré-tratamento adequado e dizemos-lhe como atacar cada nódoa.</p>
+            </div>
+
+            <div class="grupo">
+              <h3><span class="n">4</span>O aluguer que combinámos</h3>
+              <label class="opcao"><input type="radio" name="modalidade" value="Um dia" data-preco="40" onchange="calcular()"> Um dia <b>40€</b></label>
+              <label class="opcao"><input type="radio" name="modalidade" value="Dois dias" data-preco="65" onchange="calcular()"> Dois dias <b>65€</b></label>
+              <label class="opcao"><input type="radio" name="modalidade" value="Três dias" data-preco="90" onchange="calcular()"> Três dias <b>90€</b></label>
+              <label class="opcao"><input type="radio" name="modalidade" value="Fim de semana" data-preco="70" onchange="calcular()"> Fim de semana <b>70€</b></label>
+              <label class="opcao"><input type="radio" name="modalidade" value="Uma semana" data-preco="160" onchange="calcular()"> Uma semana <b>160€</b></label>
+              <p class="ajuda">Escolha o que já combinou connosco, para ficarmos os dois com a mesma coisa escrita.</p>
+            </div>
+
+            <div class="grupo">
+              <h3><span class="n">5</span>Quer levar mais alguma coisa?</h3>
+              <label class="opcao"><input type="checkbox" id="ePack" onchange="calcular()"> Pacote de 3 pastilhas <b>10€</b></label>
+              <label class="opcao"><input type="checkbox" id="ePastilha" onchange="calcular()"> Uma pastilha extra <b>5€</b></label>
+              <label class="opcao"><input type="checkbox" id="eSpray" onchange="calcular()"> Spray tira-nódoas <b>8€</b></label>
+              <label class="opcao"><input type="checkbox" id="eKit" onchange="calcular()"> Kit de urina e odores de animais <b>10€</b></label>
+              <p class="ajuda">Uma pastilha vai sempre incluída no aluguer. Estas são as adicionais, para quem tem muita área a limpar ou nódoas difíceis.</p>
+            </div>
+
+            <div class="conta">
+              <h3>A sua conta</h3>
+              <div class="l"><span id="lAluguer">Aluguer</span><span id="vAluguer">por escolher</span></div>
+              <div class="l"><span id="lDeslocacao">Entrega e recolha</span><span id="vDeslocacao">por calcular</span></div>
+              <div class="l"><span>Extras</span><span id="vExtras">0,00 €</span></div>
+              <div class="l total"><span>Total</span><span id="vTotal">por calcular</span></div>
+              <small>A entrega e a recolha estão incluídas até 5 km do centro de Viseu. Fora disso, 1,50 € por quilómetro. A caução de 50 € é entregue no momento e devolvida por inteiro na recolha. A distância é calculada por mapa, por isso confirmamos sempre o valor consigo antes da entrega.</small>
+            </div>
+
+            <div class="grupo">
+              <h3><span class="n">6</span>Para o contrato</h3>
+              <div class="dupla">
+                <label class="campo"><span>Cartão de cidadão</span><input type="text" id="cc" inputmode="numeric" placeholder="12345678 9 ZZ0"></label>
+                <label class="campo"><span>NIF</span><input type="text" id="nif" inputmode="numeric" placeholder="000 000 000"></label>
+              </div>
+              <p class="ajuda">São os dois números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
+            </div>
+
+            <div class="aviso" id="aviso"></div>
+            <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
+            <p class="notas" style="text-align:center;margin-top:12px"><a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
+          </form>
+
+          <div class="feito" id="feito">
+            <svg viewBox="0 0 52 52" width="56" height="56" style="margin:0 auto" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h2 class="display" style="font-size:24px;margin-top:14px">Recebemos, obrigada</h2>
+            <p class="sub" style="margin:10px auto 0;max-width:42ch">Vamos preparar a máquina a pensar no que nos disse. Falamos consigo pelo WhatsApp para acertar a hora da entrega e confirmar o valor.</p>
+            <a class="btn btn-primario" style="margin-top:22px" href="https://wa.me/351914502987">Falar connosco no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap lin">
+    <div>
+      <div style="color:#fff;font-weight:800;letter-spacing:.14em;text-transform:uppercase">Bruma Serviços</div>
+      <div style="margin-top:6px">Aluguer de equipamentos · Viseu</div>
+      <a class="fone" href="https://wa.me/351914502987">914 502 987</a>
+      <div style="margin-top:8px">Somos a Bruna e a Mariana, de Viseu.</div>
+      <div style="margin-top:8px"><a href="mailto:geral.brumaservicos@gmail.com">geral.brumaservicos@gmail.com</a><br>
+      <a href="https://www.instagram.com/bruma.servicos" rel="noopener">Instagram @bruma.servicos</a></div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:800">Como trabalhamos</div>
+      <div style="margin-top:6px">Entrega e recolha em sua casa<br>Até 5 km do centro de Viseu sem custo<br>Fora disso, 1,50€ por quilómetro<br>Pagamento por MB Way ou dinheiro</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:800">O site</div>
+      <div style="margin-top:6px">
+        <a href="../">Início</a><br>
+        <a href="../limpeza-de-sofas/">Limpeza de sofás</a><br>
+        <a href="../limpeza-de-colchoes/">Limpeza de colchões</a><br>
+        <a href="../estofos-automovel/">Estofos de automóvel</a><br>
+        <a href="../como-usar/">Como se usa</a><br>
+        <a href="../zonas-servidas/">Zonas servidas</a><br>
+        <a href="../perguntas-frequentes/">Perguntas frequentes</a><br>
+        <a href="../blog/">Guias e conselhos</a><br>
+        <a href="../reservar/">Reservar equipamento</a><br>
+        <a href="../privacidade/">Privacidade</a>
       </div>
     </div>
-
-    <div class="grupo">
-      <h2><span class="n">2</span>Onde e quando entregamos</h2>
-      <label class="campo"><span>Morada</span><input type="text" id="morada" autocomplete="street-address" placeholder="Rua, número e andar"></label>
-      <div class="dupla">
-        <label class="campo"><span>Código postal</span><input type="text" id="postal" autocomplete="postal-code" placeholder="3500-000"></label>
-        <label class="campo"><span>Localidade</span><input type="text" id="localidade" autocomplete="address-level2" placeholder="Viseu, Cavernães..."></label>
-      </div>
-      <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
-      <p class="ajuda">Pergunta feia mas prática: a máquina pesa cerca de dez quilos e queremos saber se subimos escadas.</p>
-      <label class="campo"><span>Dia combinado para a entrega</span><input type="date" id="dataEntrega"></label>
-      <p class="ajuda">O dia que já combinámos consigo. Serve para confirmarmos que estamos os dois a falar do mesmo, antes de a máquina sair daqui.</p>
-    </div>
-
-    <div class="grupo">
-      <h2><span class="n">3</span>O que vai limpar</h2>
-      <label class="chk"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
-      <label class="chk"><input type="checkbox" id="cColchao"> Colchões</label>
-      <label class="chk"><input type="checkbox" id="cTapete"> Tapetes ou alcatifa</label>
-      <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
-      <label class="chk" style="margin-top:6px"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
-      <label class="campo" style="margin-top:16px"><span>Alguma nódoa em especial <em>· opcional</em></span><input type="text" id="manchas" placeholder="vinho na almofada, xixi do gato, gordura no braço..."></label>
-      <p class="ajuda">Quanto mais nos disser, melhor o ajudamos: levamos o produto de pré-tratamento adequado e dizemos-lhe como atacar cada nódoa. Se tiver dúvidas sobre o tecido, mande-nos uma fotografia da etiqueta pelo WhatsApp.</p>
-    </div>
-
-    <div class="grupo">
-      <h2><span class="n">4</span>Para o contrato</h2>
-      <div class="dupla">
-        <label class="campo"><span>Cartão de cidadão</span><input type="text" id="cc" inputmode="numeric" placeholder="12345678 9 ZZ0"></label>
-        <label class="campo"><span>NIF</span><input type="text" id="nif" inputmode="numeric" placeholder="000 000 000"></label>
-      </div>
-      <p class="ajuda">São os dois números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
-    </div>
-
-    <div class="grupo">
-      <h2><span class="n">5</span>O aluguer que combinámos</h2>
-      <label class="opcao"><input type="radio" name="modalidade" value="Um dia" data-preco="40"> Um dia <b>40€</b></label>
-      <label class="opcao"><input type="radio" name="modalidade" value="Dois dias" data-preco="65"> Dois dias <b>65€</b></label>
-      <label class="opcao"><input type="radio" name="modalidade" value="Três dias" data-preco="90"> Três dias <b>90€</b></label>
-      <label class="opcao"><input type="radio" name="modalidade" value="Fim de semana" data-preco="70"> Fim de semana <b>70€</b></label>
-      <label class="opcao"><input type="radio" name="modalidade" value="Uma semana" data-preco="160"> Uma semana <b>160€</b></label>
-      <p class="ajuda">Escolha o que já combinou connosco, para ficarmos os dois com a mesma coisa escrita. A entrega e a recolha estão incluídas até 5 km do centro de Viseu. Fora disso acrescem 1,50€ por quilómetro, o valor que lhe dissemos quando marcámos.</p>
-    </div>
-
-    <div class="aviso" id="aviso"></div>
-    <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
-    <p class="notas" style="text-align:center;margin-top:14px"><a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
-  </form>
-
-  <div class="feito" id="feito">
-    <svg viewBox="0 0 52 52" width="56" height="56" style="margin:0 auto" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <h2>Recebemos, obrigada</h2>
-    <p>Vamos preparar a máquina a pensar no que nos disse. Falamos consigo pelo WhatsApp para acertar a hora da entrega.</p>
-    <a class="btn btn-primario" style="margin-top:22px" href="https://wa.me/351914502987">Falar connosco no WhatsApp</a>
   </div>
-
-  <footer class="mini">
-    Bruma Serviços · Viseu<br>
-    <a href="https://wa.me/351914502987">914 502 987</a> · <a href="../">brumaservicos.pt</a>
-  </footer>
-
-</div>
+  <div class="wrap"><small>Bruma Serviços · Viseu · Respondemos por WhatsApp, normalmente no próprio dia.</small></div>
+</footer>
 
 <script>
 var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec';
+var CAMARA = { lat: 40.6575793, lon: -7.9142192 };
+var KM_GRATIS = 5, PRECO_KM = 1.5;
+var km = null, deslocacao = null;
+
+var EXTRAS = [
+  { id: 'ePack', nome: 'Pacote de 3 pastilhas', preco: 10 },
+  { id: 'ePastilha', nome: 'Uma pastilha extra', preco: 5 },
+  { id: 'eSpray', nome: 'Spray tira-nódoas', preco: 8 },
+  { id: 'eKit', nome: 'Kit de urina e odores de animais', preco: 10 }
+];
 
 function $(id) { return document.getElementById(id); }
 function v(id) { return $(id).value.trim(); }
-
-function escolhida() {
-  return document.querySelector('input[name="modalidade"]:checked');
-}
+function eur(n) { return Number(n).toFixed(2).replace('.', ',') + ' €'; }
+function escolhida() { return document.querySelector('input[name="modalidade"]:checked'); }
+function extrasEscolhidos() { return EXTRAS.filter(function (e) { return $(e.id).checked; }); }
 
 function limpar() {
   var l = [];
@@ -175,6 +291,88 @@ function limpar() {
   return l.join(', ');
 }
 
+function calcular() {
+  var m = escolhida();
+  var aluguer = m ? Number(m.getAttribute('data-preco')) : null;
+  $('lAluguer').textContent = m ? 'Aluguer, ' + m.value.toLowerCase() : 'Aluguer';
+  $('vAluguer').textContent = aluguer === null ? 'por escolher' : eur(aluguer);
+
+  var totalExtras = extrasEscolhidos().reduce(function (s, e) { return s + e.preco; }, 0);
+  $('vExtras').textContent = eur(totalExtras);
+
+  if (km === null) {
+    $('lDeslocacao').textContent = 'Entrega e recolha';
+    $('vDeslocacao').textContent = 'por calcular';
+  } else {
+    $('lDeslocacao').textContent = 'Entrega e recolha, ' + km + ' km';
+    $('vDeslocacao').textContent = deslocacao === 0 ? 'incluída' : eur(deslocacao);
+  }
+
+  $('vTotal').textContent = (aluguer === null || km === null)
+    ? 'por calcular'
+    : eur(aluguer + deslocacao + totalExtras);
+}
+
+function geocodifica(procura, soPovoacoes) {
+  var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=pt'
+    + (soPovoacoes ? '&featureType=settlement' : '') + '&q=' + encodeURIComponent(procura);
+  return fetch(url).then(function (r) { return r.json(); }).then(function (l) { return l.length ? l[0] : null; });
+}
+
+function kmEntre(a, b) {
+  var R = 6371, g = Math.PI / 180;
+  var dLat = (b.lat - a.lat) * g, dLon = (b.lon - a.lon) * g;
+  var x = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(a.lat * g) * Math.cos(b.lat * g) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+}
+
+var aCalcular = false, ultimaProcura = '';
+async function verDistancia() {
+  var loc = v('localidade'), mor = v('morada');
+  var dica = $('dicaKm');
+  if (!loc || aCalcular) return;
+  if (loc + '|' + mor === ultimaProcura) return;
+  ultimaProcura = loc + '|' + mor;
+  aCalcular = true;
+  dica.className = 'dica';
+  dica.textContent = 'A calcular a distância...';
+  try {
+    // 1. a povoacao primeiro, nunca ruas com o mesmo nome noutro sitio
+    var sitio = await geocodifica(loc + ', Portugal', true);
+    if (!sitio) throw new Error('sem resultado');
+    var nome = sitio.display_name.split(',').slice(0, 2).join(',');
+    // 2. a morada so afina o ponto se cair perto da povoacao
+    var ponto = sitio;
+    if (mor) {
+      var fino = await geocodifica(mor + ', ' + loc + ', Portugal', false);
+      if (fino && kmEntre({ lat: +fino.lat, lon: +fino.lon }, { lat: +sitio.lat, lon: +sitio.lon }) < 5) ponto = fino;
+    }
+    var r = await fetch('https://router.project-osrm.org/route/v1/driving/' + CAMARA.lon + ',' + CAMARA.lat + ';' + ponto.lon + ',' + ponto.lat + '?overview=false');
+    var j = await r.json();
+    if (j.code !== 'Ok') throw new Error('sem rota');
+    km = Math.ceil(j.routes[0].distance / 1000);
+    deslocacao = Math.max(0, km - KM_GRATIS) * PRECO_KM;
+    if (sitio.display_name.indexOf('Viseu') === -1 || km > 60) {
+      dica.className = 'dica mau';
+      dica.textContent = 'Encontrámos "' + nome + '", a ' + km + ' km. Fica fora da nossa zona habitual, por isso confirmamos consigo antes de avançar.';
+    } else {
+      dica.className = 'dica ok';
+      dica.textContent = 'Encontrámos ' + nome + ': ' + km + ' km a partir do centro de Viseu. Entrega e recolha ' + (deslocacao === 0 ? 'incluídas.' : 'por ' + eur(deslocacao) + '.');
+    }
+  } catch (e) {
+    km = null; deslocacao = null;
+    dica.className = 'dica mau';
+    dica.textContent = 'Não conseguimos calcular a distância daqui. Não faz mal, acertamos consigo pelo WhatsApp.';
+  } finally {
+    aCalcular = false;
+    calcular();
+  }
+}
+
+$('localidade').addEventListener('blur', verDistancia);
+$('morada').addEventListener('blur', function () { if (v('localidade')) verDistancia(); });
+
 function enviar() {
   var falta = [];
   if (!v('nome')) falta.push('o nome');
@@ -182,11 +380,11 @@ function enviar() {
   if (!v('email') || v('email').indexOf('@') === -1) falta.push('um email válido');
   if (!v('morada')) falta.push('a morada');
   if (!v('localidade')) falta.push('a localidade');
+  if (!v('dataEntrega')) falta.push('o dia da entrega');
+  if (!limpar()) falta.push('o que vai limpar');
+  if (!escolhida()) falta.push('o aluguer combinado');
   if (!v('cc')) falta.push('o cartão de cidadão');
   if (!v('nif')) falta.push('o NIF');
-  if (!v('dataEntrega')) falta.push('o dia da entrega');
-  if (!escolhida()) falta.push('o aluguer combinado');
-  if (!limpar()) falta.push('o que vai limpar');
 
   var av = $('aviso');
   if (falta.length) {
@@ -205,6 +403,10 @@ function enviar() {
   if (v('andar')) morada += ', ' + v('andar');
   if (v('postal')) morada += ', ' + v('postal');
 
+  var ex = extrasEscolhidos();
+  var totalExtras = ex.reduce(function (s, e) { return s + e.preco; }, 0);
+  var aluguer = Number(escolhida().getAttribute('data-preco'));
+
   var dados = {
     recebido: new Date().toISOString(),
     estado: 'dados do cliente',
@@ -215,12 +417,18 @@ function enviar() {
     cc: v('cc'),
     morada: morada,
     localidade: v('localidade'),
+    km: km === null ? '' : km,
     entrega: v('dataEntrega'),
-    modalidade: escolhida() ? escolhida().value : '',
-    valor_aluguer: escolhida() ? escolhida().getAttribute('data-preco') : '',
+    modalidade: escolhida().value,
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
     manchas: v('manchas'),
+    extras: ex.map(function (e) { return e.nome; }).join(', '),
+    valor_aluguer: aluguer,
+    valor_deslocacao: deslocacao === null ? '' : deslocacao,
+    valor_extras: totalExtras,
+    total: deslocacao === null ? '' : aluguer + deslocacao + totalExtras,
+    caucao: 50,
     aceitou_dados: 'sim'
   };
 
@@ -231,7 +439,6 @@ function enviar() {
     body: JSON.stringify(dados)
   }).then(function () {
     $('frm').style.display = 'none';
-    $('pedido').style.display = 'none';
     $('feito').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }).catch(function () {
@@ -241,6 +448,8 @@ function enviar() {
     botao.textContent = 'Enviar os meus dados';
   });
 }
+
+calcular();
 </script>
 </body>
 </html>
