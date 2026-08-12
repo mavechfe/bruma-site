@@ -20,7 +20,7 @@ const dataDoFicheiro = f => {
 
 const walk = (d, rel) => {
   for (const e of fs.readdirSync(d, {withFileTypes:true})) {
-    if (e.name.startsWith('.') || e.name.startsWith('_') || ['node_modules','assets','tools','automation'].includes(e.name)) continue;
+    if (e.name.startsWith('.') || e.name.startsWith('_') || ['node_modules','assets','tools','automation','confirmar'].includes(e.name)) continue;
     if (e.isDirectory()) walk(path.join(d, e.name), rel + e.name + '/');
   }
   const idx = path.join(d, 'index.html');

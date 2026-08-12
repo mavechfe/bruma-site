@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Dados para prepararmos a máquina | Bruma Serviços</title>
+<meta name="description" content="Formulário rápido para nos dar os dados da entrega e do contrato, e para prepararmos a máquina com os bocais e o produto certos.">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dados para prepararmos a máquina | Bruma Serviços">
+<meta property="og:description" content="Um minuto para nos dar os dados da entrega e do contrato. É com isto que preparamos a máquina para o que vai limpar.">
+<meta property="og:image" content="https://brumaservicos.pt/assets/og-bruma.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bruma Serviços · aluguer de máquina de limpeza a fundo em Viseu">
+<meta property="og:site_name" content="Bruma Serviços">
+<meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://brumaservicos.pt/assets/og-bruma.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  .folha{max-width:640px;margin:0 auto;padding:0 20px 60px}
+  .topo{text-align:center;padding:34px 0 26px}
+  .topo .marca{justify-content:center}
+  .topo h1{font-size:clamp(25px,5vw,34px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;
+           line-height:1.1;color:var(--ardosia);margin-top:18px}
+  .topo .caveat{font-size:23px;color:var(--teal-esc);margin-top:8px}
+  .porque{background:var(--nevoa-clara);border:1px solid var(--linha);border-radius:16px;padding:20px 22px;margin-top:22px}
+  .porque p{font-size:15.5px;color:#3A4E53;margin-bottom:10px}
+  .porque p:last-child{margin-bottom:0}
+  .porque b{color:var(--ardosia)}
+  .grupo{margin-top:30px}
+  .grupo > h2{font-size:13px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-esc);
+              margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .grupo > h2 .n{width:24px;height:24px;border-radius:50%;background:var(--teal-esc);color:#fff;flex:0 0 auto;
+                 display:flex;align-items:center;justify-content:center;font-size:12px}
+  .dupla{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+  @media(max-width:520px){.dupla{grid-template-columns:1fr}}
+  .ajuda{font-size:13px;color:var(--suave);margin:-8px 0 14px}
+  .feito{display:none;text-align:center;padding:40px 10px}
+  .feito h2{font-size:24px;font-weight:900;text-transform:uppercase;color:var(--ardosia);margin-top:16px}
+  .feito p{color:var(--suave);margin-top:10px}
+  footer.mini{background:none;text-align:center;color:var(--suave);font-size:14px;padding:26px 0 0;border-top:1px solid var(--linha);margin-top:34px}
+  footer.mini a{color:var(--teal-esc);font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="folha">
+
+  <div class="topo">
+    <a class="marca" href="../" style="display:inline-flex">
+      <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
+        <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
+        <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
+      </svg>
+      <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
+    </a>
+    <h1>Falta só isto<br>e a máquina fica pronta</h1>
+    <div class="caveat">um minuto, prometemos</div>
+  </div>
+
+  <div class="porque" id="pedido">
+    <p>Já temos o seu dia reservado. Estes dados servem para duas coisas, mais nada.</p>
+    <p><b>Preparar a máquina.</b> Conforme o que nos disser que vai limpar, escolhemos os bocais que vão consigo e levamos o produto certo. Não é a mesma coisa lavar um sofá de tecido ou tirar xixi de um colchão.</p>
+    <p><b>Preencher o contrato e a fatura.</b> O contrato de aluguer que assinamos na entrega leva o seu nome, o documento e a morada. Sem isto teríamos de o escrever à mão, à porta de sua casa, com a máquina na mão.</p>
+  </div>
+
+  <form id="frm" onsubmit="return false">
+
+    <div class="grupo">
+      <h2><span class="n">1</span>Quem recebe a máquina</h2>
+      <label class="campo"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"></label>
+      <div class="dupla">
+        <label class="campo"><span>Telemóvel</span><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></label>
+        <label class="campo"><span>Email</span><input type="email" id="email" autocomplete="email" inputmode="email"></label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <h2><span class="n">2</span>Onde entregamos</h2>
+      <label class="campo"><span>Morada</span><input type="text" id="morada" autocomplete="street-address" placeholder="Rua, número e andar"></label>
+      <div class="dupla">
+        <label class="campo"><span>Código postal</span><input type="text" id="postal" autocomplete="postal-code" placeholder="3500-000"></label>
+        <label class="campo"><span>Localidade</span><input type="text" id="localidade" autocomplete="address-level2" placeholder="Viseu, Cavernães..."></label>
+      </div>
+      <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
+      <p class="ajuda">Pergunta feia mas prática: a máquina pesa cerca de dez quilos e queremos saber se subimos escadas.</p>
+    </div>
+
+    <div class="grupo">
+      <h2><span class="n">3</span>O que vai limpar</h2>
+      <label class="chk"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
+      <label class="chk"><input type="checkbox" id="cColchao"> Colchões</label>
+      <label class="chk"><input type="checkbox" id="cTapete"> Tapetes ou alcatifa</label>
+      <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
+      <label class="chk" style="margin-top:6px"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
+      <label class="campo" style="margin-top:16px"><span>Alguma nódoa em especial <em>· opcional</em></span><input type="text" id="manchas" placeholder="vinho na almofada, xixi do gato, gordura no braço..."></label>
+      <p class="ajuda">Se nos disser, levamos o produto de pré-tratamento adequado. Se tiver dúvidas sobre o tecido, mande-nos uma fotografia da etiqueta pelo WhatsApp.</p>
+    </div>
+
+    <div class="grupo">
+      <h2><span class="n">4</span>Para o contrato</h2>
+      <div class="dupla">
+        <label class="campo"><span>Cartão de cidadão</span><input type="text" id="cc" inputmode="numeric" placeholder="12345678 9 ZZ0"></label>
+        <label class="campo"><span>NIF <em>· opcional</em></span><input type="text" id="nif" inputmode="numeric" placeholder="para a fatura"></label>
+      </div>
+      <p class="ajuda">Só copiamos o número para o contrato. Não tiramos fotocópia nem guardamos imagem do documento.</p>
+    </div>
+
+    <div class="aviso" id="aviso"></div>
+    <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
+    <p class="notas" style="text-align:center;margin-top:14px">Usamos estes dados apenas para o seu aluguer, o contrato e a fatura. Não são partilhados com ninguém. <a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
+  </form>
+
+  <div class="feito" id="feito">
+    <svg viewBox="0 0 52 52" width="56" height="56" style="margin:0 auto" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2>Recebemos, obrigada</h2>
+    <p>Vamos preparar a máquina a pensar no que nos disse. Falamos consigo pelo WhatsApp para acertar a hora da entrega.</p>
+    <a class="btn btn-primario" style="margin-top:22px" href="https://wa.me/351914502987">Falar connosco no WhatsApp</a>
+  </div>
+
+  <footer class="mini">
+    Bruma Serviços · Viseu<br>
+    <a href="https://wa.me/351914502987">914 502 987</a> · <a href="../">brumaservicos.pt</a>
+  </footer>
+
+</div>
+
+<script>
+var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec';
+
+function $(id) { return document.getElementById(id); }
+function v(id) { return $(id).value.trim(); }
+
+function limpar() {
+  var l = [];
+  if ($('cSofa').checked) l.push('sofá ou cadeirões');
+  if ($('cColchao').checked) l.push('colchões');
+  if ($('cTapete').checked) l.push('tapetes ou alcatifa');
+  if ($('cCarro').checked) l.push('carro');
+  return l.join(', ');
+}
+
+function enviar() {
+  var falta = [];
+  if (!v('nome')) falta.push('o nome');
+  if (!v('tel')) falta.push('o telemóvel');
+  if (!v('email') || v('email').indexOf('@') === -1) falta.push('um email válido');
+  if (!v('morada')) falta.push('a morada');
+  if (!v('localidade')) falta.push('a localidade');
+  if (!v('cc')) falta.push('o cartão de cidadão');
+  if (!limpar()) falta.push('o que vai limpar');
+
+  var av = $('aviso');
+  if (falta.length) {
+    av.style.display = 'block';
+    av.textContent = 'Falta preencher: ' + falta.join(', ') + '.';
+    av.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  av.style.display = 'none';
+
+  var botao = document.querySelector('.btn-zap');
+  botao.disabled = true;
+  botao.textContent = 'A enviar...';
+
+  var morada = v('morada');
+  if (v('andar')) morada += ', ' + v('andar');
+  if (v('postal')) morada += ', ' + v('postal');
+
+  var dados = {
+    recebido: new Date().toISOString(),
+    estado: 'dados do cliente',
+    nome: v('nome'),
+    telemovel: v('tel'),
+    email: v('email'),
+    nif: v('nif'),
+    cc: v('cc'),
+    morada: morada,
+    localidade: v('localidade'),
+    vai_limpar: limpar(),
+    animais: $('cAnimais').checked ? 'sim' : 'não',
+    manchas: v('manchas'),
+    aceitou_dados: 'sim'
+  };
+
+  fetch(SHEETS_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(dados)
+  }).then(function () {
+    $('frm').style.display = 'none';
+    $('pedido').style.display = 'none';
+    $('feito').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }).catch(function () {
+    av.style.display = 'block';
+    av.textContent = 'Não conseguimos enviar. Tente outra vez ou mande-nos os dados pelo WhatsApp: 914 502 987.';
+    botao.disabled = false;
+    botao.textContent = 'Enviar os meus dados';
+  });
+}
+</script>
+</body>
+</html>
