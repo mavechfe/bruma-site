@@ -30,6 +30,7 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - Consequência: **`node tools/check-site.js` é o único travão que existe**. Corre-o obrigatoriamente antes de cada push. Se falhar, não se faz push.
 - O CSS deixou de ser embutido no deploy (o `tools/inline-css.js` só corria no workflow). As páginas carregam `assets/site.css` por `<link>`, o que é normal e não é erro.
 - Depois de cada push com alterações ao site, **confirmar que está no ar** com um pedido a https://brumaservicos.pt (demora cerca de um minuto). Push não é publicação.
+- O build do Pages tem encravado (duas vezes a 12/08/2026, uma delas parada 12 minutos). Se o site não refletir o push, forçar com `gh api -X POST repos/mavechfe/bruma-site/pages/builds` e confirmar outra vez.
 - Para voltar ao modo antigo quando os runners do GitHub recuperarem: `gh workflow enable pages.yml` e repor `build_type` do Pages para `workflow`.
 
 ## Contactos oficiais
