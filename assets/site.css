@@ -86,7 +86,7 @@ nav.menu a.reservar:hover{background:var(--teal-esc);color:#fff}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 
 /* barra de números do hero */
-.numeros{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;border-top:1px solid rgba(255,255,255,.14);
+.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:26px;border-top:1px solid rgba(255,255,255,.14);
          margin-top:48px;padding:26px 0 30px}
 .numeros .num b{display:block;font-size:clamp(24px,3vw,34px);font-weight:900;color:var(--menta);line-height:1}
 .numeros .num span{display:block;margin-top:6px;font-size:12.5px;font-weight:700;letter-spacing:.08em;
