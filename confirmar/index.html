@@ -48,7 +48,9 @@
   .opcao input:checked{border-color:var(--teal-esc)}
   .opcao input[type=radio]:checked::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--teal-esc)}
   .opcao input[type=checkbox]:checked{background:var(--teal-esc) no-repeat center/13px url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>')}
-  .opcao b{margin-left:auto;color:var(--teal-esc);font-weight:900;white-space:nowrap}
+  .opcao .et{display:block;flex:1}
+  .opcao .et small{display:block;font-weight:600;font-size:12.5px;color:var(--suave);margin-top:3px;line-height:1.45}
+  .opcao b{margin-left:auto;color:var(--teal-esc);font-weight:900;white-space:nowrap;align-self:center}
   .dica{font-size:13.5px;font-weight:700;margin:-6px 0 14px;min-height:18px}
   .dica.ok{color:var(--teal-esc)}
   .dica.mau{color:#A33C3C}
@@ -126,6 +128,17 @@
           <span>O contrato de aluguer que assinamos na entrega leva o seu nome, os documentos e a morada.</span>
         </div>
 
+        <div class="cartao" style="margin-top:28px">
+          <h3>O que vai incluído</h3>
+          <ul>
+            <li>Entrega e recolha em sua casa</li>
+            <li>Os bocais certos para o que nos disser que vai limpar</li>
+            <li>1 pastilha de detergente, que dá para um sofá ou um colchão</li>
+            <li>Assistência por WhatsApp enquanto está a limpar</li>
+            <li>Instruções passo a passo, explicadas na entrega</li>
+          </ul>
+        </div>
+
         <div class="palco" style="padding:20px 18px 16px;margin-top:28px">
           <span class="etiqueta">Kärcher Puzzi 10/1</span>
           <img src="../assets/equipamento.webp" alt="Kärcher Puzzi 10/1, a máquina que entregamos em sua casa" width="1000" height="1212" loading="lazy" decoding="async" style="max-width:260px">
@@ -164,7 +177,6 @@
               </div>
               <div class="dica" id="dicaKm"></div>
               <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
-              <p class="ajuda">Pergunta feia mas prática: a máquina pesa cerca de dez quilos e queremos saber se subimos escadas.</p>
               <label class="campo"><span>Dia combinado para a entrega</span><input type="date" id="dataEntrega"></label>
             </div>
 
@@ -191,10 +203,20 @@
 
             <div class="grupo">
               <h3><span class="n">5</span>Quer levar mais alguma coisa?</h3>
-              <label class="opcao"><input type="checkbox" id="ePack" onchange="calcular()"> Pacote de 3 pastilhas <b>10€</b></label>
-              <label class="opcao"><input type="checkbox" id="ePastilha" onchange="calcular()"> Uma pastilha extra <b>5€</b></label>
-              <label class="opcao"><input type="checkbox" id="eSpray" onchange="calcular()"> Spray tira-nódoas <b>8€</b></label>
-              <label class="opcao"><input type="checkbox" id="eKit" onchange="calcular()"> Kit de urina e odores de animais <b>10€</b></label>
+              <p class="ajuda" style="margin-top:0">Uma pastilha enche o depósito de 4 litros. Por experiência, é isto que costuma dar:</p>
+              <table class="precos" style="margin-bottom:16px">
+                <tr><td>Sofá de 2 ou 3 lugares</td><td>1 pastilha</td></tr>
+                <tr><td>Sofá grande ou de canto</td><td>2 pastilhas</td></tr>
+                <tr><td>Colchão, de um lado</td><td>1 pastilha</td></tr>
+                <tr><td>Bancos e tapetes de um carro</td><td>1 pastilha</td></tr>
+                <tr><td>Tapete até 2 por 3 metros</td><td>1 pastilha</td></tr>
+                <tr><td>Uma divisão de alcatifa</td><td>2 pastilhas</td></tr>
+              </table>
+              <p class="ajuda">Some o que vai lavar. Uma vai incluída no aluguer, por isso só precisa das restantes. Se sobrar alguma, fica consigo para a próxima, e se ficar na dúvida diga-nos o que vai lavar que nós dizemos quantas leva.</p>
+              <label class="opcao"><input type="checkbox" id="ePack" onchange="calcular()"><span class="et">Pacote de 3 pastilhas<small>Detergente para mais três depósitos. É a conta que sai melhor se tiver mais do que uma coisa para lavar.</small></span><b>10€</b></label>
+              <label class="opcao"><input type="checkbox" id="ePastilha" onchange="calcular()"><span class="et">Uma pastilha extra<small>Mais um depósito, para quando falta pouco.</small></span><b>5€</b></label>
+              <label class="opcao"><input type="checkbox" id="eSpray" onchange="calcular()"><span class="et">Spray tira-nódoas<small>Borrifa-se em cima da nódoa e deixa-se atuar uns minutos antes de passar a máquina. Serve para vinho, café, gordura e maquilhagem que já secaram.</small></span><b>8€</b></label>
+              <label class="opcao"><input type="checkbox" id="eKit" onchange="calcular()"><span class="et">Kit de urina e odores de animais<small>Para xixi de cão ou gato. Ataca o cheiro que fica no enchimento, não só a mancha que se vê.</small></span><b>10€</b></label>
               <p class="ajuda">Uma pastilha vai sempre incluída no aluguer. Estas são as adicionais, para quem tem muita área a limpar ou nódoas difíceis.</p>
             </div>
 
