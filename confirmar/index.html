@@ -47,6 +47,15 @@
   .feito{display:none;text-align:center;padding:40px 10px}
   .feito h2{font-size:24px;font-weight:900;text-transform:uppercase;color:var(--ardosia);margin-top:16px}
   .feito p{color:var(--suave);margin-top:10px}
+  .opcao{display:flex;align-items:center;gap:12px;border:1.5px solid var(--linha);background:var(--papel);
+         border-radius:12px;padding:13px 15px;margin-bottom:9px;cursor:pointer;font-size:16px;font-weight:700;color:#33474C}
+  .opcao:hover{border-color:var(--menta)}
+  .opcao:has(input:checked){border-color:var(--teal-esc);background:var(--nevoa-clara)}
+  .opcao input{appearance:none;width:21px;height:21px;border:2px solid #9DB4B1;border-radius:50%;flex:0 0 auto;
+               background:#fff;position:relative;cursor:pointer}
+  .opcao input:checked{border-color:var(--teal-esc)}
+  .opcao input:checked::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--teal-esc)}
+  .opcao b{margin-left:auto;color:var(--teal-esc);font-weight:900;white-space:nowrap}
   footer.mini{background:none;text-align:center;color:var(--suave);font-size:14px;padding:26px 0 0;border-top:1px solid var(--linha);margin-top:34px}
   footer.mini a{color:var(--teal-esc);font-weight:800;text-decoration:none}
 </style>
@@ -118,6 +127,16 @@
       <p class="ajuda">São os dois números que entram no contrato que assinamos na entrega. Copiamos só o número: não tiramos fotocópia nem guardamos imagem dos documentos.</p>
     </div>
 
+    <div class="grupo">
+      <h2><span class="n">5</span>O aluguer que combinámos</h2>
+      <label class="opcao"><input type="radio" name="modalidade" value="Um dia" data-preco="40"> Um dia <b>40€</b></label>
+      <label class="opcao"><input type="radio" name="modalidade" value="Dois dias" data-preco="65"> Dois dias <b>65€</b></label>
+      <label class="opcao"><input type="radio" name="modalidade" value="Três dias" data-preco="90"> Três dias <b>90€</b></label>
+      <label class="opcao"><input type="radio" name="modalidade" value="Fim de semana" data-preco="70"> Fim de semana <b>70€</b></label>
+      <label class="opcao"><input type="radio" name="modalidade" value="Uma semana" data-preco="160"> Uma semana <b>160€</b></label>
+      <p class="ajuda">Escolha o que já combinou connosco, para ficarmos os dois com a mesma coisa escrita. A entrega e a recolha estão incluídas até 5 km do centro de Viseu. Fora disso acrescem 1,50€ por quilómetro, o valor que lhe dissemos quando marcámos.</p>
+    </div>
+
     <div class="aviso" id="aviso"></div>
     <button class="btn-zap" onclick="enviar()">Enviar os meus dados</button>
     <p class="notas" style="text-align:center;margin-top:14px"><a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
@@ -143,6 +162,10 @@ var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJ
 function $(id) { return document.getElementById(id); }
 function v(id) { return $(id).value.trim(); }
 
+function escolhida() {
+  return document.querySelector('input[name="modalidade"]:checked');
+}
+
 function limpar() {
   var l = [];
   if ($('cSofa').checked) l.push('sofá ou cadeirões');
@@ -162,6 +185,7 @@ function enviar() {
   if (!v('cc')) falta.push('o cartão de cidadão');
   if (!v('nif')) falta.push('o NIF');
   if (!v('dataEntrega')) falta.push('o dia da entrega');
+  if (!escolhida()) falta.push('o aluguer combinado');
   if (!limpar()) falta.push('o que vai limpar');
 
   var av = $('aviso');
@@ -192,6 +216,8 @@ function enviar() {
     morada: morada,
     localidade: v('localidade'),
     entrega: v('dataEntrega'),
+    modalidade: escolhida() ? escolhida().value : '',
+    valor_aluguer: escolhida() ? escolhida().getAttribute('data-preco') : '',
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
     manchas: v('manchas'),
