@@ -24,6 +24,14 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
 
+## Como o site é publicado (desde 12/08/2026)
+
+- O GitHub Pages serve diretamente o branch `main`. O workflow `.github/workflows/pages.yml` está DESATIVADO porque os runners do GitHub deixaram de pegar nos trabalhos a 11/08/2026 e o site ficou 13 horas a servir uma versão errada.
+- Consequência: **`node tools/check-site.js` é o único travão que existe**. Corre-o obrigatoriamente antes de cada push. Se falhar, não se faz push.
+- O CSS deixou de ser embutido no deploy (o `tools/inline-css.js` só corria no workflow). As páginas carregam `assets/site.css` por `<link>`, o que é normal e não é erro.
+- Depois de cada push com alterações ao site, **confirmar que está no ar** com um pedido a https://brumaservicos.pt (demora cerca de um minuto). Push não é publicação.
+- Para voltar ao modo antigo quando os runners do GitHub recuperarem: `gh workflow enable pages.yml` e repor `build_type` do Pages para `workflow`.
+
 ## Contactos oficiais
 
 - 914 502 987 · wa.me/351914502987 · geral.brumaservicos@gmail.com · https://brumaservicos.pt · Instagram @bruma.servicos

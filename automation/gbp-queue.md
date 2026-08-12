@@ -7,3 +7,9 @@ Cada item é um bloco com cabeçalho `## <id AAAA-MM-DD-n> | estado: fila|public
 Convívio de verão em casa acaba sempre da mesma forma? Vinho no sofá, gordura de petiscos, protetor solar na almofada. Esfregar não resolve, só empurra a nódoa mais para dentro do tecido. A limpeza a extração aspira o líquido e o produto ao mesmo tempo, é essa a diferença. Reunimos o guia completo, mancha a mancha, aqui: https://brumaservicos.pt/blog/nodoas-guia-mancha-a-mancha/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
+
+## 2026-08-12-1 | estado: fila
+
+Ainda não lavou o sofá este verão? A caução da Bruma são agora 50€, entregues no momento em que recebe a máquina e devolvidos por inteiro quando a vamos buscar. O aluguer mantém-se nos 40€ por um dia inteiro, com entrega, recolha e uma pastilha de detergente incluídas. Viseu e arredores, marcação em https://brumaservicos.pt/reservar/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
