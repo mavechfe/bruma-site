@@ -21,7 +21,7 @@ PASSOS:
    - Sem emojis. Sem travessões a ligar frases.
    - Não mencionar o produto RM 761. Vinagre branco como auxiliar doméstico está aprovado.
    - Não inventar o pacote "Casa Respira" nem outros pacotes; a oferta é aluguer simples com extras avulso.
-   - Preços em vigor: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€, caução 150€.
+   - Preços em vigor: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€, caução 50€.
 6. Grava o artigo em `blog/_rascunhos/<slug>.html` com commit no repositório (mensagem: `draft: <slug>`).
 7. Atualiza a linha do tema no `content-plan.md` para estado `rascunho` (mesmo commit ou commit seguinte).
 8. Apresenta o artigo à Mariana AQUI NA SESSÃO, em duas mensagens finais:

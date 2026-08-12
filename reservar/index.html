@@ -3,129 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reservar a máquina | Bruma Serviços</title>
-<meta name="description" content="Meio minuto a preencher: diga-nos o que vai lavar e para quando, e respondemos no próprio dia com o preço certo.">
+<title>Reservar equipamento em Viseu | Bruma Serviços</title>
+<meta name="description" content="Reserve a máquina profissional de limpeza de estofos em Viseu. Meio minuto a preencher: diga o que vai lavar e para quando, e respondemos no próprio dia.">
 <link rel="canonical" href="https://brumaservicos.pt/reservar/">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Reservar a máquina | Bruma Serviços">
+<meta property="og:title" content="Reservar equipamento em Viseu | Bruma Serviços">
 <meta property="og:description" content="Meio minuto a preencher: diga-nos o que vai lavar e para quando, e respondemos no próprio dia com o preço certo.">
-<meta property="og:url" content="https://brumaservicos.pt/reservar/">
-<meta property="og:image" content="https://brumaservicos.pt/assets/puzzi.jpg">
+<meta property="og:image" content="https://brumaservicos.pt/assets/og-bruma.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bruma Serviços · aluguer de máquina de limpeza a fundo em Viseu">
+<meta property="og:site_name" content="Bruma Serviços">
 <meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://brumaservicos.pt/assets/og-bruma.png">
+<meta property="og:url" content="https://brumaservicos.pt/reservar/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-  /* Bruma: teal #0D9488 · teal escuro #0B6E66 · menta #5EC5B8 · ardósia #12333A · névoa #D9E7E5 · papel #FBFCFC */
-  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body { font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif; color: #12333A; background: #EFF3F3; line-height: 1.5; font-size: 16px; }
-  .pagina { max-width: 560px; margin: 0 auto; background: #FBFCFC; min-height: 100vh; padding: 22px 20px 40px; }
-
-  header { text-align: center; border-bottom: 2px solid #D9E7E5; padding-bottom: 16px; margin-bottom: 6px; }
-  .logo { display: inline-flex; align-items: center; gap: 10px; }
-  .logo svg { width: 38px; height: 22px; }
-  .logo b { font-size: 21px; font-weight: 800; letter-spacing: 3px; }
-  .logo b small { display: block; font-size: 8px; letter-spacing: 3px; color: #0B6E66; font-weight: 700; }
-  h1 { font-size: 24px; font-weight: 800; margin-top: 12px; }
-  header p { color: #42585C; font-size: 15px; margin-top: 4px; }
-
-  .precos { background: #F1F7F6; border: 2px solid #D9E7E5; border-radius: 12px; padding: 10px 14px; margin: 16px 0 4px; font-size: 13.5px; color: #42585C; line-height: 1.5; text-align: center; }
-  .precos b { color: #0B6E66; }
-
-  label { display: block; font-weight: 700; font-size: 14.5px; margin: 14px 0 4px; }
-  label .op { font-weight: 400; color: #8FA6A8; }
-  input[type=text], input[type=tel], input[type=email], input[type=date] {
-    width: 100%; font-family: inherit; font-size: 16px; color: #12333A; background: #FBFCFC;
-    border: 2px solid #D9E7E5; border-radius: 10px; padding: 11px 12px; }
-  input:focus { outline: none; border-color: #5EC5B8; }
-  .dupla { display: flex; gap: 10px; } .dupla > div { flex: 1; }
-
-  .escolha { display: flex; gap: 10px; align-items: center; border: 2px solid #D9E7E5; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; font-size: 15px; }
-  .escolha:has(input:checked) { border-color: #5EC5B8; background: #F1F7F6; }
-  .escolha input { width: 20px; height: 20px; flex: 0 0 20px; accent-color: #0D9488; }
-  .escolha small { color: #42585C; }
-
-  .caucao { border: 2px solid #5EC5B8; background: #F1F7F6; border-radius: 12px; padding: 4px 12px 4px; margin-top: 18px; }
-  .caucao .escolha { border: none; background: none; margin: 0; padding: 8px 0; align-items: flex-start; }
-  .caucao .escolha input { margin-top: 2px; }
-  .caucao b { display: block; }
-  .caucao small { color: #42585C; }
-
-  button.enviar { width: 100%; margin-top: 16px; background: #0D9488; color: #FBFCFC; border: none; border-radius: 12px; padding: 16px; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer; }
-  button.enviar:hover { background: #0B6E66; }
-  .erro { display: none; background: #FDF6F6; border-left: 4px solid #C86B6B; color: #A33F3F; padding: 10px 12px; border-radius: 0 8px 8px 0; margin-top: 12px; font-size: 14.5px; }
-  .rgpd { font-size: 12.5px; color: #8FA6A8; margin-top: 10px; text-align: center; line-height: 1.5; }
-  .rgpd a { color: #0B6E66; }
-
-  .feito { display: none; text-align: center; padding: 30px 10px; }
-  .feito h2 { font-size: 20px; margin: 10px 0; }
-  .feito p { color: #42585C; }
-
-  footer { margin-top: 26px; padding-top: 14px; border-top: 2px solid #D9E7E5; text-align: center; color: #42585C; font-size: 14px; }
-  footer a { color: #0B6E66; font-weight: 700; text-decoration: none; }
-</style>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-<div class="pagina">
 
 <header>
-  <a class="logo" href="../" style="text-decoration:none;color:inherit" aria-label="Voltar ao site da Bruma">
-    <svg viewBox="0 0 60 46" aria-hidden="true">
-      <path d="M6 16c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.42"/>
-      <path d="M6 32c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7" stroke-linecap="round" fill="none"/>
-    </svg>
-    <b>BRUMA<small>SERVIÇOS</small></b>
-  </a>
-  <h1>Reservar a máquina</h1>
-  <p>Meio minuto a preencher. Respondemos no próprio dia com o preço certo e a confirmação da data.</p>
+  <div class="wrap hd">
+      <a class="marca" href="../">
+        <svg width="40" height="26" viewBox="2 14 56 36" fill="none" aria-label="Bruma">
+          <path d="M6 24c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="6" stroke-linecap="round" opacity=".42"/>
+          <path d="M6 40c8-9 16 9 24 0s16 9 24 0" stroke="#0D9488" stroke-width="7.5" stroke-linecap="round"/>
+        </svg>
+        <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
+      </a>
+    <nav class="menu">
+      <a href="../limpeza-de-sofas/">Sofás</a>
+      <a href="../limpeza-de-colchoes/">Colchões</a>
+      <a href="../estofos-automovel/">Automóvel</a>
+      <a class="destaque" href="../como-usar/">Como se usa</a>
+      <a href="../zonas-servidas/">Zonas</a>
+      <a href="../perguntas-frequentes/">Perguntas</a>
+      <a href="../blog/">Guias</a>
+      <a class="reservar ativo" href="#pedido">Reservar</a>
+    </nav>
+    <div class="hd-right">
+      <div class="hd-tel"><span>Respondemos todos os dias</span><a href="https://wa.me/351914502987">914 502 987</a></div>
+      <a class="btn-cta" href="#pedido">Reservar equipamento</a>
+    </div>
+  </div>
 </header>
+<main>
 
-<div class="precos"><b>40 € por dia</b> com detergente, 3 bocais, entrega e recolha incluídos até 5 km do centro de Viseu · fora disso, 1,50 € por km</div>
+<section class="pagina-interior">
+  <div class="wrap">
+    <ul class="breadcrumb">
+      <li><a href="../">Início</a></li>
+      <li>Reservar equipamento</li>
+    </ul>
+    <div class="kick">Aluguer em Viseu</div>
+    <h1>Reservar equipamento</h1>
+    <p class="notas" style="font-size:16px;color:var(--claro-sobre-escuro);margin-top:14px;max-width:56ch">
+      Meio minuto a preencher. Respondemos normalmente no próprio dia, com o preço final e a confirmação da data.
+    </p>
+  </div>
+</section>
 
-<form id="frm" onsubmit="return false">
+<section id="pedido">
+  <div class="wrap">
+    <div class="grelha-contacto">
+      <div>
+        <div class="palco" style="padding:22px 20px 18px">
+          <span class="etiqueta">Kärcher Puzzi 10/1</span>
+          <img src="../assets/equipamento.webp" alt="Kärcher Puzzi 10/1, a máquina de injeção e extração que entregamos em casa" width="1000" height="1212" loading="lazy" decoding="async" style="max-width:300px">
+        </div>
 
-<label>Nome</label>
-<input type="text" id="nome" autocomplete="name">
-<div class="dupla">
-  <div><label>Telemóvel</label><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></div>
-  <div><label>Email <span class="op">opcional</span></label><input type="email" id="email" autocomplete="email"></div>
-</div>
-<div class="dupla">
-  <div><label>Localidade</label><input type="text" id="localidade" placeholder="Viseu, Cavernães, Mangualde..."></div>
-  <div><label>Para quando</label><input type="date" id="quando"></div>
-</div>
+        <div class="cartao" style="margin-top:22px">
+          <h3>O que está incluído</h3>
+          <ul>
+            <li>Entrega e recolha em sua casa</li>
+            <li>3 bocais: sofá, cantos e carro</li>
+            <li>1 pastilha de detergente profissional</li>
+            <li>Instruções passo a passo na entrega</li>
+          </ul>
+        </div>
 
-<label style="margin-top:18px">O que vai limpar</label>
-<label class="escolha"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
-<label class="escolha"><input type="checkbox" id="cColchao"> Colchões</label>
-<label class="escolha"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
-<label class="escolha"><input type="checkbox" id="cTapete"> Tapetes ou alcatifa</label>
-<label class="escolha"><input type="checkbox" id="cAnimais"> Tenho animais em casa <small>· levamos o produto certo</small></label>
+        <table class="precos" style="margin-top:22px">
+          <tr><td>Um dia</td><td>40€</td></tr>
+          <tr><td>Dois dias</td><td>65€</td></tr>
+          <tr><td>Três dias</td><td>90€</td></tr>
+          <tr class="destaque"><td>Fim de semana</td><td>70€</td></tr>
+          <tr><td>Semana</td><td>160€</td></tr>
+        </table>
+        <p class="notas">Entrega e recolha incluídas até 5 km do centro de Viseu. Fora dos 5 km, 1,50€ por quilómetro. <b>Caução de 50€</b>, devolvida na recolha.</p>
 
-<div class="caucao">
-  <label class="escolha"><input type="checkbox" id="okCaucao"><span><b>Sei que há uma caução de 150 €</b><small>entregue no momento e devolvida por inteiro na recolha, assim que confirmarmos que está tudo como ficou</small></span></label>
-</div>
+        <div class="linha-contacto">
+          <div class="icone"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg></div>
+          <div><div class="rotulo">Prefere falar?</div><div class="valor"><a href="https://wa.me/351914502987">914 502 987</a></div><div class="extra">WhatsApp ou chamada, todos os dias.</div></div>
+        </div>
+      </div>
 
-<button class="enviar" onclick="enviar()">Enviar pedido de reserva</button>
-<div class="erro" id="erro"></div>
-<p class="rgpd">Ao enviar, autoriza o uso destes dados apenas para responder ao seu pedido. Não são partilhados. <a href="../privacidade/" target="_blank" rel="noopener">Política de privacidade</a></p>
+      <div>
+        <div class="bloco" style="margin-top:0">
+          <h3>O pedido de reserva</h3>
+          <form id="frm" onsubmit="return false">
+            <label class="campo"><span>Nome</span><input type="text" id="nome" autocomplete="name"></label>
+            <label class="campo"><span>Telemóvel</span><input type="tel" id="tel" autocomplete="tel" inputmode="tel"></label>
+            <label class="campo"><span>Email <em>· opcional</em></span><input type="email" id="email" autocomplete="email"></label>
+            <label class="campo"><span>Localidade</span><input type="text" id="localidade" placeholder="Viseu, Cavernães, Mangualde..."></label>
+            <label class="campo"><span>Para quando</span><input type="date" id="quando"></label>
 
-</form>
+            <span style="display:block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--suave);text-transform:uppercase;margin:20px 0 6px">O que vai limpar</span>
+            <label class="chk"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
+            <label class="chk"><input type="checkbox" id="cColchao"> Colchões</label>
+            <label class="chk"><input type="checkbox" id="cCarro"> Carro, bancos e interior</label>
+            <label class="chk"><input type="checkbox" id="cTapete"> Tapetes ou alcatifa</label>
+            <label class="chk"><input type="checkbox" id="cAnimais"> Tenho animais em casa</label>
 
-<div class="feito" id="feito">
-  <svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  <h2>Pedido enviado!</h2>
-  <p>Recebemos o seu pedido e respondemos normalmente no próprio dia, com o preço certo e a confirmação da data.</p>
-  <p style="margin-top:14px"><a href="#" id="linkWhats" style="color:#0B6E66;font-weight:800">Prefere falar já? Abrir a conversa no WhatsApp</a></p>
-</div>
+            <div style="background:var(--nevoa-clara);border:1px solid var(--linha);border-radius:12px;padding:6px 14px;margin-top:18px">
+              <label class="chk rgpd"><input type="checkbox" id="okCaucao"><span><b style="color:var(--ardosia)">Sei que há uma caução de 50€</b><br>Entregue no momento e devolvida por inteiro na recolha, assim que confirmarmos que está tudo como ficou.</span></label>
+            </div>
 
+            <div class="aviso" id="aviso"></div>
+            <button class="btn-zap" onclick="enviar()">Enviar pedido de reserva</button>
+            <p class="notas" style="text-align:center;margin-top:12px">Ao enviar, autoriza o uso destes dados apenas para responder ao seu pedido. Não são partilhados. <a href="../privacidade/" style="color:var(--teal-esc);font-weight:800">Política de privacidade</a></p>
+          </form>
+
+          <div id="feito" style="display:none;text-align:center;padding:20px 4px">
+            <svg viewBox="0 0 52 52" width="52" height="52" style="margin:0 auto" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#5EC5B8" stroke-width="3"/><path d="M15 27l8 8 15-16" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h2 class="display" style="font-size:24px;margin-top:14px">Pedido enviado</h2>
+            <p class="sub" style="margin:10px auto 0;max-width:40ch">Respondemos normalmente no próprio dia, com o preço certo e a confirmação da data.</p>
+            <a class="btn btn-primario" style="margin-top:20px" id="linkWhats" href="https://wa.me/351914502987">Prefere falar já? Abrir o WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
 <footer>
-  Bruma Serviços · Viseu<br>
-  <a href="tel:+351914502987">914 502 987</a> · <a href="../">brumaservicos.pt</a>
+  <div class="wrap lin">
+    <div>
+      <div style="color:#fff;font-weight:800;letter-spacing:.14em;text-transform:uppercase">Bruma Serviços</div>
+      <div style="margin-top:6px">Aluguer de equipamentos · Viseu</div>
+      <a class="fone" href="https://wa.me/351914502987">914 502 987</a>
+      <div style="margin-top:8px">Somos a Bruna e a Mariana, de Viseu.</div>
+      <div style="margin-top:8px"><a href="mailto:geral.brumaservicos@gmail.com">geral.brumaservicos@gmail.com</a><br>
+      <a href="https://www.instagram.com/bruma.servicos" rel="noopener">Instagram @bruma.servicos</a></div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:800">Como trabalhamos</div>
+      <div style="margin-top:6px">Entrega e recolha em sua casa<br>Até 5 km do centro de Viseu sem custo<br>Fora disso, 1,50€ por quilómetro<br>Pagamento por MB Way ou dinheiro</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:800">O site</div>
+      <div style="margin-top:6px">
+        <a href="../">Início</a><br>
+        <a href="../limpeza-de-sofas/">Limpeza de sofás</a><br>
+        <a href="../limpeza-de-colchoes/">Limpeza de colchões</a><br>
+        <a href="../estofos-automovel/">Estofos de automóvel</a><br>
+        <a href="../como-usar/">Como se usa</a><br>
+        <a href="../zonas-servidas/">Zonas servidas</a><br>
+        <a href="../perguntas-frequentes/">Perguntas frequentes</a><br>
+        <a href="../blog/">Guias e conselhos</a><br>
+        <a href="../reservar/">Reservar equipamento</a><br>
+        <a href="../privacidade/">Privacidade</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap"><small>Bruma Serviços · Viseu · Respondemos por WhatsApp, normalmente no próprio dia.</small></div>
 </footer>
 
-</div>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://brumaservicos.pt/"},
+    {"@type":"ListItem","position":2,"name":"Reservar equipamento","item":"https://brumaservicos.pt/reservar/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Aluguer de máquina de limpeza de estofos",
+  "serviceType":"Aluguer de equipamento de limpeza a extração",
+  "provider":{"@type":"LocalBusiness","name":"Bruma Serviços","telephone":"+351914502987","email":"geral.brumaservicos@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Viseu","addressCountry":"PT"}},
+  "areaServed":{"@type":"City","name":"Viseu"},
+  "url":"https://brumaservicos.pt/reservar/",
+  "offers":[
+    {"@type":"Offer","name":"Um dia","price":"40","priceCurrency":"EUR","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","name":"Dois dias","price":"65","priceCurrency":"EUR","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","name":"Três dias","price":"90","priceCurrency":"EUR","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","name":"Fim de semana","price":"70","priceCurrency":"EUR","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","name":"Semana","price":"160","priceCurrency":"EUR","availability":"https://schema.org/InStock"}
+  ]
+}
+</script>
 
 <script>
 var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec';
@@ -149,13 +227,14 @@ function enviar() {
   if ($('email').value.trim() && $('email').value.indexOf('@') === -1) falta.push('um email válido');
   if (!$('localidade').value.trim()) falta.push('a localidade');
   if (!$('okCaucao').checked) falta.push('a confirmação da caução');
+
+  var av = $('aviso');
   if (falta.length) {
-    var e = $('erro');
-    e.style.display = 'block';
-    e.textContent = 'Falta preencher: ' + falta.join(', ') + '.';
+    av.style.display = 'block';
+    av.textContent = 'Falta preencher: ' + falta.join(', ') + '.';
     return;
   }
-  $('erro').style.display = 'none';
+  av.style.display = 'none';
 
   var quando = 'a combinar';
   if ($('quando').value) {
@@ -172,7 +251,7 @@ function enviar() {
     entrega: $('quando').value,
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
-    caucao: 150,
+    caucao: 50,
     aceitou_caucao: 'sim',
     aceitou_dados: 'sim'
   };
@@ -194,11 +273,10 @@ function enviar() {
     + 'Para quando: ' + quando + '\n'
     + 'Vou limpar: ' + dados.vai_limpar + '\n'
     + 'Animais em casa: ' + dados.animais + '\n'
-    + 'Caução de 150 €: ok\n\nEnviado pelo site';
+    + 'Caução de 50€: ok\n\nEnviado pelo site';
 
   $('linkWhats').href = 'https://wa.me/' + TELEFONE + '?text=' + encodeURIComponent(msg);
   $('frm').style.display = 'none';
-  document.querySelector('.precos').style.display = 'none';
   $('feito').style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }

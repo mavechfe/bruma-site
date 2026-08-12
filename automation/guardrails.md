@@ -18,7 +18,7 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 ## Oferta em vigor (11/08/2026)
 
 - Preços: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€.
-- Caução: 150€, devolvida na recolha. Comunicar sempre sem letras pequenas.
+- Caução: 50€ (simbólica, decisão de 12/08/2026), devolvida por inteiro na recolha. Comunicar sempre sem letras pequenas.
 - Incluído: 3 bocais + 1 pastilha RM 760. Extras: pastilhas a 5€, à consignação.
 - Entrega: grátis até 5 km de Viseu; depois (km-5)×1,50€ ida e volta.
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).

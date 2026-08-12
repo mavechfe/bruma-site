@@ -35,7 +35,7 @@ header{position:sticky;top:0;z-index:40;background:rgba(251,252,252,.96);
 .marca .txt .s{font-size:8px;font-weight:700;letter-spacing:.36em;text-transform:uppercase;
                color:var(--teal-esc);margin-top:4px}
 nav.menu{display:flex;gap:2px 4px;flex-wrap:wrap;font-size:14.5px;font-weight:700}
-nav.menu a{color:#42585C;text-decoration:none;display:inline-block;padding:8px 9px;border-radius:8px}
+nav.menu a{color:#42585C;text-decoration:none;display:inline-block;padding:8px 7px;border-radius:8px}
 nav.menu a:hover{color:var(--teal-esc);background:var(--nevoa-clara)}
 nav.menu a.ativo{color:var(--teal-esc)}
 nav.menu a.destaque{background:var(--teal-esc);color:#fff;font-weight:800}
@@ -48,10 +48,10 @@ nav.menu a.reservar:hover{background:var(--teal-esc);color:#fff}
 .hd-tel span{display:block;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--suave)}
 .hd-tel a{font-weight:900;color:var(--ardosia);text-decoration:none;font-size:17px;white-space:nowrap}
 .btn-cta{display:inline-block;background:var(--teal-esc);color:#fff;font-weight:800;font-size:15px;
-         padding:12px 20px;border-radius:12px;text-decoration:none;white-space:nowrap;
+         padding:12px 17px;border-radius:12px;text-decoration:none;white-space:nowrap;
          box-shadow:0 6px 16px rgba(11,110,102,.28);transition:.15s}
 .btn-cta:hover{transform:translateY(-1px);background:var(--teal)}
-@media(max-width:900px){.hd-tel{display:none}}
+@media(max-width:1140px){.hd-tel{display:none}}
 @media(max-width:640px){.btn-cta{display:none}nav.menu{order:3;width:100%;justify-content:flex-start}}
 
 /* ---------- botões ---------- */
@@ -325,3 +325,28 @@ a.btn-zap{text-decoration:none}
 /* linha SOS nas caixas CTA dos artigos */
 .cta-caixa .sos{margin-top:12px;font-size:14.5px;color:var(--suave)}
 .cta-caixa .sos a{color:var(--teal-esc);font-weight:800}
+
+/* ---------- o equipamento ---------- */
+.grelha-equipamento{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}
+@media(max-width:900px){.grelha-equipamento{grid-template-columns:1fr;gap:34px}}
+.palco{position:relative;border-radius:24px;border:1px solid var(--linha);padding:30px 26px 26px;
+       background:radial-gradient(ellipse at 50% 42%,#fff 0%,#F4F9F8 52%,#E4EFED 100%);
+       box-shadow:0 20px 50px rgba(18,51,58,.09)}
+.palco img{width:100%;max-width:430px;margin:0 auto;transform:rotate(-3deg);
+           filter:drop-shadow(0 18px 22px rgba(18,51,58,.18))}
+.palco .etiqueta{position:absolute;top:20px;left:20px;z-index:2;background:var(--ardosia);color:var(--menta);
+                 font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+                 padding:9px 17px;border-radius:99px;transform:rotate(-2deg)}
+.palco .anotacao{position:absolute;right:22px;bottom:22px;display:flex;align-items:flex-end;gap:8px;
+                 font-size:26px;line-height:1.1;color:var(--teal-esc);transform:rotate(-4deg)}
+.palco .anotacao svg{flex:0 0 auto;margin-bottom:4px}
+@media(max-width:520px){.palco .anotacao{font-size:21px;right:14px;bottom:14px}}
+.equipamento-texto h2 em{font-style:normal;color:var(--teal-esc)}
+.lista-check{list-style:none;display:grid;gap:13px;margin-top:26px}
+.lista-check li{display:flex;align-items:flex-start;gap:12px;font-size:15.5px;font-weight:700;color:#33474C}
+.lista-check li::before{content:"✓";flex:0 0 auto;width:27px;height:27px;border-radius:9px;background:var(--teal-esc);
+                      color:#fff;display:flex;align-items:center;justify-content:center;
+                      font-size:14px;font-weight:900;line-height:1}
+.lista-check li b{color:var(--ardosia)}
+.equip-acoes{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+.equip-acoes .nota-modelo{font-size:13.5px;color:var(--suave);font-weight:700;max-width:26ch}
