@@ -59,6 +59,19 @@
   .conta .total span:last-child{font-size:22px;color:var(--menta)}
   .conta small{display:block;margin-top:12px;font-size:12.5px;color:#8FB4B0;line-height:1.5}
   .feito{display:none;text-align:center;padding:30px 10px}
+  /* o telefone e o sitio onde isto e preenchido: topo curto, sem cabecalho a ocupar meio ecra */
+  .hd-tel{display:block}
+  .hd-tel span{font-size:9.5px}
+  @media(max-width:640px){
+    header .hd{padding:9px 20px}
+    .marca svg{width:34px;height:22px}
+    .hd-tel a{font-size:15px}
+    .pagina-interior{padding:24px 0 28px}
+    .pagina-interior h1{font-size:25px;margin-top:6px}
+    .pagina-interior .kick{font-size:11px}
+    .breadcrumb{margin-bottom:10px;font-size:12.5px}
+    #dados{padding:34px 0 52px}
+  }
 </style>
 </head>
 <body>
@@ -72,20 +85,7 @@
         </svg>
         <div class="txt"><div class="n">Bruma</div><div class="s">Serviços</div></div>
       </a>
-    <nav class="menu">
-      <a href="../limpeza-de-sofas/">Sofás</a>
-      <a href="../limpeza-de-colchoes/">Colchões</a>
-      <a href="../estofos-automovel/">Automóvel</a>
-      <a class="destaque" href="../como-usar/">Como se usa</a>
-      <a href="../zonas-servidas/">Zonas</a>
-      <a href="../perguntas-frequentes/">Perguntas</a>
-      <a href="../blog/">Guias</a>
-      <a class="reservar ativo" href="#dados">Os meus dados</a>
-    </nav>
-    <div class="hd-right">
-      <div class="hd-tel"><span>Respondemos todos os dias</span><a href="https://wa.me/351914502987">914 502 987</a></div>
-      <a class="btn-cta" href="#dados">Enviar os meus dados</a>
-    </div>
+    <div class="hd-tel" style="text-align:right"><span>Alguma dúvida?</span><a href="https://wa.me/351914502987">914 502 987</a></div>
   </div>
 </header>
 <main>
@@ -99,7 +99,7 @@
     <div class="kick">Já com o seu dia reservado</div>
     <h1>Vamos preparar a sua máquina</h1>
     <p class="notas" style="font-size:16px;color:var(--claro-sobre-escuro);margin-top:14px;max-width:56ch">
-      Um minuto para nos dar os últimos dados e a máquina fica pronta para o que nos disser que vai limpar.
+      Um minuto e a máquina fica pronta para o que nos disser que vai limpar.
     </p>
   </div>
 </section>

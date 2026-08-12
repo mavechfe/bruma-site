@@ -28,7 +28,7 @@ h2.display{font-size:clamp(27px,4vw,40px);color:var(--ardosia)}
 /* ---------- header ---------- */
 header{position:sticky;top:0;z-index:40;background:rgba(251,252,252,.96);
        backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
-.hd{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0;flex-wrap:wrap}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 24px;flex-wrap:wrap}
 .marca{display:flex;align-items:center;gap:11px;text-decoration:none;flex:0 0 auto}
 .marca .txt .n{font-size:19px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
                color:var(--ardosia);line-height:1}
