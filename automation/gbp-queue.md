@@ -8,7 +8,7 @@ Convívio de verão em casa acaba sempre da mesma forma? Vinho no sofá, gordura
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
 
-## 2026-08-12-1 | estado: fila
+## 2026-08-12-1 | estado: publicado
 
 Ainda não lavou o sofá este verão? A caução da Bruma são agora 50€, entregues no momento em que recebe a máquina e devolvidos por inteiro quando a vamos buscar. O aluguer mantém-se nos 40€ por um dia inteiro, com entrega, recolha e uma pastilha de detergente incluídas. Viseu e arredores, marcação em https://brumaservicos.pt/reservar/
 
