@@ -15,11 +15,18 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - Tom Bruma: pergunta provocadora + contraponto seco. Exemplo aprovado: "Quando foi a última vez que lavou o sofá?" / "aspirar não conta".
 - Identidade: paleta teal (#0D9488, #0B6E66, #5EC5B8, #12333A, #D9E7E5, #FBFCFC), fonte Nunito.
 
+## Imagens dos posts GBP (13/08/2026)
+
+- **PROIBIDO publicar `site/assets/puzzi.jpg`** ou qualquer foto de catalogo do fabricante. E imagem promocional da Karcher, vende a Karcher e nao a Bruma, e saiu nos posts de 11/08 e 12/08 por falta desta regra.
+- Cada bloco da `gbp-queue.md` tem de apontar para uma imagem da pasta aprovada de artes da marca. **Nunca repetir a mesma imagem em dois posts.**
+- Sem imagem aprovada disponivel, publica-se **so texto**. Texto sozinho e melhor do que foto de catalogo.
+- Prioridade maxima assim que existir: **antes e depois reais** de um trabalho, com autorizacao do cliente.
+
 ## Oferta em vigor (11/08/2026)
 
 - Preços: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€.
 - Caução: 50€ (simbólica, decisão de 12/08/2026), devolvida por inteiro na recolha. Comunicar sempre sem letras pequenas.
-- Incluído: 3 bocais + 1 pastilha RM 760. Extras: pastilhas a 5€, à consignação.
+- Incluído: 3 bocais + 1 pastilha RM 760. Extras (decisão de 12/08/2026, substitui a consignação): pacote de 3 pastilhas 10€, pastilha extra 5€, spray tira-nódoas 8€, kit animais 10€.
 - Entrega: grátis até 5 km de Viseu; depois (km-5)×1,50€ ida e volta.
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
