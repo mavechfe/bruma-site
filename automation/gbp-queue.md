@@ -13,3 +13,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
 Ainda não lavou o sofá este verão? A caução da Bruma são agora 50€, entregues no momento em que recebe a máquina e devolvidos por inteiro quando a vamos buscar. O aluguer mantém-se nos 40€ por um dia inteiro, com entrega, recolha e uma pastilha de detergente incluídas. Viseu e arredores, marcação em https://brumaservicos.pt/reservar/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
+
+## 2026-08-15-1 | estado: fila
+
+Já aspirou o sofá esta semana e continua com um cheiro parado no tecido? O aspirador só recolhe o que está à superfície, o resto fica infiltrado nas fibras. A limpeza a extração injeta água com detergente e aspira tudo de volta, é isso que remove o reservatório de pó e sujidade que o aspirador deixa para trás. Dica prática: aspire primeiro para tirar pelos e migalhas soltas, a extração trata do resto. Mais informação em https://brumaservicos.pt
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\aspirar.webp
