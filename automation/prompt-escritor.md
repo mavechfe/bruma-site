@@ -18,7 +18,7 @@ PASSOS:
    - NUNCA escrever "desinfeta", "higieniza", "elimina ácaros", "mata ácaros", "mata bactérias", "elimina bactérias", "trata a asma", "trata alergias", nem mencionar ozono. A máquina Puzzi aquece a água no máximo a 50°C; alegações biocidas violam o Regulamento (UE) 528/2012.
    - "Elimina" só pode aparecer aplicado a manchas e odores. Para organismos e alergénios usar sempre "remove".
    - Posicionamento aprovado: "remove o reservatório de sujidade que o aspirador deixa".
-   - Sem emojis. Sem travessões a ligar frases.
+   - Sem emojis. Sem travessões a ligar frases. A marca fala sempre na primeira pessoa do plural ("ficamos contentes", "cá estamos", "recomendamos"), nunca no singular.
    - Não mencionar o produto RM 761. Vinagre branco como auxiliar doméstico está aprovado.
    - Não inventar o pacote "Casa Respira" nem outros pacotes; a oferta é aluguer simples com extras avulso.
    - Preços em vigor: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€, caução 50€.

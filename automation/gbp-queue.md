@@ -14,7 +14,7 @@ Ainda não lavou o sofá este verão? A caução da Bruma são agora 50€, entr
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
 
-## 2026-08-15-1 | estado: fila
+## 2026-08-15-1 | estado: publicado
 
 Já aspirou o sofá esta semana e continua com um cheiro parado no tecido? O aspirador só recolhe o que está à superfície, o resto fica infiltrado nas fibras. A limpeza a extração injeta água com detergente e aspira tudo de volta, é isso que remove o reservatório de pó e sujidade que o aspirador deixa para trás. Dica prática: aspire primeiro para tirar pelos e migalhas soltas, a extração trata do resto. Mais informação em https://brumaservicos.pt
 

@@ -13,6 +13,7 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 
 - PT-PT sempre. **Sem emojis** em qualquer texto ou visual. **Sem travessões a ligar frases** (usar ponto final ou vírgula).
 - Tom Bruma: pergunta provocadora + contraponto seco. Exemplo aprovado: "Quando foi a última vez que lavou o sofá?" / "aspirar não conta".
+- **PRIMEIRA PESSOA DO PLURAL sempre que a marca fala (decisão da Mariana, 15/08/2026)**: "ficamos contentes", "cá estamos", "temos a máquina disponível". Nunca "fico contente", "cá estou", "tenho". Vale para respostas a avaliações, posts, site, blog, Instagram e mensagens. A assinatura de agradecimento fica "Obrigada" (marca de mulher empresária), o resto do verbo é plural.
 - Identidade: paleta teal (#0D9488, #0B6E66, #5EC5B8, #12333A, #D9E7E5, #FBFCFC), fonte Nunito.
 
 ## Imagens dos posts GBP (13/08/2026)
@@ -21,6 +22,9 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - Cada bloco da `gbp-queue.md` tem de apontar para uma imagem da pasta aprovada de artes da marca. **Nunca repetir a mesma imagem em dois posts.**
 - Sem imagem aprovada disponivel, publica-se **so texto**. Texto sozinho e melhor do que foto de catalogo.
 - Prioridade maxima assim que existir: **antes e depois reais** de um trabalho, com autorizacao do cliente.
+- **PROIBIDO `site/assets/aspirar.webp`** (15/08/2026). E foto de stock de um aspirador de mao com o logotipo do fabricante "Victor" bem visivel no deposito. Mesmo problema da puzzi.jpg: vende a marca do fabricante e nao a Bruma.
+- Antes de meter uma imagem na `gbp-queue.md`, ABRIR a imagem e confirmar que nao tem logotipo nem marca de terceiros visivel. O nome do ficheiro nao chega.
+- **O GBP nao aceita `.webp`** ("Tipo de ficheiro invalido selecionado"). Os posts com imagem tem de apontar para JPG ou PNG. Quase todas as imagens em `site/assets/` sao webp, por isso a fonte natural de artes para o GBP e `Bruma-Publicarruma-post-*.png` e `BrumaImagenseais*.jpg`.
 
 ## Oferta em vigor (11/08/2026)
 
