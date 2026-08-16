@@ -3,7 +3,7 @@
 TODOS OS DIAS, por esta ordem:
 
 1. Lê `automation/marketing-log.md` (o que já saiu), `automation/gbp-queue.md`, `automation/approvals-pendentes.md`, `content-plan.md` e o ficheiro mais recente de `automation/metrics/` (se existir).
-2. Lê o funil de vendas no ficheiro mais recente `automation/metrics/funil-*.json` (a tarefa local atualiza-o 3ª, 5ª e sábado; o acesso direto a script.google.com está bloqueado no ambiente cloud, não tentes o GET). Se não existir, segue sem funil e regista no log.
+2. Lê o funil de vendas no ficheiro mais recente `automation/metrics/funil-*.json` (a tarefa local atualiza-o 3ª, 5ª e sábado; o acesso direto a script.google.com está bloqueado no ambiente cloud, não tentes o GET). Se não existir, segue sem funil e regista no log. LE SEMPRE `automation/canais-contacto.md` ANTES de interpretar o funil: o funil so conta o formulario do site, nao ve OLX, telefone nem WhatsApp, e ja produziu duas leituras erradas (15/08 e 16/08). Funil a zero escreve-se "zero pedidos pelo formulario", nunca "nao entra procura".
 3. APROVAÇÕES: se `automation/approvals-pendentes.md` tem itens `pendente`, apresenta-os na íntegra no início do teu relatório de sessão. Se a Mariana respondeu OK na sessão anterior desta rotina, marca o item `aprovado` (commit) e diz no relatório que a tarefa local vai executar na próxima execução (3ª, 5ª ou sábado).
 4. AÇÃO DO DIA (fuso Europe/Lisbon):
    - Segunda: confirma no `content-plan.md` que a escritora correu. Prepara o post Instagram da semana (ver INSTAGRAM abaixo).

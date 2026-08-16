@@ -24,7 +24,50 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - Prioridade maxima assim que existir: **antes e depois reais** de um trabalho, com autorizacao do cliente.
 - **PROIBIDO `site/assets/aspirar.webp`** (15/08/2026). E foto de stock de um aspirador de mao com o logotipo do fabricante "Victor" bem visivel no deposito. Mesmo problema da puzzi.jpg: vende a marca do fabricante e nao a Bruma.
 - Antes de meter uma imagem na `gbp-queue.md`, ABRIR a imagem e confirmar que nao tem logotipo nem marca de terceiros visivel. O nome do ficheiro nao chega.
-- **O GBP nao aceita `.webp`** ("Tipo de ficheiro invalido selecionado"). Os posts com imagem tem de apontar para JPG ou PNG. Quase todas as imagens em `site/assets/` sao webp, por isso a fonte natural de artes para o GBP e `Bruma-Publicarruma-post-*.png` e `BrumaImagenseais*.jpg`.
+- **O GBP nao aceita `.webp`** ("Tipo de ficheiro invalido selecionado"). Os posts com imagem tem de apontar para JPG ou PNG. Quase todas as imagens em `site/assets/` sao webp, por isso a fonte natural de artes para o GBP e `Bruma-Publicarruma-post-*.png` e `BrumaImagens
+eais*.jpg`.
+
+## Catalogo de imagens APROVADAS para GBP e Instagram (16/08/2026)
+
+As 21 imagens abaixo foram ABERTAS e verificadas uma a uma a 16/08/2026: nenhuma tem logotipo nem marca de terceiros, todas sao PNG ou JPG (formatos que o GBP aceita), todas sao arte propria da Bruma ou foto real feita por ela. **Escolher SEMPRE desta lista.** Nao e preciso voltar a abrir cada ficheiro, basta confirmar na coluna "usada" que ainda nao saiu (a regra de nunca repetir imagem mantem-se) e cruzar com o `marketing-log.md`.
+
+Raiz das artes: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\`
+Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagens\reais\`
+
+**Artes de marca (`bruma-post-N.png`), verticais, todas com telefone 914 502 987 e "reserve por WhatsApp":**
+
+| ficheiro | tema | usada |
+|---|---|---|
+| bruma-post-1.png | "Aspirar nao conta" (posicionamento-mestre) | nao |
+| bruma-post-2.png | "O cao dorme no sofa. Voce tambem." | nao |
+| bruma-post-3.png | "Lava os lencois todas as semanas. E o colchao?" | nao |
+| bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | nao |
+| bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | nao |
+| bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | nao |
+| bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | nao |
+| bruma-post-8.png | "Tem visitas este fim de semana?" | nao |
+| bruma-post-9.png | "Os miudos comem no sofa." | nao |
+| bruma-post-10.png | vinho no sofa, 3 passos | nao |
+| bruma-post-11.png | protetor solar no sofa, 3 passos | nao |
+| bruma-post-12.png | areia e sal da praia, 3 passos | nao |
+| bruma-post-13.png | gelado derretido, 3 passos | nao |
+| bruma-post-14.png | animal fez no sofa, 3 passos | nao |
+| bruma-post-15.png | cafe entornado, 3 passos | nao |
+
+**bruma-post-5.png foi conferido a 16/08 contra a oferta em vigor: 40/65/90/70/160 e caucao 50 EUR batem certo. Se os precos mudarem, esta arte fica PROIBIDA ate ser refeita.**
+
+**Fotos reais da Mariana (`Imagens\reais\*.jpg`), prioridade maxima porque sao prova:**
+
+| ficheiro | o que mostra | usada |
+|---|---|---|
+| agua-suja.jpg | bocal com a agua suja a sair do sofa | nao |
+| sofa-faixa-limpa.jpg | faixa limpa no meio do sofa sujo, a melhor prova visual | nao |
+| sofa-antes-depois.jpg | antes e depois no mesmo sofa | nao |
+| sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | nao |
+| sofa-4x5.jpg | extracao em curso, formato 4x5 | nao |
+| carro-bocal.jpg | banco de carro, com texto "Limpa em profundidade" | nao |
+
+**Panfletos (`panfleto-bruma-nodoa/pergunta/poster.png`): material de impressao com QR code. Servem para Instagram ou para imprimir, NAO para post GBP** (o QR nao faz sentido no ecra e o texto e denso demais).
 
 ## Oferta em vigor (11/08/2026)
 
