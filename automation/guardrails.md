@@ -38,7 +38,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 
 | ficheiro | tema | usada |
 |---|---|---|
-| bruma-post-1.png | "Aspirar nao conta" (posicionamento-mestre) | nao |
+| bruma-post-1.png | "Aspirar nao conta" (posicionamento-mestre) | sim (IG 17/08, por confirmar publicacao da Mariana) |
 | bruma-post-2.png | "O cao dorme no sofa. Voce tambem." | nao |
 | bruma-post-3.png | "Lava os lencois todas as semanas. E o colchao?" | nao |
 | bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | nao |
