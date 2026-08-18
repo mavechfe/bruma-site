@@ -20,7 +20,7 @@ Já aspirou o sofá esta semana e continua com um cheiro parado no tecido? O asp
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\aspirar.webp
 
-## 2026-08-18-1 | estado: fila
+## 2026-08-18-1 | estado: publicado
 
 Já lavou os lençóis esta semana? E o colchão, quando foi a última vez? O suor e a poeira acumulam-se nas camadas de baixo e o aspirador não chega lá. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também no colchão. Reunimos o que resulta mesmo contra o cheiro que fica preso no colchão aqui: https://brumaservicos.pt/blog/cheiro-urina-colchao-o-que-funciona-mesmo/
 
