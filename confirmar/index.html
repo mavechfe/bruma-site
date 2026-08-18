@@ -58,26 +58,14 @@
   .conta .total{border-top:1px solid rgba(255,255,255,.2);margin-top:8px;padding-top:14px;font-size:18px;color:#fff;font-weight:900}
   .conta .total span:last-child{font-size:22px;color:var(--menta)}
   .conta small{display:block;margin-top:12px;font-size:12.5px;color:#8FB4B0;line-height:1.5}
-  .termos{border:1.5px solid var(--linha);border-radius:16px;background:var(--papel);margin-top:28px;overflow:hidden}
+  .termos{margin-top:26px}
   .termos > h3{font-size:12.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-esc);
-               padding:18px 20px 0;margin:0}
-  .termos .versao{padding:4px 20px 0;font-size:12.5px;font-weight:700;color:var(--suave)}
-  .termos .texto{max-height:270px;overflow-y:auto;padding:14px 20px 18px;margin:10px 0 0;
-                 border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);
-                 background:var(--nevoa-clara);font-size:14.5px;line-height:1.62;color:#33474C;
-                 -webkit-overflow-scrolling:touch}
-  .termos .texto h4{font-size:13.5px;font-weight:900;color:var(--teal-esc);margin:16px 0 5px}
-  .termos .texto h4:first-child{margin-top:0}
-  .termos .texto p{margin:0 0 8px}
-  .termos .texto ul{margin:0 0 8px;padding-left:20px}
-  .termos .texto li{margin-bottom:5px}
-  .termos .texto b{color:#22383D}
-  .termos .fim{padding:16px 20px 20px}
-  .termos .fim .opcao{margin-bottom:9px}
-  .termos .fim .opcao:last-child{margin-bottom:0}
-  .termos .fim .opcao .et{font-size:14.5px;font-weight:700;line-height:1.45}
-  .termos .fim .opcao a{color:var(--teal-esc);font-weight:800}
-  .termos .fim .opcao.porler{border-color:#D8C58A;background:#FCF8EC}
+               margin:0 0 12px}
+  .termos .opcao{align-items:flex-start;padding:14px 15px}
+  .termos .opcao input{margin-top:1px}
+  .termos .opcao .et{font-size:15px;font-weight:700;line-height:1.4}
+  .termos .opcao a{color:var(--teal-esc);font-weight:800;text-decoration:underline}
+  .termos .opcao.porler{border-color:#D8C58A;background:#FCF8EC}
   .feito{display:none;text-align:center;padding:30px 10px}
   /* o telefone e o sitio onde isto e preenchido: topo curto, sem cabecalho a ocupar meio ecra */
   .hd-tel{display:block}
@@ -233,51 +221,8 @@
 
             <div class="termos">
               <h3>Termos do aluguer</h3>
-              <p class="versao">Versão de 18 de agosto de 2026. É isto que fica combinado entre nós, e substitui o contrato em papel.</p>
-              <div class="texto" id="txTermos" tabindex="0">
-                <h4>O que alugamos</h4>
-                <p>Uma máquina de extração <b>Kärcher Puzzi 10/1</b> com os acessórios da checklist: mangueira, tubo, punho, bocal de estofos, bocal de pavimentos com adaptador para tapetes, bocal de juntas, filtro, depósitos, cabo e saco de transporte. O equipamento continua a ser da Bruma Serviços durante todo o aluguer.</p>
-
-                <h4>Preço e pagamento</h4>
-                <p>Um dia 40 €, dois dias 65 €, três dias 90 €, fim de semana 70 €, uma semana 160 €. Inclui sempre 1 pastilha de detergente e assistência por WhatsApp enquanto está a limpar. Os extras são os que escolher acima. Paga-se na entrega, por MB Way, dinheiro ou transferência.</p>
-
-                <h4>Entrega e recolha</h4>
-                <p>Incluídas até 5 km do centro de Viseu. Fora disso, 1,50 € por quilómetro, contado por mapa. O valor é o que aparece na conta aqui em cima e é confirmado consigo antes da entrega. A máquina é entregue limpa, a funcionar e com todos os acessórios.</p>
-
-                <h4>Caução de 50 €</h4>
-                <p>São entregues 50 € no momento da entrega e <b>devolvidos por inteiro na recolha</b> se o equipamento voltar completo e sem danos. Não é um pagamento, é só uma garantia. Nada é descontado sem fotografias e sem explicação. Se for preciso avaliar melhor um dano, indicamos o valor em 48 horas e até lá a caução não é usada.</p>
-
-                <h4>Como fica registado o estado da máquina</h4>
-                <p>Não tem papéis para assinar. Na entrega percorremos a checklist consigo e <b>fotografamos o equipamento à sua frente</b>, e as fotografias são-lhe enviadas por WhatsApp no momento. Na recolha faz-se o mesmo. São essas fotografias, com a data e a hora, que servem de registo para as duas partes. Se discordar de alguma coisa, diga-nos no próprio dia.</p>
-
-                <h4>O que lhe pedimos</h4>
-                <ul>
-                  <li>Seguir o passo a passo que damos na entrega e usar só as pastilhas fornecidas por nós.</li>
-                  <li>Usar em interiores e na morada indicada. Não emprestar nem levar para outro sítio.</li>
-                  <li>Não usar em pele, camurça, veludo, seda, nem em peças com etiqueta "S" ou "X". Na dúvida, mande-nos foto da etiqueta antes de começar.</li>
-                  <li>Devolver os depósitos despejados e enxaguados. Se a máquina vier suja, cobra-se 15 € de limpeza na recolha.</li>
-                  <li>Avisar-nos logo se alguma coisa correr mal com o equipamento.</li>
-                </ul>
-
-                <h4>Se avariar</h4>
-                <p>Se a máquina deixar de funcionar sem ser por mau uso, pare de a usar e avise-nos. <b>Não é cobrado nada pela avaria</b> e devolvemos a parte do preço dos dias que não chegou a usar. Não responde pelo desgaste normal.</p>
-
-                <h4>Danos, perda ou furto</h4>
-                <p>Responde pelos danos por mau uso e pela perda ou furto enquanto a máquina estiver à sua guarda, <b>até ao valor de reposição de 890 €</b>, que é quanto custa esta máquina nova. Desconta-se primeiro da caução e, se a ultrapassar, paga a diferença em 8 dias, sempre com o orçamento ou a fatura que justifica o valor.</p>
-
-                <h4>Atrasos na devolução</h4>
-                <p>Cada dia a mais conta como um dia de aluguer, 40 €. Se precisar de mais tempo, basta avisar. Passados 5 dias sem devolução e sem resposta, podemos recorrer às autoridades e cobrar o valor de substituição.</p>
-
-                <h4>Mudar ou cancelar</h4>
-                <p>Qualquer uma das partes pode mudar a data avisando com 24 horas de antecedência, sem custo. Pode desistir livremente até 24 horas antes da entrega, sem pagar nada e sem justificar. Se não pudermos entregar na data combinada, devolvemos tudo o que já tenha pago.</p>
-
-                <h4>Dados, reclamações e lei</h4>
-                <p>Os seus dados servem só para preparar a entrega, faturar e cumprir as obrigações fiscais, como está na política de privacidade. Havendo litígio de consumo pode recorrer ao CNIACC, em www.cniacc.pt. Aplica-se a lei portuguesa e nada aqui lhe retira os direitos de consumidor.</p>
-              </div>
-              <div class="fim">
-                <label class="opcao" id="optTermos"><input type="checkbox" id="aceitaTermos" onchange="verTermos()"><span class="et">Li e aceito os termos do aluguer, incluindo a caução de 50 €<small>Pode reler quando quiser em <a href="../contrato/" target="_blank" rel="noopener">brumaservicos.pt/contrato</a></small></span></label>
-                <label class="opcao" id="optDados"><input type="checkbox" id="aceitaDados" onchange="verTermos()"><span class="et">Autorizo o tratamento dos meus dados para este aluguer<small>Só para preparar a entrega e faturar. Ver a <a href="../privacidade/" target="_blank" rel="noopener">política de privacidade</a></small></span></label>
-              </div>
+              <label class="opcao" id="optTermos"><input type="checkbox" id="aceitaTermos" onchange="verTermos()"><span class="et">Li e aceito os <a href="../contrato/" target="_blank" rel="noopener">termos do aluguer</a><small>Caução de 50 €, devolvida por inteiro na recolha. Cada dia de atraso na devolução conta como um dia de aluguer, 40 €. Perda ou dano por mau uso, até 890 €.</small></span></label>
+              <label class="opcao" id="optDados"><input type="checkbox" id="aceitaDados" onchange="verTermos()"><span class="et">Autorizo o tratamento dos meus dados para este aluguer<small>Só para preparar a entrega e faturar. Ver a <a href="../privacidade/" target="_blank" rel="noopener">política de privacidade</a></small></span></label>
             </div>
 
             <div class="aviso" id="aviso"></div>
