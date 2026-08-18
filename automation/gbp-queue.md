@@ -19,3 +19,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
 Já aspirou o sofá esta semana e continua com um cheiro parado no tecido? O aspirador só recolhe o que está à superfície, o resto fica infiltrado nas fibras. A limpeza a extração injeta água com detergente e aspira tudo de volta, é isso que remove o reservatório de pó e sujidade que o aspirador deixa para trás. Dica prática: aspire primeiro para tirar pelos e migalhas soltas, a extração trata do resto. Mais informação em https://brumaservicos.pt
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\aspirar.webp
+
+## 2026-08-18-1 | estado: fila
+
+Já lavou os lençóis esta semana? E o colchão, quando foi a última vez? O suor e a poeira acumulam-se nas camadas de baixo e o aspirador não chega lá. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também no colchão. Reunimos o que resulta mesmo contra o cheiro que fica preso no colchão aqui: https://brumaservicos.pt/blog/cheiro-urina-colchao-o-que-funciona-mesmo/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-3.png
