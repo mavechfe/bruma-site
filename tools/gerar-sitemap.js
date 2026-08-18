@@ -25,6 +25,9 @@ const walk = (d, rel) => {
   }
   const idx = path.join(d, 'index.html');
   if (fs.existsSync(idx)) {
+    // paginas com noindex (privacidade, termos) ficam de fora: manda-las no sitemap
+    // faz a Search Console acusar "pagina com etiqueta noindex enviada no sitemap"
+    if (/<meta\s+name="robots"[^>]*noindex/i.test(fs.readFileSync(idx, 'utf8'))) return;
     urls.push({loc: BASE + '/' + rel, lastmod: dataDoFicheiro(idx)});
   }
 };
