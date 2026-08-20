@@ -25,3 +25,7 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\aspirar.w
 Já lavou os lençóis esta semana? E o colchão, quando foi a última vez? O suor e a poeira acumulam-se nas camadas de baixo e o aspirador não chega lá. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também no colchão. Reunimos o que resulta mesmo contra o cheiro que fica preso no colchão aqui: https://brumaservicos.pt/blog/cheiro-urina-colchao-o-que-funciona-mesmo/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-3.png
+
+## 2026-08-20-1 | estado: fila
+
+Já sabia que também lavamos tapetes e alcatifas? A areia acumulada no fundo do pelo funciona como lixa quando fica húmida, por isso aspiramos sempre a fundo antes de começar. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nos tapetes. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
