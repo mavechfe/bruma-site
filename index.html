@@ -222,7 +222,7 @@
           <b>Caução de 50€</b> na entrega, devolvida por inteiro na recolha depois de conferirmos a máquina.
         </p>
         <p class="notas">
-          <b>Porquê alugar?</b> Mandar lavar fora custa o triplo: só o sofá, numa empresa, fica por 80€ a 150€. Com a máquina em casa faz o sofá, os colchões e o carro no mesmo dia.
+          <b>Porquê alugar?</b> Com a máquina em casa faz o sofá, os colchões, os tapetes e o carro no mesmo dia. Veja as contas já a seguir.
         </p>
       </div>
       <div class="caixa-extras">
@@ -240,6 +240,126 @@
     </div>
   </div>
 </section>
+
+<section class="alt" id="contas">
+  <div class="wrap">
+    <div class="cabeca-seccao">
+      <div class="kicker">Faça as contas</div>
+      <h2 class="display">Mandar limpar fora<br><em>ou fazer você mesmo?</em></h2>
+      <p class="sub">Marque o que tem para limpar e compare o preço típico de uma empresa em Portugal com um dia de aluguer. Os valores variam com a zona e o estado das peças, mas a diferença fala por si.</p>
+    </div>
+    <div class="comparar">
+      <div class="coluna">
+        <h3>O que precisa de limpar?</h3>
+        <p class="calc-sub">Preços típicos de um serviço profissional, por peça.</p>
+        <div class="calc-item" data-min="80" data-max="150">
+          <div class="nome">Sofá de 3 lugares<small>80€ a 150€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">1</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="40" data-max="100">
+          <div class="nome">Sofá de 2 lugares<small>40€ a 100€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">0</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="30" data-max="50">
+          <div class="nome">Cadeirão<small>30€ a 50€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">0</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="50" data-max="100">
+          <div class="nome">Colchão de casal<small>50€ a 100€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">1</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="30" data-max="60">
+          <div class="nome">Colchão de solteiro<small>30€ a 60€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">0</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="65" data-max="110">
+          <div class="nome">Interior do carro<small>65€ a 110€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">1</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+        <div class="calc-item" data-min="25" data-max="60">
+          <div class="nome">Tapete grande<small>25€ a 60€</small></div>
+          <div class="stepper"><button class="menos" type="button" aria-label="Menos um">−</button><span class="qt">0</span><button class="mais" type="button" aria-label="Mais um">+</button></div>
+        </div>
+      </div>
+      <div class="coluna bruma">
+        <h3>O resultado</h3>
+        <div class="resultado-linha"><span>Numa empresa de limpeza</span><b id="r-empresa">195€ a 360€</b></div>
+        <div class="resultado-linha bruma"><span>Um dia com a Bruma</span><b id="r-bruma">50€</b></div>
+        <ul>
+          <li>Faz tudo isto no mesmo dia<b>Sim</b></li>
+          <li>Entrega e recolha em sua casa<b>Incluídas</b></li>
+          <li>3 bocais e 1 pastilha de detergente<b>Incluídos</b></li>
+          <li id="r-li-pastilhas"><span id="r-pastilhas-nome">2 pastilhas extra</span><b id="r-pastilhas-preco">+10€</b></li>
+        </ul>
+        <div class="poupanca" id="r-poupanca">
+          <span class="rot">Poupa</span>
+          <b id="r-poupanca-valor">145€ a 310€</b>
+        </div>
+        <a class="btn btn-primario" style="margin-top:14px;text-align:center" href="#reservar">Reservar o meu dia</a>
+      </div>
+    </div>
+    <p class="notas">Valores de referência de prestadores de limpeza profissional a operar em Portugal em 2026. Cada empresa tem a sua tabela e o preço final depende do tamanho e do estado das peças.</p>
+  </div>
+</section>
+<script>
+(function(){
+  var itens = document.querySelectorAll('#contas .calc-item');
+  var rEmp = document.getElementById('r-empresa');
+  var rBru = document.getElementById('r-bruma');
+  var rPou = document.getElementById('r-poupanca');
+  var rPouValor = document.getElementById('r-poupanca-valor');
+  var rLiPast = document.getElementById('r-li-pastilhas');
+  var rPastNome = document.getElementById('r-pastilhas-nome');
+  var rPastPreco = document.getElementById('r-pastilhas-preco');
+  function custoPastilhasExtra(e){
+    // extras: avulso 5€, pack de 3 por 10€; devolve o mais barato
+    return 10 * Math.floor(e / 3) + [0, 5, 10][e % 3];
+  }
+  function calc(){
+    var min = 0, max = 0, n = 0;
+    itens.forEach(function(it){
+      var q = parseInt(it.querySelector('.qt').textContent, 10) || 0;
+      if (q > 0) { min += q * +it.dataset.min; max += q * +it.dataset.max; n += q; }
+      it.classList.toggle('on', q > 0);
+    });
+    if (n === 0) {
+      rEmp.textContent = 'Escolha as peças';
+      rEmp.classList.add('vazio');
+      rBru.textContent = '40€';
+      rLiPast.style.display = 'none';
+      rPou.style.display = 'none';
+      return;
+    }
+    rEmp.classList.remove('vazio');
+    rEmp.textContent = min + '€ a ' + max + '€';
+    // 1 pastilha por peça; a primeira vai incluída
+    var pastilhas = n;
+    var extras = Math.max(0, pastilhas - 1);
+    var custoExtras = custoPastilhasExtra(extras);
+    var bruma = 40 + custoExtras;
+    rBru.textContent = bruma + '€';
+    if (extras > 0) {
+      rLiPast.style.display = '';
+      rPastNome.textContent = extras === 1 ? '1 pastilha extra' : extras + ' pastilhas extra';
+      rPastPreco.textContent = '+' + custoExtras + '€';
+    } else {
+      rLiPast.style.display = 'none';
+    }
+    var a = min - bruma, b = max - bruma;
+    if (b <= 0) { rPou.style.display = 'none'; }
+    else {
+      rPou.style.display = '';
+      rPouValor.textContent = a > 0 ? a + '€ a ' + b + '€' : 'até ' + b + '€';
+    }
+  }
+  itens.forEach(function(it){
+    var qt = it.querySelector('.qt');
+    it.querySelector('.menos').addEventListener('click', function(){ qt.textContent = Math.max(0, (+qt.textContent) - 1); calc(); });
+    it.querySelector('.mais').addEventListener('click', function(){ qt.textContent = Math.min(9, (+qt.textContent) + 1); calc(); });
+  });
+  calc();
+})();
+</script>
 
 <section class="escuro" id="prova">
   <div class="wrap">
