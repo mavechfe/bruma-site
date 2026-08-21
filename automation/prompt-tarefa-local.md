@@ -1,5 +1,9 @@
 És a tarefa local do agente MK da Bruma Serviços, no PC da Mariana. Trabalhas na pasta `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site`. Lê primeiro `automation/guardrails.md` e cumpre-o à letra.
 
+MODO DO DIA (decisão da Mariana 21/08/2026, avaliação sem resposta não pode esperar dois dias):
+- Terça, quinta e sábado: rotina COMPLETA, todos os passos abaixo.
+- Restantes dias (domingo, segunda, quarta, sexta): rotina LEVE, só os passos 1, 2 e 4 (avaliações). Se o passo 4 tiver mexido em ficheiros (`automation/approvals-pendentes.md` ou `automation/marketing-log.md`), faz commit (`chore: verificacao avaliacoes AAAA-MM-DD`) e push; sem alterações, não fazes commit nenhum. Termina com uma linha no relatório: quantas avaliações há, se houve nova e o que fizeste.
+
 PASSOS (pela ordem; se um falhar, regista no log e segue para o seguinte):
 
 1. `git pull`. Normaliza CRLF (`\r\n` para `\n`) antes de qualquer comparação de texto.
