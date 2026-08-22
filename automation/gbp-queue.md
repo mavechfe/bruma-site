@@ -29,3 +29,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 ## 2026-08-20-1 | estado: publicado
 
 Já sabia que também lavamos tapetes e alcatifas? A areia acumulada no fundo do pelo funciona como lixa quando fica húmida, por isso aspiramos sempre a fundo antes de começar. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nos tapetes. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
+
+## 2026-08-22-1 | estado: fila
+
+Fim de semana de praia? Areia e sal ficam presos nas fibras do sofá e, com a humidade, a areia funciona como lixa fina sobre o tecido. Sacuda o que for possível antes de se sentar, aspire bem e deixe o sofá arejar. Para o que ficar mesmo infiltrado, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-12.png
