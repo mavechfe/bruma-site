@@ -116,3 +116,4 @@ Formato: `- AAAA-MM-DD HH:mm | <canal: gbp|blog|ig|site|funil|sistema> | <ação
 - 2026-08-23 09:10 | sistema | approvals-pendentes.md sem itens pendentes | nada a apresentar a Mariana hoje
 - 2026-08-23 09:10 | sistema | RELATORIO SEMANAL escrito em reports/2026-08-23.md (periodo 17-23/08: funil, publicacoes da semana, metricas GSC/GBP com variacao face a 15/08, pendentes, decisoes e plano de 24-30/08) | acao de domingo conforme o plano; relatorio integral apresentado na sessao
 - 2026-08-23 09:10 | ig | sem acao Instagram hoje | domingo nao e dia de Instagram no plano; o post de 17/08 (bruma-post-1.png) continua por confirmar publicacao pela Mariana, sinalizado no relatorio semanal
+- 2026-08-23 | sistema | sessao local escreveu tambem automation/reports/2026-08-23-semanal.md sem saber do relatorio cloud das 09:10 | duplicacao a resolver nesta mesma sessao: fica um unico relatorio semanal
