@@ -35,3 +35,9 @@ Já sabia que também lavamos tapetes e alcatifas? A areia acumulada no fundo do
 Fim de semana de praia? Areia e sal ficam presos nas fibras do sofá e, com a humidade, a areia funciona como lixa fina sobre o tecido. Sacuda o que for possível antes de se sentar, aspire bem e deixe o sofá arejar. Para o que ficar mesmo infiltrado, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-12.png
+
+## 2026-08-25-1 | estado: fila
+
+Vinho tinto entornado no sofá este fim de semana? Sal por cima, água com gás ou vinho branco a seguir são mitos, só pioram a mancha. Água fria aos toques resolve os primeiros minutos, mas se a nódoa voltar dias depois é porque desceu à espuma do estofo. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também aí. Reunimos os passos certos e os mitos a esquecer aqui: https://brumaservicos.pt/blog/nodoa-de-vinho-tinto/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-10.png
