@@ -36,7 +36,7 @@ Fim de semana de praia? Areia e sal ficam presos nas fibras do sofá e, com a hu
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-12.png
 
-## 2026-08-25-1 | estado: fila
+## 2026-08-25-1 | estado: publicado
 
 Vinho tinto entornado no sofá este fim de semana? Sal por cima, água com gás ou vinho branco a seguir são mitos, só pioram a mancha. Água fria aos toques resolve os primeiros minutos, mas se a nódoa voltar dias depois é porque desceu à espuma do estofo. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também aí. Reunimos os passos certos e os mitos a esquecer aqui: https://brumaservicos.pt/blog/nodoa-de-vinho-tinto/
 
