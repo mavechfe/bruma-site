@@ -24,7 +24,7 @@ Qualquer rotina (cloud ou local) lê este ficheiro antes de escrever conteúdo. 
 - Prioridade maxima assim que existir: **antes e depois reais** de um trabalho, com autorizacao do cliente.
 - **PROIBIDO `site/assets/aspirar.webp`** (15/08/2026). E foto de stock de um aspirador de mao com o logotipo do fabricante "Victor" bem visivel no deposito. Mesmo problema da puzzi.jpg: vende a marca do fabricante e nao a Bruma.
 - Antes de meter uma imagem na `gbp-queue.md`, ABRIR a imagem e confirmar que nao tem logotipo nem marca de terceiros visivel. O nome do ficheiro nao chega.
-- **O GBP nao aceita `.webp`** ("Tipo de ficheiro invalido selecionado"). Os posts com imagem tem de apontar para JPG ou PNG. Quase todas as imagens em `site/assets/` sao webp, por isso a fonte natural de artes para o GBP e `Bruma-Publicarruma-post-*.png` e `BrumaImagens
+- **O GBP nao aceita `.webp`** ("Tipo de ficheiro invalido selecionado"). Os posts com imagem tem de apontar para JPG ou PNG. Quase todas as imagens em `site/assets/` sao webp, por isso a fonte natural de artes para o GBP e `Bruma-Publicarruma-post-*.png` e `BrumaImagens
 eais*.jpg`.
 
 ## Catalogo de imagens APROVADAS para GBP e Instagram (16/08/2026)
@@ -52,7 +52,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-12.png | areia e sal da praia, 3 passos | SIM, GASTA (post GBP 2026-08-22-1, publicado e confirmado a 22/08) |
 | bruma-post-13.png | gelado derretido, 3 passos | nao |
 | bruma-post-14.png | animal fez no sofa, 3 passos | nao |
-| bruma-post-15.png | cafe entornado, 3 passos | nao |
+| bruma-post-15.png | cafe entornado, 3 passos | reservada (post GBP 2026-08-27-1, aguarda publicacao pela tarefa local) |
 
 **bruma-post-5.png foi conferido a 16/08 contra a oferta em vigor: 40/65/90/70/160 e caucao 50 EUR batem certo. Se os precos mudarem, esta arte fica PROIBIDA ate ser refeita.**
 
