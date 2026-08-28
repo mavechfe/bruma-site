@@ -11,10 +11,10 @@ Estados: pendente | rascunho | aprovado | publicado
 | 3 | Como limpar um sofá de tecido em casa, passo a passo (slug como-limpar-sofa-tecido-passo-a-passo) | como limpar sofá de tecido, limpar sofá em casa | limpeza-de-sofas | rascunho |
 | 4 | Quanto custa limpar um sofá: profissional vs alugar a máquina (slug quanto-custa-limpar-sofa-profissional-ou-maquina) | quanto custa limpar sofá, limpeza sofá preço | limpeza-de-sofas | rascunho |
 | 5 | Xixi de cão ou gato no sofá, tapete ou carro (slug xixi-de-animais) | urina gato sofá, cheiro xixi cão sofá | limpeza-de-sofas | publicado |
+| 9 | Como limpar um tapete ou alcatifa em casa | limpar alcatifa, lavar tapete em casa | limpeza-de-tapetes | pendente |
 | 6 | Quanto tempo demora um sofá a secar depois da limpeza | sofá molhado secar, tempo secagem sofá | limpeza-de-sofas | pendente |
 | 7 | Como limpar bancos do carro de tecido | limpar bancos carro, lavar estofos automóvel | estofos-automovel | pendente |
 | 8 | Pó e ácaros no colchão: o que a limpeza a extração remove | ácaros colchão, pó colchão limpeza | limpeza-de-colchoes | pendente |
-| 9 | Como limpar um tapete ou alcatifa em casa | limpar alcatifa, lavar tapete em casa | limpeza-de-tapetes | pendente |
 | 10 | Sofá de chenille ou veludo: cuidados antes de limpar | limpar sofá chenille, sofá veludo limpeza | limpeza-de-sofas | pendente |
 | 11 | Preparar a casa para a chegada de um bebé: estofos e têxteis | preparar casa bebé limpeza | limpeza-de-colchoes | pendente |
 | 12 | Casa de fumadores: reduzir o cheiro nos estofos | cheiro tabaco sofá, casa cheira a tabaco | limpeza-de-sofas | pendente |
