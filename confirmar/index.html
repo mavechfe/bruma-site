@@ -219,9 +219,8 @@
 
             <div class="termos">
               <h3>Termos do aluguer</h3>
-              <label class="opcao" id="optTermos"><input type="checkbox" id="aceitaTermos" onchange="verTermos()"><span class="et">Li e aceito os <a href="../contrato/" target="_blank" rel="noopener">termos do aluguer</a></span></label>
+              <label class="opcao" id="optTermos"><input type="checkbox" id="aceitaTermos" onchange="verTermos()"><span class="et">Aceito a caução de 50 € e os <a href="../contrato/" target="_blank" rel="noopener">termos do aluguer</a></span></label>
               <label class="opcao" id="optDados"><input type="checkbox" id="aceitaDados" onchange="verTermos()"><span class="et">Autorizo o tratamento dos meus dados para este aluguer</span></label>
-              <label class="opcao" id="optCaucao"><input type="checkbox" id="aceitaCaucao" onchange="verTermos()"><span class="et">Aceito a caução de 50 €</span></label>
             </div>
 
             <div class="aviso" id="aviso"></div>
@@ -394,7 +393,6 @@ var VERSAO_TERMOS = '2026-08-18';
 function verTermos() {
   $('optTermos').classList.toggle('porler', false);
   $('optDados').classList.toggle('porler', false);
-  $('optCaucao').classList.toggle('porler', false);
 }
 
 function carimbo() {
@@ -423,13 +421,12 @@ function enviar() {
     return;
   }
 
-  // sem as tres caixas nao ha contrato: nada segue para a folha
-  if (!$('aceitaTermos').checked || !$('aceitaDados').checked || !$('aceitaCaucao').checked) {
+  // sem as duas caixas nao ha contrato: nada segue para a folha
+  if (!$('aceitaTermos').checked || !$('aceitaDados').checked) {
     $('optTermos').classList.toggle('porler', !$('aceitaTermos').checked);
     $('optDados').classList.toggle('porler', !$('aceitaDados').checked);
-    $('optCaucao').classList.toggle('porler', !$('aceitaCaucao').checked);
     av.style.display = 'block';
-    av.textContent = 'Falta aceitar os termos do aluguer, o tratamento dos dados e a caução, aqui em cima. Sem isso não conseguimos preparar a entrega.';
+    av.textContent = 'Falta aceitar a caução e os termos do aluguer, e o tratamento dos dados, aqui em cima. Sem isso não conseguimos preparar a entrega.';
     document.querySelector('.termos').scrollIntoView({ behavior: 'smooth', block: 'center' });
     return;
   }
