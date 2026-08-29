@@ -467,9 +467,10 @@ function enviar() {
     total: deslocacao === null ? '' : aluguer + deslocacao + totalExtras,
     caucao: 50,
     // as 3 colunas "Aceitou..." da folha guardam a prova da aceitacao online
-    aceitou_caucao: 'sim · termos v' + VERSAO_TERMOS + ' aceites em ' + carimbo(),
+    // "sim" a seco: o script do e-mail compara com === 'sim'; a prova (versao + hora) vai em aceitou_dados
+    aceitou_caucao: 'sim',
     aceitou_deslocacao: deslocacao === null ? 'sim' : 'sim · ' + (km === null ? '?' : km) + ' km · ' + deslocacao + ' €',
-    aceitou_dados: 'sim · ' + carimbo()
+    aceitou_dados: 'sim · termos v' + VERSAO_TERMOS + ' e caução aceites em ' + carimbo()
   };
 
   fetch(SHEETS_URL, {
