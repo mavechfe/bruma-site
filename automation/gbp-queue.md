@@ -42,7 +42,7 @@ Vinho tinto entornado no sofá este fim de semana? Sal por cima, água com gás 
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-10.png
 
-## 2026-08-27-1 | estado: fila
+## 2026-08-27-1 | estado: publicado
 
 Café entornado no sofá esta semana? Água fria aos toques resolve a maioria dos casos, mas se o café levava leite a receita muda, porque a gordura do leite pede outro passo. O chá segue a mesma lógica do café, os dois deixam o mesmo tipo de marca nas fibras. Para o que já ficou preso no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo, com e sem leite, aqui: https://brumaservicos.pt/blog/nodoas-de-cafe-e-cha/
 
