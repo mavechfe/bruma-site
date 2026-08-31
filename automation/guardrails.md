@@ -62,7 +62,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 |---|---|---|
 | agua-suja.jpg | bocal com a agua suja a sair do sofa | nao |
 | sofa-faixa-limpa.jpg | faixa limpa no meio do sofa sujo, a melhor prova visual | sim (IG 24/08, por confirmar publicacao da Mariana) |
-| sofa-antes-depois.jpg | antes e depois no mesmo sofa | nao |
+| sofa-antes-depois.jpg | antes e depois no mesmo sofa | sim (IG 31/08, por confirmar publicacao da Mariana) |
 | sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | nao |
 | sofa-4x5.jpg | extracao em curso, formato 4x5 | nao |
 | carro-bocal.jpg | banco de carro, com texto "Limpa em profundidade" | nao |
