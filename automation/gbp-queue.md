@@ -48,6 +48,6 @@ Café entornado no sofá esta semana? Água fria aos toques resolve a maioria do
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-15.png
 
-## 2026-09-01-1 | estado: fila
+## 2026-09-01-1 | estado: publicado
 
 Quantas vezes limpamos mesmo o tapete ou a alcatifa por ano? A maioria só aspira por cima, mas o pó e a areia fina acumulam-se nas fibras mais fundas ao longo de meses, às vezes anos, sem que se note a olho nu. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas camadas mais fundas de tapetes e alcatifas. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
