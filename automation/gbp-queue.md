@@ -47,3 +47,7 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 Café entornado no sofá esta semana? Água fria aos toques resolve a maioria dos casos, mas se o café levava leite a receita muda, porque a gordura do leite pede outro passo. O chá segue a mesma lógica do café, os dois deixam o mesmo tipo de marca nas fibras. Para o que já ficou preso no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo, com e sem leite, aqui: https://brumaservicos.pt/blog/nodoas-de-cafe-e-cha/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-15.png
+
+## 2026-09-01-1 | estado: fila
+
+Quantas vezes limpamos mesmo o tapete ou a alcatifa por ano? A maioria só aspira por cima, mas o pó e a areia fina acumulam-se nas fibras mais fundas ao longo de meses, às vezes anos, sem que se note a olho nu. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas camadas mais fundas de tapetes e alcatifas. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
