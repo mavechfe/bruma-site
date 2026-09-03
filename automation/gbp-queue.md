@@ -52,6 +52,6 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 
 Quantas vezes limpamos mesmo o tapete ou a alcatifa por ano? A maioria só aspira por cima, mas o pó e a areia fina acumulam-se nas fibras mais fundas ao longo de meses, às vezes anos, sem que se note a olho nu. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas camadas mais fundas de tapetes e alcatifas. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
 
-## 2026-09-03-1 | estado: fila
+## 2026-09-03-1 | estado: publicado
 
 Pizza ao colo esta semana? Gordura e água não se misturam, por isso deitar água fria o dia todo não resolve nada, precisamos de um absorvente e de um detergente que quebre a gordura. A maquilhagem no sofá segue a mesma lógica, com um passo a mais para o rímel. Para o que já ficou fixado no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o método completo, incluindo o truque do rímel, aqui: https://brumaservicos.pt/blog/nodoas-de-gordura-e-maquilhagem/
