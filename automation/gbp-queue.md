@@ -55,3 +55,9 @@ Quantas vezes limpamos mesmo o tapete ou a alcatifa por ano? A maioria só aspir
 ## 2026-09-03-1 | estado: publicado
 
 Pizza ao colo esta semana? Gordura e água não se misturam, por isso deitar água fria o dia todo não resolve nada, precisamos de um absorvente e de um detergente que quebre a gordura. A maquilhagem no sofá segue a mesma lógica, com um passo a mais para o rímel. Para o que já ficou fixado no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o método completo, incluindo o truque do rímel, aqui: https://brumaservicos.pt/blog/nodoas-de-gordura-e-maquilhagem/
+
+## 2026-09-05-1 | estado: fila
+
+Tem visitas este fim de semana? Uma passagem rápida com o aspirador tira o que está à vista, mas não chega às fibras mais fundas do sofá, onde fica o pó acumulado. Sacudir as almofadas e arejar a sala antes de as visitas chegarem já ajuda bastante. Para o que ficou mesmo infiltrado no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-8.png
