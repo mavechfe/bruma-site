@@ -45,7 +45,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | nao |
 | bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | nao |
 | bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | nao |
-| bruma-post-8.png | "Tem visitas este fim de semana?" | nao |
+| bruma-post-8.png | "Tem visitas este fim de semana?" | SIM, GASTA (post GBP 2026-09-05-1, publicado e confirmado a 05/09) |
 | bruma-post-9.png | "Os miudos comem no sofa." | nao |
 | bruma-post-10.png | vinho no sofa, 3 passos | SIM, GASTA (post GBP 2026-08-25-1, publicado e confirmado a 26/08) |
 | bruma-post-11.png | protetor solar no sofa, 3 passos | nao |
@@ -63,7 +63,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | agua-suja.jpg | bocal com a agua suja a sair do sofa | nao |
 | sofa-faixa-limpa.jpg | faixa limpa no meio do sofa sujo, a melhor prova visual | sim (IG 24/08, por confirmar publicacao da Mariana) |
 | sofa-antes-depois.jpg | antes e depois no mesmo sofa | sim (IG 31/08, por confirmar publicacao da Mariana) |
-| sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | nao |
+| sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | sim (IG 07/09, por confirmar publicacao da Mariana) |
 | sofa-4x5.jpg | extracao em curso, formato 4x5 | nao |
 | carro-bocal.jpg | banco de carro, com texto "Limpa em profundidade" | nao |
 
