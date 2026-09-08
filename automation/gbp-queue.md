@@ -61,3 +61,7 @@ Pizza ao colo esta semana? Gordura e água não se misturam, por isso deitar ág
 Tem visitas este fim de semana? Uma passagem rápida com o aspirador tira o que está à vista, mas não chega às fibras mais fundas do sofá, onde fica o pó acumulado. Sacudir as almofadas e arejar a sala antes de as visitas chegarem já ajuda bastante. Para o que ficou mesmo infiltrado no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-8.png
+
+## 2026-09-08-1 | estado: fila
+
+Uma criança ficou três minutos sozinha com uma caneta e o sofá já não é o mesmo? Água não tira tinta, só a espalha mais para dentro do tecido. O que funciona é álcool aplicado com toques num pano, nunca despejado sobre o estofo, e nunca calor por cima disso. Depois de quebrar a tinta, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, incluindo o pigmento que escorreu para dentro do sofá. Reunimos o guia completo, sem promessas exageradas sobre marcador permanente, aqui: https://brumaservicos.pt/blog/tinta-caneta-marcador/
