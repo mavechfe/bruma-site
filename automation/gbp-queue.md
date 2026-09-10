@@ -62,6 +62,6 @@ Tem visitas este fim de semana? Uma passagem rápida com o aspirador tira o que 
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-8.png
 
-## 2026-09-08-1 | estado: fila
+## 2026-09-08-1 | estado: publicado
 
 Uma criança ficou três minutos sozinha com uma caneta e o sofá já não é o mesmo? Água não tira tinta, só a espalha mais para dentro do tecido. O que funciona é álcool aplicado com toques num pano, nunca despejado sobre o estofo, e nunca calor por cima disso. Depois de quebrar a tinta, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, incluindo o pigmento que escorreu para dentro do sofá. Reunimos o guia completo, sem promessas exageradas sobre marcador permanente, aqui: https://brumaservicos.pt/blog/tinta-caneta-marcador/
