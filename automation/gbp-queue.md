@@ -66,7 +66,7 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 
 Uma criança ficou três minutos sozinha com uma caneta e o sofá já não é o mesmo? Água não tira tinta, só a espalha mais para dentro do tecido. O que funciona é álcool aplicado com toques num pano, nunca despejado sobre o estofo, e nunca calor por cima disso. Depois de quebrar a tinta, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, incluindo o pigmento que escorreu para dentro do sofá. Reunimos o guia completo, sem promessas exageradas sobre marcador permanente, aqui: https://brumaservicos.pt/blog/tinta-caneta-marcador/
 
-## 2026-09-12-1 | estado: fila
+## 2026-09-12-1 | estado: publicado
 
 O seu cão ou gato tem lugar cativo no sofá? A maioria de nós aceita. Ficam pelos que o aspirador não apanha todos e, com a humidade do ar, um cheiro que teima em voltar. Aspire com frequência para tirar o que está à superfície, isso já ajuda bastante. Para o que ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
