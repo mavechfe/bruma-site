@@ -42,8 +42,8 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-2.png | "O cao dorme no sofa. Voce tambem." | sim (fila GBP 2026-09-12-1, por confirmar publicacao) |
 | bruma-post-3.png | "Lava os lencois todas as semanas. E o colchao?" | SIM, GASTA (post GBP 2026-08-18-1, publicado e confirmado a 18/08) |
 | bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | nao |
-| bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | nao |
-| bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | nao |
+| bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | sim (fila GBP 2026-09-13-2) |
+| bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | sim (fila GBP 2026-09-13-1) |
 | bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | nao |
 | bruma-post-8.png | "Tem visitas este fim de semana?" | SIM, GASTA (post GBP 2026-09-05-1, publicado e confirmado a 05/09) |
 | bruma-post-9.png | "Os miudos comem no sofa." | nao |

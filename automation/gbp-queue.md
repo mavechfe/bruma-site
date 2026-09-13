@@ -71,3 +71,15 @@ Uma criança ficou três minutos sozinha com uma caneta e o sofá já não é o 
 O seu cão ou gato tem lugar cativo no sofá? A maioria de nós aceita. Ficam pelos que o aspirador não apanha todos e, com a humidade do ar, um cheiro que teima em voltar. Aspire com frequência para tirar o que está à superfície, isso já ajuda bastante. Para o que ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-2.png
+
+## 2026-09-13-1 | estado: fila
+
+Quer limpar o sofá de tecido em casa e tem medo de o estragar? O segredo está em dois passos que quase toda a gente salta: o teste num canto escondido antes de começar e o enxaguamento com pano só de água limpa no fim, que é o que evita os halos. Escrevemos o passo a passo completo, com os erros a evitar, aqui: https://brumaservicos.pt/blog/como-limpar-sofa-tecido-passo-a-passo/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-6.png
+
+## 2026-09-13-2 | estado: fila
+
+Profissional ou alugar a máquina, o que sai mais barato para limpar o sofá? Depende sobretudo de quantas peças tem para limpar. Com o sofá, o colchão e os bancos do carro, um só dia de aluguer a 40€ cobre tudo, porque a máquina não cobra por peça. Fizemos as contas aqui: https://brumaservicos.pt/blog/quanto-custa-limpar-sofa-profissional-ou-maquina/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-5.png
