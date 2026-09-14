@@ -60,7 +60,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 
 | ficheiro | o que mostra | usada |
 |---|---|---|
-| agua-suja.jpg | bocal com a agua suja a sair do sofa | nao |
+| agua-suja.jpg | bocal com a agua suja a sair do sofa | sim (IG 14/09, por confirmar publicacao da Mariana) |
 | sofa-faixa-limpa.jpg | faixa limpa no meio do sofa sujo, a melhor prova visual | sim (IG 24/08, por confirmar publicacao da Mariana) |
 | sofa-antes-depois.jpg | antes e depois no mesmo sofa | sim (IG 31/08, por confirmar publicacao da Mariana) |
 | sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | sim (IG 07/09, por confirmar publicacao da Mariana) |
