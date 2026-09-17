@@ -83,3 +83,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 Profissional ou alugar a máquina, o que sai mais barato para limpar o sofá? Depende sobretudo de quantas peças tem para limpar. Com o sofá, o colchão e os bancos do carro, um só dia de aluguer a 40€ cobre tudo, porque a máquina não cobra por peça. Fizemos as contas aqui: https://brumaservicos.pt/blog/quanto-custa-limpar-sofa-profissional-ou-maquina/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-5.png
+
+## 2026-09-17-1 | estado: fila
+
+O seu cão ou gato já fez xixi no sofá ou no tapete e o cheiro volta sempre que chove? Não é imaginação, é a urina que desceu para dentro do estofo e sobe à superfície com a humidade do ar. Esfregar com detergente comum só espalha o problema, falta o passo de aspirar toda a água suja que fica lá dentro. Reunimos os erros que pioram tudo e o que resolve mesmo aqui: https://brumaservicos.pt/blog/xixi-de-animais/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-14.png

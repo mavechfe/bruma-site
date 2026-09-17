@@ -51,7 +51,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-11.png | protetor solar no sofa, 3 passos | nao |
 | bruma-post-12.png | areia e sal da praia, 3 passos | SIM, GASTA (post GBP 2026-08-22-1, publicado e confirmado a 22/08) |
 | bruma-post-13.png | gelado derretido, 3 passos | nao |
-| bruma-post-14.png | animal fez no sofa, 3 passos | nao |
+| bruma-post-14.png | animal fez no sofa, 3 passos | sim (fila GBP 2026-09-17-1, por confirmar publicacao) |
 | bruma-post-15.png | cafe entornado, 3 passos | SIM, GASTA (post GBP 2026-08-27-1, publicado e confirmado a 29/08) |
 
 **bruma-post-5.png foi conferido a 16/08 contra a oferta em vigor: 40/65/90/70/160 e caucao 50 EUR batem certo. Se os precos mudarem, esta arte fica PROIBIDA ate ser refeita.**
