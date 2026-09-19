@@ -46,7 +46,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | sim (fila GBP 2026-09-13-1) |
 | bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | nao |
 | bruma-post-8.png | "Tem visitas este fim de semana?" | SIM, GASTA (post GBP 2026-09-05-1, publicado e confirmado a 05/09) |
-| bruma-post-9.png | "Os miudos comem no sofa." | nao |
+| bruma-post-9.png | "Os miudos comem no sofa." | sim (fila GBP 2026-09-19-1, por confirmar publicacao) |
 | bruma-post-10.png | vinho no sofa, 3 passos | SIM, GASTA (post GBP 2026-08-25-1, publicado e confirmado a 26/08) |
 | bruma-post-11.png | protetor solar no sofa, 3 passos | nao |
 | bruma-post-12.png | areia e sal da praia, 3 passos | SIM, GASTA (post GBP 2026-08-22-1, publicado e confirmado a 22/08) |
