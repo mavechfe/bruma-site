@@ -12,7 +12,7 @@ Estados: pendente | rascunho | aprovado | publicado
 | 4 | Quanto custa limpar um sofá: profissional vs alugar a máquina (slug quanto-custa-limpar-sofa-profissional-ou-maquina) | quanto custa limpar sofá, limpeza sofá preço | limpeza-de-sofas | publicado |
 | 5 | Xixi de cão ou gato no sofá, tapete ou carro (slug xixi-de-animais) | urina gato sofá, cheiro xixi cão sofá | limpeza-de-sofas | publicado |
 | 9 | Como limpar um tapete ou alcatifa em casa (slug como-limpar-tapete-alcatifa-em-casa) | limpar alcatifa, lavar tapete em casa | limpeza-de-tapetes | rascunho |
-| 18 | Tapete do quarto: quantas vezes limpar por ano | limpar tapete quarto, manutenção tapetes | limpeza-de-tapetes | pendente |
+| 18 | Tapete do quarto: quantas vezes limpar por ano | limpar tapete quarto, manutenção tapetes | limpeza-de-tapetes | rascunho |
 | 7 | Como limpar bancos do carro de tecido | limpar bancos carro, lavar estofos automóvel | estofos-automovel | pendente |
 | 6 | Quanto tempo demora um sofá a secar depois da limpeza | sofá molhado secar, tempo secagem sofá | limpeza-de-sofas | pendente |
 | 8 | Pó e ácaros no colchão: o que a limpeza a extração remove | ácaros colchão, pó colchão limpeza | limpeza-de-colchoes | pendente |
