@@ -90,7 +90,7 @@ O seu cão ou gato já fez xixi no sofá ou no tapete e o cheiro volta sempre qu
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-14.png
 
-## 2026-09-19-1 | estado: fila
+## 2026-09-19-1 | estado: publicado
 
 Fim de semana com os miúdos em casa costuma acabar com migalhas e uma mancha nova no sofá. Aspirar tira o que está à vista, mas não chega às fibras onde o sumo ou o chocolate se infiltram. Um pano só de água nos primeiros minutos ajuda a não deixar secar, mas não substitui uma limpeza a fundo. Para o que já ficou preso no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo de nódoas aqui: https://brumaservicos.pt/blog/nodoas-guia-mancha-a-mancha/
 
