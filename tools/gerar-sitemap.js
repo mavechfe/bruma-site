@@ -8,6 +8,19 @@ const urls = [];
 // A data vem do ultimo commit que tocou o ficheiro, NAO do mtime: num clone novo
 // (as rotinas cloud clonam sempre de raiz) todos os ficheiros ficavam com a data de hoje
 // e o sitemap dizia ao Google que o site inteiro tinha mudado. Corrigido em 12/08/2026.
+//
+// Os clones das sessoes cloud sao shallow (historico cortado): "git log" para um
+// ficheiro nao tocado dentro dessa janela devolve a data do commit-fronteira do
+// clone, nao a data real do ultimo commit, e essa data-fronteira muda de sessao
+// para sessao. Isto corrompeu silenciosamente o lastmod de paginas antigas em
+// varias sessoes anteriores (descoberto em 23/09/2026). Corrigido a fazer
+// unshallow antes de ler as datas, sempre que o repositorio for shallow.
+try {
+  if (cp.execSync('git rev-parse --is-shallow-repository', { cwd: root, encoding: 'utf8' }).trim() === 'true') {
+    cp.execSync('git fetch --unshallow origin', { cwd: root, stdio: ['ignore', 'ignore', 'ignore'] });
+  }
+} catch (e) { /* sem git, sem remoto, ou sem rede: segue com o historico que houver */ }
+
 const dataDoFicheiro = f => {
   try {
     const d = cp.execSync('git log -1 --format=%cs -- "' + f + '"', {
