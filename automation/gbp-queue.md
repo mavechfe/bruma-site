@@ -96,7 +96,7 @@ Fim de semana com os miúdos em casa costuma acabar com migalhas e uma mancha no
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-9.png
 
-## 2026-09-24-1 | estado: fila
+## 2026-09-24-1 | estado: publicado
 
 Quantas vezes por ano os bancos do carro veem mesmo uma limpeza a fundo? Entre migalhas, areia e o uso diário, o aspirador tira o que está à superfície mas não chega ao que ficou infiltrado no tecido ou na pele. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
 
