@@ -95,3 +95,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 Fim de semana com os miúdos em casa costuma acabar com migalhas e uma mancha nova no sofá. Aspirar tira o que está à vista, mas não chega às fibras onde o sumo ou o chocolate se infiltram. Um pano só de água nos primeiros minutos ajuda a não deixar secar, mas não substitui uma limpeza a fundo. Para o que já ficou preso no tecido, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo de nódoas aqui: https://brumaservicos.pt/blog/nodoas-guia-mancha-a-mancha/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-9.png
+
+## 2026-09-24-1 | estado: fila
+
+Quantas vezes por ano os bancos do carro veem mesmo uma limpeza a fundo? Entre migalhas, areia e o uso diário, o aspirador tira o que está à superfície mas não chega ao que ficou infiltrado no tecido ou na pele. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-7.png
