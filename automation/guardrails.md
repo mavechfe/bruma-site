@@ -42,7 +42,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-2.png | "O cao dorme no sofa. Voce tambem." | sim (fila GBP 2026-09-12-1, por confirmar publicacao) |
 | bruma-post-3.png | "Lava os lencois todas as semanas. E o colchao?" | SIM, GASTA (post GBP 2026-08-18-1, publicado e confirmado a 18/08) |
 | bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | nao |
-| bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | sim (fila GBP 2026-09-13-2) |
+| bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | ⛔ OBSOLETA desde 25/09/2026 (entrega grátis passou a 3 km), não voltar a publicar (fila GBP 2026-09-13-2) |
 | bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | sim (fila GBP 2026-09-13-1) |
 | bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | SIM, GASTA (post GBP 2026-09-24-1, publicado e confirmado a 24/09) |
 | bruma-post-8.png | "Tem visitas este fim de semana?" | SIM, GASTA (post GBP 2026-09-05-1, publicado e confirmado a 05/09) |
@@ -74,7 +74,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 - Preços: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€.
 - Caução: 50€ (simbólica, decisão de 12/08/2026), devolvida por inteiro na recolha. Comunicar sempre sem letras pequenas.
 - Incluído: 3 bocais + 1 pastilha RM 760. Extras (decisão de 12/08/2026, substitui a consignação): pacote de 3 pastilhas 10€, pastilha extra 5€, spray tira-nódoas 8€, kit animais 10€.
-- Entrega: grátis até 5 km de Viseu; depois (km-5)×1,50€ ida e volta.
+- Entrega: grátis até 3 km do centro de Viseu (desde 25/09/2026, antes 5 km); depois (km-3)×1,50€, km por estrada a partir da Câmara, ida e volta incluídas. Nunca voltar a escrever "5 km".
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
 

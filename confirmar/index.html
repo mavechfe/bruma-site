@@ -165,6 +165,8 @@
                 <label class="campo"><span>Localidade</span><input type="text" id="localidade" autocomplete="address-level2" placeholder="Viseu, Cavernães..."></label>
               </div>
               <div class="dica" id="dicaKm"></div>
+              <label class="chk"><input type="checkbox" id="levanta" onchange="calcular()"> Prefiro levantar e devolver a máquina no centro de Viseu, sem custo de deslocação</label>
+              <p class="ajuda">O sítio exato no centro combinamos consigo pelo WhatsApp.</p>
               <label class="campo"><span>Andar e elevador <em>· opcional</em></span><input type="text" id="andar" placeholder="3.º esquerdo, sem elevador"></label>
               <label class="campo"><span>Dia combinado para a entrega</span><input type="date" id="dataEntrega"></label>
             </div>
@@ -213,7 +215,7 @@
               <div class="l"><span id="lDeslocacao">Entrega e recolha</span><span id="vDeslocacao">por calcular</span></div>
               <div class="l"><span>Extras</span><span id="vExtras">0,00 €</span></div>
               <div class="l total"><span>Total</span><span id="vTotal">por calcular</span></div>
-              <small>A entrega e a recolha estão incluídas até 5 km do centro de Viseu. Fora disso, 1,50 € por quilómetro. A caução de 50 € é entregue no momento e devolvida por inteiro na recolha. A distância é calculada por mapa, por isso confirmamos sempre o valor consigo antes da entrega.</small>
+              <small>A entrega e a recolha estão incluídas até 3 km do centro de Viseu. Fora disso, 1,50 € por quilómetro, ou pode levantar e devolver a máquina no centro de Viseu sem custo. A caução de 50 € é entregue no momento e devolvida por inteiro na recolha. A distância é calculada por mapa, por isso confirmamos sempre o valor consigo antes da entrega.</small>
             </div>
 
 
@@ -254,7 +256,7 @@
     </div>
     <div>
       <div style="color:#fff;font-weight:800">Como trabalhamos</div>
-      <div style="margin-top:6px">Entrega e recolha em sua casa<br>Até 5 km do centro de Viseu sem custo<br>Fora disso, 1,50€ por quilómetro<br>Pagamento por MB Way ou dinheiro</div>
+      <div style="margin-top:6px">Entrega e recolha em sua casa<br>Até 3 km do centro de Viseu sem custo<br>Fora disso, 1,50€ por quilómetro<br>ou levante no centro de Viseu, sem custo<br>Pagamento por MB Way ou dinheiro</div>
     </div>
     <div>
       <div style="color:#fff;font-weight:800">O site</div>
@@ -280,7 +282,7 @@
 <script>
 var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwlkbcDF36RQt7wnEJSmKJxd6ivgS3MCchRJbtvu6BV4EBo09THhy2N4JKRwCKYiNsr/exec';
 var CAMARA = { lat: 40.6575793, lon: -7.9142192 };
-var KM_GRATIS = 5, PRECO_KM = 1.5;
+var KM_GRATIS = 3, PRECO_KM = 1.5;
 var km = null, deslocacao = null;
 
 var EXTRAS = [
@@ -314,7 +316,10 @@ function calcular() {
   var totalExtras = extrasEscolhidos().reduce(function (s, e) { return s + e.preco; }, 0);
   $('vExtras').textContent = eur(totalExtras);
 
-  if (km === null) {
+  if (levanta()) {
+    $('lDeslocacao').textContent = 'Levanta e devolve no centro de Viseu';
+    $('vDeslocacao').textContent = 'sem custo';
+  } else if (km === null) {
     $('lDeslocacao').textContent = 'Entrega e recolha';
     $('vDeslocacao').textContent = 'por calcular';
   } else {
@@ -322,10 +327,15 @@ function calcular() {
     $('vDeslocacao').textContent = deslocacao === 0 ? 'incluída' : eur(deslocacao);
   }
 
-  $('vTotal').textContent = (aluguer === null || km === null)
+  var desl = custoDeslocacao();
+  $('vTotal').textContent = (aluguer === null || desl === null)
     ? 'por calcular'
-    : eur(aluguer + deslocacao + totalExtras);
+    : eur(aluguer + desl + totalExtras);
 }
+
+// quem levanta a maquina no centro nao paga deslocacao
+function levanta() { return $('levanta').checked; }
+function custoDeslocacao() { return levanta() ? 0 : deslocacao; }
 
 function geocodifica(procura, soPovoacoes) {
   var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=pt'
@@ -341,33 +351,80 @@ function kmEntre(a, b) {
   return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
 }
 
+// codigo postal completo (0000-000), do campo proprio ou escrito dentro da morada
+function codigoPostal() {
+  var m = (v('postal') + ' ' + v('morada')).match(/\b(\d{4})\s?-\s?(\d{3})\b/);
+  return m ? m[1] + '-' + m[2] : '';
+}
+
+// o codigo postal aponta para a rua (base dos CTT), e o metodo mais fiavel
+function pontoDoCodigo(cp) {
+  return fetch('https://json.geoapi.pt/cp/' + cp, { headers: { Accept: 'application/json' } })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) {
+      if (!j || !j.centro) return null;
+      var rua = j.ruas && j.ruas.length === 1 ? j.ruas[0] + ', ' : '';
+      return { lat: j.centro[0], lon: j.centro[1], nome: rua + (j.Localidade || j['Designação Postal'] || cp), distrito: j.Distrito || '' };
+    })
+    .catch(function () { return null; })
+    .then(function (p) { return p || pontoDoCodigoMapa(cp); });
+}
+
+// plano B (geoapi em baixo ou no limite de pedidos): o mapa tambem conhece muitos codigos postais
+function pontoDoCodigoMapa(cp) {
+  return fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=pt&postalcode=' + cp)
+    .then(function (r) { return r.json(); })
+    .then(function (l) {
+      if (!l.length) return null;
+      var partes = l[0].display_name.split(',');
+      return { lat: +l[0].lat, lon: +l[0].lon, nome: partes.slice(1, 3).join(',').trim() || cp, distrito: l[0].display_name.indexOf('Viseu') !== -1 ? 'Viseu' : '' };
+    })
+    .catch(function () { return null; });
+}
+
 var aCalcular = false, ultimaProcura = '';
 async function verDistancia() {
-  var loc = v('localidade'), mor = v('morada');
+  var loc = v('localidade'), mor = v('morada'), cp = codigoPostal();
   var dica = $('dicaKm');
-  if (!loc || aCalcular) return;
-  if (loc + '|' + mor === ultimaProcura) return;
-  ultimaProcura = loc + '|' + mor;
+  if ((!loc && !cp) || aCalcular) return;
+  if (loc + '|' + mor + '|' + cp === ultimaProcura) return;
+  ultimaProcura = loc + '|' + mor + '|' + cp;
   aCalcular = true;
   dica.className = 'dica';
   dica.textContent = 'A calcular a distância...';
   try {
-    // 1. a povoacao primeiro, nunca ruas com o mesmo nome noutro sitio
-    var sitio = await geocodifica(loc + ', Portugal', true);
-    if (!sitio) throw new Error('sem resultado');
-    var nome = sitio.display_name.split(',').slice(0, 2).join(',');
-    // 2. a morada so afina o ponto se cair perto da povoacao
-    var ponto = sitio;
-    if (mor) {
-      var fino = await geocodifica(mor + ', ' + loc + ', Portugal', false);
-      if (fino && kmEntre({ lat: +fino.lat, lon: +fino.lon }, { lat: +sitio.lat, lon: +sitio.lon }) < 5) ponto = fino;
+    var ponto = null, nome = '', naZona = true;
+    // 1. pelo codigo postal
+    if (cp) {
+      var porCodigo = await pontoDoCodigo(cp);
+      if (porCodigo) {
+        ponto = porCodigo;
+        nome = porCodigo.nome;
+        naZona = porCodigo.distrito === 'Viseu';
+      }
+    }
+    // 2. sem codigo postal: a povoacao primeiro, nunca ruas com o mesmo nome noutro sitio
+    if (!ponto) {
+      if (!loc) throw new Error('sem localidade');
+      var sitio = await geocodifica(loc + ', Portugal', true);
+      if (!sitio) throw new Error('sem resultado');
+      nome = sitio.display_name.split(',').slice(0, 2).join(',');
+      naZona = sitio.display_name.indexOf('Viseu') !== -1;
+      // a morada so afina o ponto se cair perto da povoacao
+      ponto = sitio;
+      if (mor) {
+        var fino = await geocodifica(mor + ', ' + loc + ', Portugal', false);
+        if (fino && kmEntre({ lat: +fino.lat, lon: +fino.lon }, { lat: +sitio.lat, lon: +sitio.lon }) < 5) ponto = fino;
+      }
+      // "Viseu" sozinho e o concelho inteiro: sem a rua encontrada, o centro da cidade daria uma distancia falsa
+      if (ponto === sitio && /^viseu$/i.test(loc)) throw new Error('so o concelho');
     }
     var r = await fetch('https://router.project-osrm.org/route/v1/driving/' + CAMARA.lon + ',' + CAMARA.lat + ';' + ponto.lon + ',' + ponto.lat + '?overview=false');
     var j = await r.json();
     if (j.code !== 'Ok') throw new Error('sem rota');
     km = Math.ceil(j.routes[0].distance / 1000);
     deslocacao = Math.max(0, km - KM_GRATIS) * PRECO_KM;
-    if (sitio.display_name.indexOf('Viseu') === -1 || km > 60) {
+    if (!naZona || km > 60) {
       dica.className = 'dica mau';
       dica.textContent = 'Encontrámos "' + nome + '", a ' + km + ' km. Fica fora da nossa zona habitual, por isso confirmamos consigo antes de avançar.';
     } else {
@@ -377,17 +434,22 @@ async function verDistancia() {
   } catch (e) {
     km = null; deslocacao = null;
     dica.className = 'dica mau';
-    dica.textContent = 'Não conseguimos calcular a distância daqui. Não faz mal, acertamos consigo pelo WhatsApp.';
+    dica.textContent = cp
+      ? 'Não conseguimos calcular a distância daqui. Não faz mal, acertamos consigo pelo WhatsApp.'
+      : 'Indique o código postal completo (0000-000) para calcularmos a distância.';
   } finally {
     aCalcular = false;
     calcular();
+    // se mudaram a morada enquanto calculavamos, calcula outra vez
+    if (v('localidade') + '|' + v('morada') + '|' + codigoPostal() !== ultimaProcura) verDistancia();
   }
 }
 
 $('localidade').addEventListener('blur', verDistancia);
-$('morada').addEventListener('blur', function () { if (v('localidade')) verDistancia(); });
+$('morada').addEventListener('blur', function () { if (v('localidade') || codigoPostal()) verDistancia(); });
+$('postal').addEventListener('blur', verDistancia);
 
-var VERSAO_TERMOS = '2026-08-18';
+var VERSAO_TERMOS = '2026-09-25';
 
 // tira o realce amarelo assim que a caixa e marcada
 function verTermos() {
@@ -439,6 +501,8 @@ function enviar() {
   var morada = v('morada');
   if (v('andar')) morada += ', ' + v('andar');
   if (v('postal')) morada += ', ' + v('postal');
+  if (levanta()) morada += ' · LEVANTA E DEVOLVE NO CENTRO DE VISEU';
+  var desl = custoDeslocacao();
 
   var ex = extrasEscolhidos();
   var totalExtras = ex.reduce(function (s, e) { return s + e.preco; }, 0);
@@ -462,14 +526,14 @@ function enviar() {
     manchas: v('manchas'),
     extras: ex.map(function (e) { return e.nome; }).join(', '),
     valor_aluguer: aluguer,
-    valor_deslocacao: deslocacao === null ? '' : deslocacao,
+    valor_deslocacao: desl === null ? '' : desl,
     valor_extras: totalExtras,
-    total: deslocacao === null ? '' : aluguer + deslocacao + totalExtras,
+    total: desl === null ? '' : aluguer + desl + totalExtras,
     caucao: 50,
     // as 3 colunas "Aceitou..." da folha guardam a prova da aceitacao online
     // "sim" a seco: o script do e-mail compara com === 'sim'; a prova (versao + hora) vai em aceitou_dados
     aceitou_caucao: 'sim',
-    aceitou_deslocacao: deslocacao === null ? 'sim' : 'sim · ' + (km === null ? '?' : km) + ' km · ' + deslocacao + ' €',
+    aceitou_deslocacao: levanta() ? 'sim · levanta no centro de Viseu · 0 €' : deslocacao === null ? 'sim' : 'sim · ' + (km === null ? '?' : km) + ' km · ' + deslocacao + ' €',
     aceitou_dados: 'sim · termos v' + VERSAO_TERMOS + ' e caução aceites em ' + carimbo()
   };
 
