@@ -26,6 +26,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/medir.js" defer></script>
 </head>
 <body>
 
@@ -267,6 +268,7 @@ function enviar() {
       body: JSON.stringify(dados)
     }).catch(function () { });
   }
+  if (window.medir) medir('pedido_reserva', { origem: 'reservar' });
 
   var msg = '*Pedido de reserva · Bruma Serviços*\n\n'
     + 'Nome: ' + dados.nome + '\n'

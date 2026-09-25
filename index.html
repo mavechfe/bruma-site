@@ -26,6 +26,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/medir.js" defer></script>
 </head>
 <body>
 
@@ -598,6 +599,7 @@ function pedir(p) {
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
     body: JSON.stringify(dados)
   }).then(function () {
+    if (window.medir) medir('pedido_reserva', { origem: 'inicio' });
     av.style.display = 'block';
     av.style.background = '#F1F7F6';
     av.style.borderColor = '#5EC5B8';
