@@ -101,3 +101,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 Quantas vezes por ano os bancos do carro veem mesmo uma limpeza a fundo? Entre migalhas, areia e o uso diário, o aspirador tira o que está à superfície mas não chega ao que ficou infiltrado no tecido ou na pele. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-7.png
+
+## 2026-09-26-1 | estado: fila
+
+Uma bola de gelado a derreter no sofá neste fim de semana? Se secar, o açúcar cola ainda mais ao tecido e esfregar a seco só espalha a mancha. Retire primeiro o excesso com uma colher, sem espalhar, e passe depois um pano com água fria enquanto a nódoa ainda está fresca. Para o que ficar mesmo infiltrado no estofo, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-13.png
