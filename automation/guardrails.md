@@ -41,7 +41,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | bruma-post-1.png | "Aspirar nao conta" (posicionamento-mestre) | sim (IG 17/08, por confirmar publicacao da Mariana) |
 | bruma-post-2.png | "O cao dorme no sofa. Voce tambem." | sim (fila GBP 2026-09-12-1, por confirmar publicacao) |
 | bruma-post-3.png | "Lava os lencois todas as semanas. E o colchao?" | SIM, GASTA (post GBP 2026-08-18-1, publicado e confirmado a 18/08) |
-| bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | nao |
+| bruma-post-4.png | "Sofa, colchoes e carro. No mesmo dia." (o que esta incluido) | sim (IG 28/09, por confirmar publicacao da Mariana) |
 | bruma-post-5.png | tabela de precos: 40 EUR dia, 65/90/70/160, caucao 50 EUR, entrega gratis 5 km | ⛔ OBSOLETA desde 25/09/2026 (entrega grátis passou a 3 km), não voltar a publicar (fila GBP 2026-09-13-2) |
 | bruma-post-6.png | "Tem medo de estragar o sofa?" (3 objecoes respondidas) | sim (fila GBP 2026-09-13-1) |
 | bruma-post-7.png | "Vai vender o carro? Comece pelos bancos." | SIM, GASTA (post GBP 2026-09-24-1, publicado e confirmado a 24/09) |
