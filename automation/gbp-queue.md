@@ -102,7 +102,7 @@ Quantas vezes por ano os bancos do carro veem mesmo uma limpeza a fundo? Entre m
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-7.png
 
-## 2026-09-26-1 | estado: fila
+## 2026-09-26-1 | estado: publicado
 
 Uma bola de gelado a derreter no sofá neste fim de semana? Se secar, o açúcar cola ainda mais ao tecido e esfregar a seco só espalha a mancha. Retire primeiro o excesso com uma colher, sem espalhar, e passe depois um pano com água fria enquanto a nódoa ainda está fresca. Para o que ficar mesmo infiltrado no estofo, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
