@@ -107,3 +107,9 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 Uma bola de gelado a derreter no sofá neste fim de semana? Se secar, o açúcar cola ainda mais ao tecido e esfregar a seco só espalha a mancha. Retire primeiro o excesso com uma colher, sem espalhar, e passe depois um pano com água fria enquanto a nódoa ainda está fresca. Para o que ficar mesmo infiltrado no estofo, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-13.png
+
+## 2026-10-01-1 | estado: fila
+
+Outubro chegou e o sofá volta a ser o sítio onde passamos mais tempo em casa. Com a chuva lá fora, entra mais pó e mais humidade para dentro de casa, e isso acumula-se nas fibras do sofá sem que se note a olho nu. Aspirar tira o que está à superfície, mas não chega ao que já se infiltrou. Antes do inverno chegar a sério, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
+
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagens\reais\sofa-4x5.jpg

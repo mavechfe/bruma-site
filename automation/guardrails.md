@@ -64,7 +64,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 | sofa-faixa-limpa.jpg | faixa limpa no meio do sofa sujo, a melhor prova visual | sim (IG 24/08, por confirmar publicacao da Mariana) |
 | sofa-antes-depois.jpg | antes e depois no mesmo sofa | sim (IG 31/08, por confirmar publicacao da Mariana) |
 | sofa-extracao.jpg | extracao em curso, com marca de agua "Bruma Servicos" | sim (IG 07/09, por confirmar publicacao da Mariana) |
-| sofa-4x5.jpg | extracao em curso, formato 4x5 | nao |
+| sofa-4x5.jpg | extracao em curso, formato 4x5 | sim (fila GBP 2026-10-01-1) |
 | carro-bocal.jpg | banco de carro, com texto "Limpa em profundidade" | sim (IG 21/09, por confirmar publicacao da Mariana) |
 
 **Panfletos (`panfleto-bruma-nodoa/pergunta/poster.png`): material de impressao com QR code. Servem para Instagram ou para imprimir, NAO para post GBP** (o QR nao faz sentido no ecra e o texto e denso demais).
