@@ -114,7 +114,7 @@ Outubro chegou e o sofá volta a ser o sítio onde passamos mais tempo em casa. 
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagens\reais\sofa-4x5.jpg
 
-## 2026-10-03-1 | estado: fila
+## 2026-10-03-1 | estado: publicado
 
 Protetor solar na pele e ele acaba sempre por marcar o sofá nos últimos dias de praia. A gordura do protetor forma uma camada onde a sujidade comum se cola, e fica semanas sem se notar. Três passos simples ajudam: retirar o excesso com um pano seco antes de esfregar, aplicar um pouco de detergente neutro com toques leves, sem esfregar com força, e deixar secar ao ar antes de voltar a usar o sofá. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
