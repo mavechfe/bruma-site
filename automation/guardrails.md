@@ -69,6 +69,8 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 
 **Panfletos (`panfleto-bruma-nodoa/pergunta/poster.png`): material de impressao com QR code. Servem para Instagram ou para imprimir, NAO para post GBP** (o QR nao faz sentido no ecra e o texto e denso demais).
 
+- `panfleto-bruma-nodoa.png`: proposto para Instagram a 05/10/2026 (angulo nodoas, liga ao guia mae do blog) porque as 21 imagens do catalogo principal acima estao todas marcadas usadas ou em fila. Por confirmar publicacao da Mariana. Ao contrario do catalogo principal, este ficheiro nao foi aberto e verificado sem logotipo de terceiros por uma sessao cloud (sem acesso ao PC local); confirmar isso antes de publicar.
+
 ## Oferta em vigor (11/08/2026)
 
 - Preços: 1 dia 40€, 2 dias 65€, 3 dias 90€, fim de semana 70€, semana 160€.
