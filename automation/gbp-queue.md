@@ -120,6 +120,6 @@ Protetor solar na pele e ele acaba sempre por marcar o sofá nos últimos dias d
 
 imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-post-11.png
 
-## 2026-10-06-1 | estado: fila
+## 2026-10-06-1 | estado: publicado
 
 Procura limpeza de tapetes perto de Viseu? Entregamos a máquina de extração em casa, hoje mesmo se estiver livre, e aspiramos sempre a fundo primeiro porque a areia presa no pelo funciona como lixa quando humedece. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas fibras mais fundas do tapete ou da alcatifa. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
