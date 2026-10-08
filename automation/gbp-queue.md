@@ -123,3 +123,7 @@ imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\03-Publicar\bruma-pos
 ## 2026-10-06-1 | estado: publicado
 
 Procura limpeza de tapetes perto de Viseu? Entregamos a máquina de extração em casa, hoje mesmo se estiver livre, e aspiramos sempre a fundo primeiro porque a areia presa no pelo funciona como lixa quando humedece. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas fibras mais fundas do tapete ou da alcatifa. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
+
+## 2026-10-08-1 | estado: fila
+
+Uma pequena queda ou um corte e o sangue manchou o sofá ou o colchão? A regra não tem excepções, é sempre água fria, porque o calor coagula a proteína do sangue e fixa a nódoa dentro do tecido, como um ovo na frigideira. Água quente, secador ou ferro só pioram a marca. Para o que já ficou mais entranhado no estofo, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o método completo, incluindo o aviso para colchões de espuma, aqui: https://brumaservicos.pt/blog/nodoas-de-sangue/
