@@ -70,6 +70,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 **Panfletos (`panfleto-bruma-nodoa/pergunta/poster.png`): material de impressao com QR code. Servem para Instagram ou para imprimir, NAO para post GBP** (o QR nao faz sentido no ecra e o texto e denso demais).
 
 - `panfleto-bruma-nodoa.png`: proposto para Instagram a 05/10/2026 (angulo nodoas, liga ao guia mae do blog) porque as 21 imagens do catalogo principal acima estao todas marcadas usadas ou em fila. Por confirmar publicacao da Mariana. Ao contrario do catalogo principal, este ficheiro nao foi aberto e verificado sem logotipo de terceiros por uma sessao cloud (sem acesso ao PC local); confirmar isso antes de publicar.
+- `panfleto-bruma-pergunta.png`: proposto para Instagram a 12/10/2026 (angulo bancos do carro, liga a pagina de servico estofos-automovel) porque o catalogo principal continua esgotado e `carro-bocal.jpg` ja esta reservado para outro post (IG 21/09). Por confirmar publicacao da Mariana. Tal como o panfleto da nodoa, este ficheiro nao foi aberto nem verificado sem logotipo de terceiros por uma sessao cloud; confirmar o conteudo visual e que o tema (pergunta generica) encaixa no angulo de bancos do carro antes de publicar.
 
 ## Oferta em vigor (11/08/2026)
 
