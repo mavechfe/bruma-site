@@ -128,6 +128,6 @@ Procura limpeza de tapetes perto de Viseu? Entregamos a máquina de extração e
 
 Uma pequena queda ou um corte e o sangue manchou o sofá ou o colchão? A regra não tem excepções, é sempre água fria, porque o calor coagula a proteína do sangue e fixa a nódoa dentro do tecido, como um ovo na frigideira. Água quente, secador ou ferro só pioram a marca. Para o que já ficou mais entranhado no estofo, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o método completo, incluindo o aviso para colchões de espuma, aqui: https://brumaservicos.pt/blog/nodoas-de-sangue/
 
-## 2026-10-13-1 | estado: fila
+## 2026-10-13-1 | estado: publicado
 
 Outubro trouxe a chuva de volta e com ela os bancos do carro cheios de humidade, lama dos sapatos e guarda-chuvas a escorrer no banco de trás. O aspirador tira o que seca à superfície, mas a humidade que se infiltra no tecido ou na pele do banco fica lá, e com ela o cheiro a fechado. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
