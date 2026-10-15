@@ -132,6 +132,6 @@ Uma pequena queda ou um corte e o sangue manchou o sofá ou o colchão? A regra 
 
 Outubro trouxe a chuva de volta e com ela os bancos do carro cheios de humidade, lama dos sapatos e guarda-chuvas a escorrer no banco de trás. O aspirador tira o que seca à superfície, mas a humidade que se infiltra no tecido ou na pele do banco fica lá, e com ela o cheiro a fechado. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
 
-## 2026-10-15-1 | estado: fila
+## 2026-10-15-1 | estado: publicado
 
 Com o frio de outubro, passamos mais horas em casa e muitas vezes na cama mais cedo. O colchão vai acumulando suor, pó e humidade da noite ao longo de semanas, sem que se note a olho nu. Aspirar tira o que está à superfície, mas não chega ao que já se infiltrou nas camadas mais fundas. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também no colchão. Mais em https://brumaservicos.pt/limpeza-de-colchoes/
