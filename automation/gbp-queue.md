@@ -136,6 +136,6 @@ Outubro trouxe a chuva de volta e com ela os bancos do carro cheios de humidade,
 
 Com o frio de outubro, passamos mais horas em casa e muitas vezes na cama mais cedo. O colchão vai acumulando suor, pó e humidade da noite ao longo de semanas, sem que se note a olho nu. Aspirar tira o que está à superfície, mas não chega ao que já se infiltrou nas camadas mais fundas. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também no colchão. Mais em https://brumaservicos.pt/limpeza-de-colchoes/
 
-## 2026-10-17-1 | estado: fila
+## 2026-10-17-1 | estado: publicado
 
 Já verificámos a etiqueta de cuidados do sofá antes de o limpar? A maioria das peças tem essas letras cosidas numa almofada ou por baixo do assento, W, S ou WS, e ignorar essa informação é o erro mais comum que vemos antes de uma limpeza. A etiqueta diz-nos se o tecido aceita água, só solvente ou os dois, e isso muda o produto certo a usar. A limpeza a extração funciona bem na maioria dos tecidos domésticos, mas confirmamos sempre a etiqueta antes de começar. Mais em https://brumaservicos.pt
