@@ -139,3 +139,7 @@ Com o frio de outubro, passamos mais horas em casa e muitas vezes na cama mais c
 ## 2026-10-17-1 | estado: publicado
 
 Já verificámos a etiqueta de cuidados do sofá antes de o limpar? A maioria das peças tem essas letras cosidas numa almofada ou por baixo do assento, W, S ou WS, e ignorar essa informação é o erro mais comum que vemos antes de uma limpeza. A etiqueta diz-nos se o tecido aceita água, só solvente ou os dois, e isso muda o produto certo a usar. A limpeza a extração funciona bem na maioria dos tecidos domésticos, mas confirmamos sempre a etiqueta antes de começar. Mais em https://brumaservicos.pt
+
+## 2026-10-20-1 | estado: fila
+
+As folhas e a lama de outubro ficam à entrada de casa, mas uma boa parte segue para dentro, presa no pelo do tapete ou da alcatifa. Aspirar remove o que está à superfície, mas a sujidade fina que se infiltra com a humidade fica para trás. Entregamos a máquina de extração em casa, pronta a usar assim que estiver livre, e a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas fibras mais fundas do tapete. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
