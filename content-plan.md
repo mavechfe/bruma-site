@@ -15,6 +15,7 @@ Estados: pendente | rascunho | aprovado | publicado
 | 18 | Tapete do quarto: quantas vezes limpar por ano | limpar tapete quarto, manutenção tapetes | limpeza-de-tapetes | rascunho |
 | 7 | Como limpar bancos do carro de tecido | limpar bancos carro, lavar estofos automóvel | estofos-automovel | pendente |
 | 17 | Como limpar a cadeira auto do bebé | limpar cadeira auto, lavar ovinho bebé | estofos-automovel | pendente |
+| 22 | Erros comuns a limpar sofás e como evitá-los | erros limpar sofá, estragar sofá limpeza | limpeza-de-sofas | pendente |
 | 8 | Pó e ácaros no colchão: o que a limpeza a extração remove | ácaros colchão, pó colchão limpeza | limpeza-de-colchoes | pendente |
 | 6 | Quanto tempo demora um sofá a secar depois da limpeza | sofá molhado secar, tempo secagem sofá | limpeza-de-sofas | pendente |
 | 21 | O que é limpeza a extração e porque funciona | limpeza a extração, máquina injeção extração | limpeza-de-sofas | pendente |
@@ -27,7 +28,6 @@ Estados: pendente | rascunho | aprovado | publicado
 | 16 | Colchão amarelado: porquê e o que fazer | colchão amarelado, manchas amarelas colchão | limpeza-de-colchoes | pendente |
 | 19 | Limpeza de primavera: por onde começar nos têxteis | limpeza primavera casa, lavar têxteis casa | limpeza-de-sofas | pendente |
 | 20 | Mudança de casa: limpar estofos antes de instalar | limpar sofá mudança, casa nova limpeza | limpeza-de-sofas | pendente |
-| 22 | Erros comuns a limpar sofás e como evitá-los | erros limpar sofá, estragar sofá limpeza | limpeza-de-sofas | pendente |
 | 23 | Vinagre branco nos estofos: quando sim, quando não | vinagre branco sofá, limpar com vinagre | limpeza-de-sofas | pendente |
 | 24 | Alergias em casa: o papel dos têxteis | alergénios casa, pó têxteis casa | limpeza-de-colchoes | pendente |
 | 25 | Sofá-cama: limpar as duas faces | limpar sofá-cama, lavar sofá cama tecido | limpeza-de-sofas | pendente |
