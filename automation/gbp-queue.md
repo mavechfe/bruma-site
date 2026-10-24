@@ -144,6 +144,6 @@ Já verificámos a etiqueta de cuidados do sofá antes de o limpar? A maioria da
 
 As folhas e a lama de outubro ficam à entrada de casa, mas uma boa parte segue para dentro, presa no pelo do tapete ou da alcatifa. Aspirar remove o que está à superfície, mas a sujidade fina que se infiltra com a humidade fica para trás. Entregamos a máquina de extração em casa, pronta a usar assim que estiver livre, e a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nas fibras mais fundas do tapete. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
 
-## 2026-10-24-1 | estado: fila
+## 2026-10-24-1 | estado: publicado
 
 Já esfregou com força uma mancha no sofá na esperança de que saísse mais rápido? Esfregar não dissolve a sujidade, só a empurra mais para dentro das fibras e pode estragar o tecido. Usar água ou detergente a mais também piora o problema, porque seca mal e deixa um cheiro parado. Testamos sempre num canto escondido antes de começar e aplicamos o produto com toques leves, nunca a esfregar com força. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
