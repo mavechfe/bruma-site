@@ -152,4 +152,4 @@ Já esfregou com força uma mancha no sofá na esperança de que saísse mais r�
 
 Sabia que pode levantar a máquina no centro de Viseu, sem custo? Combinamos pelo WhatsApp um ponto e a hora que lhe der jeito, leva a Kärcher na altura e devolve no mesmo sítio. Explicamos como se usa em dois minutos. Se preferir, continuamos a entregar em casa, grátis até 3 km do centro. Aluguer 40€ o dia inteiro, com detergente incluído. Tabela completa e extras em https://brumaservicos.pt/precos/
 
-imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\sitessets\puzzi.jpg
+imagem: C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\site\assets\puzzi.jpg
