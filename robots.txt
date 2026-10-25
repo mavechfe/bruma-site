@@ -8,3 +8,5 @@ Disallow: /tools/
 Disallow: /content-plan.md
 
 Sitemap: https://brumaservicos.pt/sitemap.xml
+
+Disallow: /3eedbfe25c77d78c9a08f1a5197feb12.txt
