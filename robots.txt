@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /blog/_rascunhos/
 Disallow: /blog/_template.html
+Disallow: /automation/
+Disallow: /reports/
+Disallow: /tools/
+Disallow: /content-plan.md
 
 Sitemap: https://brumaservicos.pt/sitemap.xml

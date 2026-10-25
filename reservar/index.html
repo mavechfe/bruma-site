@@ -115,6 +115,7 @@
             <label class="campo"><span>Email <em>· opcional</em></span><input type="email" id="email" autocomplete="email"></label>
             <label class="campo"><span>Localidade</span><input type="text" id="localidade" placeholder="Viseu, Cavernães, Mangualde..."></label>
             <label class="campo"><span>Para quando</span><input type="date" id="quando"></label>
+            <label class="chk" style="grid-column:1/-1"><input type="checkbox" id="levanta"> Levanto e devolvo a máquina no centro de Viseu, sem custo de deslocação</label>
 
             <span style="display:block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--suave);text-transform:uppercase;margin:20px 0 6px">O que vai limpar</span>
             <label class="chk"><input type="checkbox" id="cSofa"> Sofá ou cadeirões</label>
@@ -251,7 +252,7 @@ function enviar() {
     nome: $('nome').value.trim(),
     telemovel: $('tel').value.trim(),
     email: $('email').value.trim(),
-    localidade: $('localidade').value.trim(),
+    localidade: $('localidade').value.trim() + ($('levanta').checked ? ' · LEVANTA E DEVOLVE NO CENTRO DE VISEU' : ''),
     entrega: $('quando').value,
     vai_limpar: limpar(),
     animais: $('cAnimais').checked ? 'sim' : 'não',
@@ -274,7 +275,8 @@ function enviar() {
     + 'Nome: ' + dados.nome + '\n'
     + 'Telemóvel: ' + dados.telemovel + '\n'
     + (dados.email ? 'Email: ' + dados.email + '\n' : '')
-    + 'Localidade: ' + dados.localidade + '\n'
+    + 'Localidade: ' + $('localidade').value.trim() + '\n'
+    + 'Entrega: ' + ($('levanta').checked ? 'levanto e devolvo no centro de Viseu' : 'em casa') + '\n'
     + 'Para quando: ' + quando + '\n'
     + 'Vou limpar: ' + dados.vai_limpar + '\n'
     + 'Animais em casa: ' + dados.animais + '\n'
