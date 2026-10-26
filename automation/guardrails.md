@@ -79,6 +79,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 - Caução: 50€ (simbólica, decisão de 12/08/2026), devolvida por inteiro na recolha. Comunicar sempre sem letras pequenas.
 - Incluído: 3 bocais + 1 pastilha RM 760. Extras (decisão de 12/08/2026, substitui a consignação): pacote de 3 pastilhas 10€, pastilha extra 5€, spray tira-nódoas 8€, kit animais 10€.
 - Entrega: grátis até 3 km do centro de Viseu (desde 25/09/2026, antes 5 km); depois (km-3)×1,50€, km por estrada a partir da Câmara, ida e volta incluídas. Nunca voltar a escrever "5 km".
+- Levantamento no centro de Viseu, sem custo (desde 25/10/2026, página `/precos/` nova e FAQ atualizada por sessão da Mariana fora desta rotina): combina-se hora e ponto por WhatsApp, alternativa à entrega em casa. Mencionável nos posts.
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
 
