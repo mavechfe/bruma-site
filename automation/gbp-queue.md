@@ -148,6 +148,6 @@ As folhas e a lama de outubro ficam à entrada de casa, mas uma boa parte segue 
 
 Já esfregou com força uma mancha no sofá na esperança de que saísse mais rápido? Esfregar não dissolve a sujidade, só a empurra mais para dentro das fibras e pode estragar o tecido. Usar água ou detergente a mais também piora o problema, porque seca mal e deixa um cheiro parado. Testamos sempre num canto escondido antes de começar e aplicamos o produto com toques leves, nunca a esfregar com força. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
-## 2026-10-27-1 | estado: fila
+## 2026-10-27-1 | estado: publicado
 
 Sabia que pode levantar a máquina no centro de Viseu, sem custo? Combinamos pelo WhatsApp um ponto e a hora que lhe der jeito, leva a Kärcher na altura e devolve no mesmo sítio. Explicamos como se usa em dois minutos. Se preferir, continuamos a entregar em casa, grátis até 3 km do centro. Aluguer 40€ o dia inteiro, com detergente incluído. Tabela completa e extras em https://brumaservicos.pt/precos/
