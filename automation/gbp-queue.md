@@ -151,3 +151,7 @@ Já esfregou com força uma mancha no sofá na esperança de que saísse mais r�
 ## 2026-10-27-1 | estado: publicado
 
 Sabia que pode levantar a máquina no centro de Viseu, sem custo? Combinamos pelo WhatsApp um ponto e a hora que lhe der jeito, leva a Kärcher na altura e devolve no mesmo sítio. Explicamos como se usa em dois minutos. Se preferir, continuamos a entregar em casa, grátis até 3 km do centro. Aluguer 40€ o dia inteiro, com detergente incluído. Tabela completa e extras em https://brumaservicos.pt/precos/
+
+## 2026-10-29-1 | estado: fila
+
+Novembro aproxima-se e os dias mais frios levam-nos a passar mais horas no sofá, muitas vezes com uma manta por cima que esconde o que já se acumulou por baixo. O aspirador tira o que está à vista, mas não chega ao pó e à sujidade que se infiltram nas fibras ao longo dos meses. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, sem esperar pela limpeza de primavera. Reunimos os cuidados a ter com o sofá aqui: https://brumaservicos.pt/limpeza-de-sofas/
