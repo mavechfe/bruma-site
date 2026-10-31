@@ -14,6 +14,7 @@
 
 - [Início](https://brumaservicos.pt/): o que alugamos, preços e calculadora de poupança
 - [Preços](https://brumaservicos.pt/precos/): tabela completa, extras, levantamento no centro ou entrega, caução
+- [Empresa ou aluguer](https://brumaservicos.pt/empresa-ou-aluguer/): calculadora que compara o preço de uma empresa de limpeza, peça a peça, com um dia de aluguer
 - [Limpeza de sofás](https://brumaservicos.pt/limpeza-de-sofas/): como se lava um sofá com a máquina, tempo de secagem e preço
 - [Limpeza de colchões](https://brumaservicos.pt/limpeza-de-colchoes/)
 - [Limpeza de tapetes e alcatifas](https://brumaservicos.pt/limpeza-de-tapetes/)
