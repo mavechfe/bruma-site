@@ -83,6 +83,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
 - A calculadora "Faça as contas" (preços de empresa por peça, pastilhas, poupança) existe em DOIS sítios desde 31/10/2026: a home (#contas) e /empresa-ou-aluguer/. Qualquer mudança de preço ou de texto faz-se nos dois.
+- Formas de pagamento (MB Way, dinheiro, transferência): NÃO se mencionam no site, nos posts nem no blog (decisão da Mariana, 31/10/2026). Só ficam nos termos do aluguer (/contrato/).
 
 ## Como o site é publicado (desde 12/08/2026)
 
