@@ -82,6 +82,7 @@ Raiz das fotos reais: `C:\Users\mavec\OneDrive\Ambiente de Trabalho\Bruma\Imagen
 - Levantamento no centro de Viseu, sem custo (desde 25/10/2026, página `/precos/` nova e FAQ atualizada por sessão da Mariana fora desta rotina): combina-se hora e ponto por WhatsApp, alternativa à entrega em casa. Mencionável nos posts.
 - NÃO existe pacote "Casa Respira". O RM 761 não se menciona (recomendação em vigor: vinagre branco).
 - Urgências: nunca prometer prazo em horas nem 24/7; apenas "hoje, se a máquina estiver livre".
+- A calculadora "Faça as contas" (preços de empresa por peça, pastilhas, poupança) existe em DOIS sítios desde 31/10/2026: a home (#contas) e /empresa-ou-aluguer/. Qualquer mudança de preço ou de texto faz-se nos dois.
 
 ## Como o site é publicado (desde 12/08/2026)
 
