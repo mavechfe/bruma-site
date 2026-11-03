@@ -156,6 +156,6 @@ Sabia que pode levantar a máquina no centro de Viseu, sem custo? Combinamos pel
 
 Novembro aproxima-se e os dias mais frios levam-nos a passar mais horas no sofá, muitas vezes com uma manta por cima que esconde o que já se acumulou por baixo. O aspirador tira o que está à vista, mas não chega ao pó e à sujidade que se infiltram nas fibras ao longo dos meses. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, sem esperar pela limpeza de primavera. Reunimos os cuidados a ter com o sofá aqui: https://brumaservicos.pt/limpeza-de-sofas/
 
-## 2026-11-03-1 | estado: fila
+## 2026-11-03-1 | estado: retido (ver approvals-pendentes.md, nao publicar sem OK da Mariana)
 
 As primeiras chuvas de novembro trazem lama e humidade para dentro do carro, sobretudo nos bancos de trás. O aspirador tira o que seca à superfície, mas a humidade que se infiltra no tecido ou na pele do banco fica lá, com o cheiro a fechado a juntar-se. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
