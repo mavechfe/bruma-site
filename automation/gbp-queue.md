@@ -159,3 +159,7 @@ Novembro aproxima-se e os dias mais frios levam-nos a passar mais horas no sofá
 ## 2026-11-03-1 | estado: retido (ver approvals-pendentes.md, nao publicar sem OK da Mariana)
 
 As primeiras chuvas de novembro trazem lama e humidade para dentro do carro, sobretudo nos bancos de trás. O aspirador tira o que seca à superfície, mas a humidade que se infiltra no tecido ou na pele do banco fica lá, com o cheiro a fechado a juntar-se. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também dentro do carro. Reunimos o que muda entre banco de tecido e de pele aqui: https://brumaservicos.pt/estofos-automovel/
+
+## 2026-11-05-1 | estado: fila
+
+No próximo São Martinho vai haver magusto em casa? A casca da castanha assada e a cinza prendem-se facilmente ao tecido do sofá, e um copo de jeropiga a mais só piora se cair em cima. Para nódoas frescas, um pano com água fria nos primeiros minutos ajuda. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo de nódoas aqui: https://brumaservicos.pt/blog/nodoas-guia-mancha-a-mancha/
