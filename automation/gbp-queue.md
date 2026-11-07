@@ -164,6 +164,6 @@ As primeiras chuvas de novembro trazem lama e humidade para dentro do carro, sob
 
 No próximo São Martinho vai haver magusto em casa? A casca da castanha assada e a cinza prendem-se facilmente ao tecido do sofá, e um copo de jeropiga a mais só piora se cair em cima. Para nódoas frescas, um pano com água fria nos primeiros minutos ajuda. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Reunimos o guia completo de nódoas aqui: https://brumaservicos.pt/blog/nodoas-guia-mancha-a-mancha/
 
-## 2026-11-07-1 | estado: fila
+## 2026-11-07-1 | estado: publicado
 
 Qual é a frequência certa para limpar o sofá a fundo? Não há uma regra única, casas com animais ou com crianças pequenas costumam precisar de ciclos mais curtos. Entre as limpezas a fundo, aspirar uma vez por semana já ajuda a não deixar acumular o que fica à superfície. Para a sujidade que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
