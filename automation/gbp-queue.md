@@ -168,6 +168,6 @@ No próximo São Martinho vai haver magusto em casa? A casca da castanha assada 
 
 Qual é a frequência certa para limpar o sofá a fundo? Não há uma regra única, casas com animais ou com crianças pequenas costumam precisar de ciclos mais curtos. Entre as limpezas a fundo, aspirar uma vez por semana já ajuda a não deixar acumular o que fica à superfície. Para a sujidade que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
-## 2026-11-10-1 | estado: fila
+## 2026-11-10-1 | estado: publicado
 
 Com o aquecimento ligado, o ar fica mais seco e levanta mais pó para dentro de casa, que acaba por se depositar no sofá e nos tapetes. Aspirar ajuda a tirar o que está à superfície, mas não chega ao que já se infiltrou nas fibras mais fundas. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também agora no inverno. Mais em https://brumaservicos.pt
