@@ -172,6 +172,6 @@ Qual é a frequência certa para limpar o sofá a fundo? Não há uma regra úni
 
 Com o aquecimento ligado, o ar fica mais seco e levanta mais pó para dentro de casa, que acaba por se depositar no sofá e nos tapetes. Aspirar ajuda a tirar o que está à superfície, mas não chega ao que já se infiltrou nas fibras mais fundas. A limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também agora no inverno. Mais em https://brumaservicos.pt
 
-## 2026-11-12-1 | estado: fila
+## 2026-11-12-1 | estado: publicado
 
 Com o frio, arejamos a casa menos vezes e o ar demora mais a renovar-se. O pó que normalmente saía pela janela fica a circular dentro de casa e acaba por se depositar no sofá e nos tapetes. Abrir a casa por alguns minutos todos os dias já ajuda a reduzir essa acumulação. Para o que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
