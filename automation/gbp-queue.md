@@ -176,6 +176,6 @@ Com o aquecimento ligado, o ar fica mais seco e levanta mais pó para dentro de 
 
 Com o frio, arejamos a casa menos vezes e o ar demora mais a renovar-se. O pó que normalmente saía pela janela fica a circular dentro de casa e acaba por se depositar no sofá e nos tapetes. Abrir a casa por alguns minutos todos os dias já ajuda a reduzir essa acumulação. Para o que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
-## 2026-11-14-1 | estado: fila
+## 2026-11-14-1 | estado: publicado
 
 Em dias de chuva, o casaco ou o guarda-chuva pousam no sofá só por um instante, mas a humidade passa logo para o tecido e fica a secar por dentro, mesmo que a superfície pareça seca ao toque. Um cabide ou um cesto perto da porta, para a roupa que ainda escorre, evita isso. Para a humidade que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
