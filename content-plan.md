@@ -13,12 +13,12 @@ Estados: pendente | rascunho | aprovado | publicado
 | 5 | Xixi de cão ou gato no sofá, tapete ou carro (slug xixi-de-animais) | urina gato sofá, cheiro xixi cão sofá | limpeza-de-sofas | publicado |
 | 9 | Como limpar um tapete ou alcatifa em casa (slug como-limpar-tapete-alcatifa-em-casa) | limpar alcatifa, lavar tapete em casa | limpeza-de-tapetes | rascunho |
 | 18 | Tapete do quarto: quantas vezes limpar por ano | limpar tapete quarto, manutenção tapetes | limpeza-de-tapetes | rascunho |
-| 22 | Erros comuns a limpar sofás e como evitá-los | erros limpar sofá, estragar sofá limpeza | limpeza-de-sofas | pendente |
 | 7 | Como limpar bancos do carro de tecido | limpar bancos carro, lavar estofos automóvel | estofos-automovel | pendente |
 | 17 | Como limpar a cadeira auto do bebé | limpar cadeira auto, lavar ovinho bebé | estofos-automovel | pendente |
+| 22 | Erros comuns a limpar sofás e como evitá-los | erros limpar sofá, estragar sofá limpeza | limpeza-de-sofas | pendente |
+| 13 | Como limpar um cadeirão ou poltrona | limpar cadeirão, lavar poltrona tecido | limpeza-de-sofas | pendente |
 | 8 | Pó e ácaros no colchão: o que a limpeza a extração remove | ácaros colchão, pó colchão limpeza | limpeza-de-colchoes | pendente |
 | 16 | Colchão amarelado: porquê e o que fazer | colchão amarelado, manchas amarelas colchão | limpeza-de-colchoes | pendente |
-| 13 | Como limpar um cadeirão ou poltrona | limpar cadeirão, lavar poltrona tecido | limpeza-de-sofas | pendente |
 | 6 | Quanto tempo demora um sofá a secar depois da limpeza | sofá molhado secar, tempo secagem sofá | limpeza-de-sofas | pendente |
 | 21 | O que é limpeza a extração e porque funciona | limpeza a extração, máquina injeção extração | limpeza-de-sofas | pendente |
 | 10 | Sofá de chenille ou veludo: cuidados antes de limpar | limpar sofá chenille, sofá veludo limpeza | limpeza-de-sofas | pendente |
@@ -39,3 +39,5 @@ Nota do tema 8 e 24: só remoção de pó, resíduos e alergénios do têxtil. N
 Nota do tema 23: recomendar vinagre branco como auxiliar doméstico está aprovado; não mencionar o RM 761.
 
 Página de serviço nova a 19/08/2026: `limpeza-de-tapetes` (Limpeza de tapetes e alcatifas). Os temas 9 e 18 passaram a apontar para ela em vez de `limpeza-de-sofas`. Artigos novos sobre tapetes ou alcatifas linkam para esta página, não para a de sofás.
+
+Reordenação de 20/11/2026 (ação de sexta-feira, com base em `automation/metrics/2026-11-14.md`): temas 7 e 17 (estofos-automóvel) sobem ao topo dos pendentes porque "limpeza de estofos de automóvel" é a consulta real (não a marca, não "aluguer máquina de desentupir") mais consistente das últimas 5 leituras do Search Console (5, 4, 4, 3, 3 impressões em 07/11, 10/11, 12/11 e 14/11, a última repetida porque a janela não avançou), e este é o único serviço sem nenhum artigo de blog próprio ainda. O tema 22 (erros comuns a limpar sofás) mantém-se logo a seguir porque "lavagem de sofá" (juntando grafias) também aparece todas as semanas, com força semelhante. O tema 13 (cadeirão/poltrona) sobe um pouco porque "limpeza de cadeiras" apareceu nas duas últimas leituras (12/11 e 14/11, 1 impressão, mesma janela), mas é só um ponto de dados e a ligação lexical é fraca (pode ser sobre cadeiras em geral, não cadeirões), por isso não sobe mais. Os temas de colchão (8, 16, 24) não têm nenhuma consulta correspondente nas leituras recentes, por isso ficam onde estavam.
