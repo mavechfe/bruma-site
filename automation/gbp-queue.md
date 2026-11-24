@@ -180,6 +180,6 @@ Com o frio, arejamos a casa menos vezes e o ar demora mais a renovar-se. O pó q
 
 Em dias de chuva, o casaco ou o guarda-chuva pousam no sofá só por um instante, mas a humidade passa logo para o tecido e fica a secar por dentro, mesmo que a superfície pareça seca ao toque. Um cabide ou um cesto perto da porta, para a roupa que ainda escorre, evita isso. Para a humidade que já se infiltrou nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
 
-## 2026-11-17-1 | estado: fila
+## 2026-11-17-1 | estado: publicado
 
 Com as festas de fim de ano a aproximarem-se, a casa costuma receber mais visitas do que o habitual nas próximas semanas. Uma passagem com o aspirador tira o que está à vista, mas o pó e a sujidade acumulados nas fibras do sofá e do tapete ficam para trás. Antes dos convívios de dezembro, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nos tapetes. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
