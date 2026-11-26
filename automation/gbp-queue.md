@@ -183,3 +183,7 @@ Em dias de chuva, o casaco ou o guarda-chuva pousam no sofá só por um instante
 ## 2026-11-17-1 | estado: publicado
 
 Com as festas de fim de ano a aproximarem-se, a casa costuma receber mais visitas do que o habitual nas próximas semanas. Uma passagem com o aspirador tira o que está à vista, mas o pó e a sujidade acumulados nas fibras do sofá e do tapete ficam para trás. Antes dos convívios de dezembro, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás, também nos tapetes. Reunimos os cuidados a ter aqui: https://brumaservicos.pt/limpeza-de-tapetes/
+
+## 2026-11-26-1 | estado: fila
+
+Nestas noites mais frias, o chocolate quente ou o leite acabam quase sempre por perto do sofá, e um deslize chega para deixar marca. A gordura do leite ou do cacau agarra-se ao tecido e, se secar, fica mais difícil de sair. Um pano com água fria nos primeiros minutos ajuda a não deixar fixar a nódoa. Para o que já ficou infiltrado nas fibras, a limpeza a extração remove o reservatório de pó e sujidade que o aspirador deixa para trás. Mais em https://brumaservicos.pt
